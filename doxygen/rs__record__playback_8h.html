@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Intel® RealSense™ Cross Platform API: C:/jenkins_sys_rsbuild/workspace/LRS_doxygen/source/include/librealsense2/h/rs_record_playback.h File Reference</title>
+<title>Intel® RealSense™ Cross Platform API: C:/jenkins_sys_rsbuild/workspace/LRS_doxygen_pipeline/source/include/librealsense2/h/rs_record_playback.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,6 +84,8 @@ Functions</h2></td></tr>
 <tr class="separator:ad623094483fda04776dde44d13782fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae04a3c083d2d537fcb1ff5f6e47a3c37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__record__playback_8h.html#ae04a3c083d2d537fcb1ff5f6e47a3c37">rs2_create_record_device</a> (const <a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *device, const char *file, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:ae04a3c083d2d537fcb1ff5f6e47a3c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad2202b78b6d864fc688456e4ae9288"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__record__playback_8h.html#a4ad2202b78b6d864fc688456e4ae9288">rs2_create_record_device_ex</a> (const <a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *device, const char *file, int compression_enabled, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a4ad2202b78b6d864fc688456e4ae9288"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbb4eff5f7ae97b4d533b82779955d7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__record__playback_8h.html#adbb4eff5f7ae97b4d533b82779955d7c">rs2_record_device_pause</a> (const <a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *device, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:adbb4eff5f7ae97b4d533b82779955d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a831978993968a7d84b353bff2bf1cde3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__record__playback_8h.html#a831978993968a7d84b353bff2bf1cde3">rs2_record_device_resume</a> (const <a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *device, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
@@ -246,6 +248,56 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>The device to record </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">file</td><td>The desired path to which the recorder should save the data </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a device that records its data to file, or null in case of failure </dd></dl>
+
+</div>
+</div>
+<a id="a4ad2202b78b6d864fc688456e4ae9288"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ad2202b78b6d864fc688456e4ae9288">&#9670;&nbsp;</a></span>rs2_create_record_device_ex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a>* rs2_create_record_device_ex </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>compression_enabled</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates a recording device to record the given device and save it to the given file </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>The device to record </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">file</td><td>The desired path to which the recorder should save the data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">compression_enabled</td><td>Indicates if compression is enabled, 0 means false, otherwise true </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
   </table>
   </dd>

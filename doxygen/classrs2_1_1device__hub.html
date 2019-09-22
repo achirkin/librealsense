@@ -61,12 +61,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a36b20936725a27bf49887fbccf405fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e47b1e2b0f4f4dcd573a1c6e1796e66"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1device__hub.html#a6e47b1e2b0f4f4dcd573a1c6e1796e66">is_connected</a> (const <a class="el" href="classrs2_1_1device.html">device</a> &amp;dev) const</td></tr>
 <tr class="separator:a6e47b1e2b0f4f4dcd573a1c6e1796e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb28b68390828ca259464ebcd9215666"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1device__hub.html#adb28b68390828ca259464ebcd9215666">operator std::shared_ptr&lt; rs2_device_hub &gt;</a> ()</td></tr>
+<tr class="separator:adb28b68390828ca259464ebcd9215666"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80798fac4e3d30de038cd10d46a6eb71"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1device__hub.html#a80798fac4e3d30de038cd10d46a6eb71">device_hub</a> (std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#ababd687b94a34c3535c6170dc0c47ae2">rs2_device_hub</a> &gt; hub)</td></tr>
+<tr class="separator:a80798fac4e3d30de038cd10d46a6eb71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classrs2_1_1device__hub.html">device_hub</a> class - encapsulate the handling of connect and disconnect events </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aab55a8b3f13f48a72a19a60a6db571ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab55a8b3f13f48a72a19a60a6db571ea">&#9670;&nbsp;</a></span>device_hub()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aab55a8b3f13f48a72a19a60a6db571ea">&#9670;&nbsp;</a></span>device_hub() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -79,6 +83,32 @@ Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classrs2_1_1context.html">context</a>&#160;</td>
           <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80798fac4e3d30de038cd10d46a6eb71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80798fac4e3d30de038cd10d46a6eb71">&#9670;&nbsp;</a></span>device_hub() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rs2::device_hub::device_hub </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#ababd687b94a34c3535c6170dc0c47ae2">rs2_device_hub</a> &gt;&#160;</td>
+          <td class="paramname"><em>hub</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -119,6 +149,31 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="adb28b68390828ca259464ebcd9215666"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb28b68390828ca259464ebcd9215666">&#9670;&nbsp;</a></span>operator std::shared_ptr&lt; rs2_device_hub &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rs2::device_hub::operator std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#ababd687b94a34c3535c6170dc0c47ae2">rs2_device_hub</a> &gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a36b20936725a27bf49887fbccf405fd7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a36b20936725a27bf49887fbccf405fd7">&#9670;&nbsp;</a></span>wait_for_device()</h2>
 
@@ -146,7 +201,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/jenkins_sys_rsbuild/workspace/LRS_doxygen/source/include/librealsense2/hpp/<a class="el" href="rs__context_8hpp_source.html">rs_context.hpp</a></li>
+<li>C:/jenkins_sys_rsbuild/workspace/LRS_doxygen_pipeline/source/include/librealsense2/hpp/<a class="el" href="rs__context_8hpp_source.html">rs_context.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

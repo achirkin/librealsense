@@ -55,8 +55,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae425c68b35b46120f7d429f4451782ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame__queue.html#ae425c68b35b46120f7d429f4451782ad">frame_queue</a> (unsigned int <a class="el" href="classrs2_1_1frame__queue.html#a34f14537ad04442d54dff7d49c1bd4c5">capacity</a>)</td></tr>
-<tr class="separator:ae425c68b35b46120f7d429f4451782ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adea0fab3a1f34f325df856d6de24dbee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame__queue.html#adea0fab3a1f34f325df856d6de24dbee">frame_queue</a> (unsigned int <a class="el" href="classrs2_1_1frame__queue.html#a34f14537ad04442d54dff7d49c1bd4c5">capacity</a>, bool <a class="el" href="classrs2_1_1frame__queue.html#ab738971563cfcb207105040361a6e704">keep_frames</a>=false)</td></tr>
+<tr class="separator:adea0fab3a1f34f325df856d6de24dbee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab382c2a67ebd6b41b4b65b65e64e109b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame__queue.html#ab382c2a67ebd6b41b4b65b65e64e109b">frame_queue</a> ()</td></tr>
 <tr class="separator:ab382c2a67ebd6b41b4b65b65e64e109b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17d0367215046e7b2c19ca1a77d3b9e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame__queue.html#a17d0367215046e7b2c19ca1a77d3b9e8">enqueue</a> (<a class="el" href="classrs2_1_1frame.html">frame</a> f) const</td></tr>
@@ -66,14 +66,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a259d511430f9993f1ff209e5fdb04f92"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a259d511430f9993f1ff209e5fdb04f92"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_base_of&lt; <a class="el" href="classrs2_1_1frame.html">rs2::frame</a>, T &gt;::value, bool &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame__queue.html#a259d511430f9993f1ff209e5fdb04f92">poll_for_frame</a> (T *output) const</td></tr>
 <tr class="separator:a259d511430f9993f1ff209e5fdb04f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a489cda3942c3bbac23934a3f9d87efd0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a489cda3942c3bbac23934a3f9d87efd0"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_base_of&lt; <a class="el" href="classrs2_1_1frame.html">rs2::frame</a>, T &gt;::value, bool &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame__queue.html#a489cda3942c3bbac23934a3f9d87efd0">try_wait_for_frame</a> (T *output, unsigned int timeout_ms=5000) const</td></tr>
+<tr class="separator:a489cda3942c3bbac23934a3f9d87efd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8c43415d74bcb09e6ce126ae4b5c362"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame__queue.html#aa8c43415d74bcb09e6ce126ae4b5c362">operator()</a> (<a class="el" href="classrs2_1_1frame.html">frame</a> f) const</td></tr>
 <tr class="separator:aa8c43415d74bcb09e6ce126ae4b5c362"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34f14537ad04442d54dff7d49c1bd4c5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame__queue.html#a34f14537ad04442d54dff7d49c1bd4c5">capacity</a> () const</td></tr>
 <tr class="separator:a34f14537ad04442d54dff7d49c1bd4c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab738971563cfcb207105040361a6e704"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame__queue.html#ab738971563cfcb207105040361a6e704">keep_frames</a> () const</td></tr>
+<tr class="separator:ab738971563cfcb207105040361a6e704"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae425c68b35b46120f7d429f4451782ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae425c68b35b46120f7d429f4451782ad">&#9670;&nbsp;</a></span>frame_queue() <span class="overload">[1/2]</span></h2>
+<a id="adea0fab3a1f34f325df856d6de24dbee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adea0fab3a1f34f325df856d6de24dbee">&#9670;&nbsp;</a></span>frame_queue() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -85,8 +90,18 @@ Public Member Functions</h2></td></tr>
           <td class="memname">rs2::frame_queue::frame_queue </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>capacity</em></td><td>)</td>
+          <td class="paramname"><em>capacity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>keep_frames</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -95,7 +110,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>create frame queue. frame queues are the simplest x-platform synchronization primitive provided by librealsense to help developers who are not using async APIs param[in] capacity size of the frame queue </p>
+<p>create frame queue. frame queues are the simplest x-platform synchronization primitive provided by librealsense to help developers who are not using async APIs param[in] capacity size of the frame queue param[in] keep_frames if set to true, the queue automatically calls keep() on every frame enqueued into it. </p>
 
 </div>
 </div>
@@ -147,6 +162,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Return the capacity of the queue </p><dl class="section return"><dt>Returns</dt><dd>capacity size </dd></dl>
 
 </div>
 </div>
@@ -173,12 +189,38 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>enqueue new frame into a queue </p><dl class="params"><dt>Parameters</dt><dd>
+<p>enqueue new frame into the queue </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">f</td><td>- frame handle to enqueue (this operation passed ownership to the queue) </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ab738971563cfcb207105040361a6e704"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab738971563cfcb207105040361a6e704">&#9670;&nbsp;</a></span>keep_frames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool rs2::frame_queue::keep_frames </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return whether or not the queue calls keep on enqueued frames </p><dl class="section return"><dt>Returns</dt><dd>keeping frames </dd></dl>
 
 </div>
 </div>
@@ -205,6 +247,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Does the same thing as enqueue function. </p>
 
 </div>
 </div>
@@ -243,6 +286,44 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a489cda3942c3bbac23934a3f9d87efd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a489cda3942c3bbac23934a3f9d87efd0">&#9670;&nbsp;</a></span>try_wait_for_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt;std::is_base_of&lt;<a class="el" href="classrs2_1_1frame.html">rs2::frame</a>, T&gt;::value, bool&gt;::type rs2::frame_queue::try_wait_for_frame </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>timeout_ms</em> = <code>5000</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aac7e49ddd003fa240abdc0496899889c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aac7e49ddd003fa240abdc0496899889c">&#9670;&nbsp;</a></span>wait_for_frame()</h2>
 
@@ -271,7 +352,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/jenkins_sys_rsbuild/workspace/LRS_doxygen/source/include/librealsense2/hpp/<a class="el" href="rs__processing_8hpp_source.html">rs_processing.hpp</a></li>
+<li>C:/jenkins_sys_rsbuild/workspace/LRS_doxygen_pipeline/source/include/librealsense2/hpp/<a class="el" href="rs__processing_8hpp_source.html">rs_processing.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

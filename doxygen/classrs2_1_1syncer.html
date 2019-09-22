@@ -61,6 +61,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af3d1ba2616ae5fc321897df5417d3ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21bf41de61a1a254b0df86c8e8658060"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1syncer.html#a21bf41de61a1a254b0df86c8e8658060">poll_for_frames</a> (<a class="el" href="classrs2_1_1frameset.html">frameset</a> *fs) const</td></tr>
 <tr class="separator:a21bf41de61a1a254b0df86c8e8658060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a021ebf9270b3783d39bad864ee1ad499"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1syncer.html#a021ebf9270b3783d39bad864ee1ad499">try_wait_for_frames</a> (<a class="el" href="classrs2_1_1frameset.html">frameset</a> *fs, unsigned int timeout_ms=5000) const</td></tr>
+<tr class="separator:a021ebf9270b3783d39bad864ee1ad499"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a912d63db3ddf76c85e4d1d24246543e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1syncer.html#a912d63db3ddf76c85e4d1d24246543e6">operator()</a> (<a class="el" href="classrs2_1_1frame.html">frame</a> f) const</td></tr>
 <tr class="separator:a912d63db3ddf76c85e4d1d24246543e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -88,6 +90,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Sync instance to align frames from different streams </p>
 
 </div>
 </div>
@@ -151,6 +154,50 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a021ebf9270b3783d39bad864ee1ad499"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a021ebf9270b3783d39bad864ee1ad499">&#9670;&nbsp;</a></span>try_wait_for_frames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool rs2::syncer::try_wait_for_frames </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classrs2_1_1frameset.html">frameset</a> *&#160;</td>
+          <td class="paramname"><em>fs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>timeout_ms</em> = <code>5000</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Wait until coherent set of frames becomes available </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout_ms</td><td>Max time in milliseconds to wait until an available frame </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">fs</td><td>New coherent frame-set </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if new frame-set was stored to result </dd></dl>
+
+</div>
+</div>
 <a id="af3d1ba2616ae5fc321897df5417d3ac0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af3d1ba2616ae5fc321897df5417d3ac0">&#9670;&nbsp;</a></span>wait_for_frames()</h2>
 
@@ -185,7 +232,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/jenkins_sys_rsbuild/workspace/LRS_doxygen/source/include/librealsense2/hpp/<a class="el" href="rs__processing_8hpp_source.html">rs_processing.hpp</a></li>
+<li>C:/jenkins_sys_rsbuild/workspace/LRS_doxygen_pipeline/source/include/librealsense2/hpp/<a class="el" href="rs__processing_8hpp_source.html">rs_processing.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Intel® RealSense™ Cross Platform API: C:/jenkins_sys_rsbuild/workspace/LRS_doxygen/source/include/librealsense2/h/rs_option.h File Reference</title>
+<title>Intel® RealSense™ Cross Platform API: C:/jenkins_sys_rsbuild/workspace/LRS_doxygen_pipeline/source/include/librealsense2/h/rs_option.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,7 +61,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a71ca93df561800268a98d45a4f0292c2"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2">rs2_option</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__option_8h.html#a71ca93df561800268a98d45a4f0292c2">rs2_option</a></td></tr>
-<tr class="memdesc:a71ca93df561800268a98d45a4f0292c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines general configuration controls. These can generally be mapped to camera UVC controls, and unless stated otherwise, can be set/queried at any time.  <a href="#a71ca93df561800268a98d45a4f0292c2">More...</a><br /></td></tr>
+<tr class="memdesc:a71ca93df561800268a98d45a4f0292c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines general configuration controls. These can generally be mapped to camera UVC controls, and can be set / queried at any time unless stated otherwise.  <a href="#a71ca93df561800268a98d45a4f0292c2">More...</a><br /></td></tr>
 <tr class="separator:a71ca93df561800268a98d45a4f0292c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7efdebe6ae2b2468dbc53b07c7b6564a"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="rs__option_8h.html#a07402b9eb861d1defe57dbab8befa3ad">rs2_sr300_visual_preset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__option_8h.html#a7efdebe6ae2b2468dbc53b07c7b6564a">rs2_sr300_visual_preset</a></td></tr>
 <tr class="memdesc:a7efdebe6ae2b2468dbc53b07c7b6564a"><td class="mdescLeft">&#160;</td><td class="mdescRight">For SR300 devices: provides optimized settings (presets) for specific types of usage.  <a href="#a7efdebe6ae2b2468dbc53b07c7b6564a">More...</a><br /></td></tr>
@@ -126,10 +126,32 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2ac7c2fdd116cd4b2ff05a49f3d67011a8">RS2_OPTION_STEREO_BASELINE</a>, 
 <a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a837060c0017eda2294d20f91772222c7">RS2_OPTION_AUTO_EXPOSURE_CONVERGE_STEP</a>, 
 <a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2aae51d09ca8ee365a720b4994ef8d6c14">RS2_OPTION_INTER_CAM_SYNC_MODE</a>, 
-<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a4158983f553ef28b078dd7716ce73419">RS2_OPTION_COUNT</a>
+<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a0f0f22301cd0afdb9d254570fe86ddca">RS2_OPTION_STREAM_FILTER</a>, 
+<br />
+&#160;&#160;<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2ae03f27f570581f6b74c9f3f69f455429">RS2_OPTION_STREAM_FORMAT_FILTER</a>, 
+<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a89b0d2023d760b5d0c11331ec269ed97">RS2_OPTION_STREAM_INDEX_FILTER</a>, 
+<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a60149cf7438c0ccce8e0e9e05e762baf">RS2_OPTION_EMITTER_ON_OFF</a>, 
+<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a2462faee03e8b67bbed8922af141b3ee">RS2_OPTION_ZERO_ORDER_POINT_X</a>, 
+<br />
+&#160;&#160;<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2ab692aa5265ad1eb2451c9871367362c3">RS2_OPTION_ZERO_ORDER_POINT_Y</a>, 
+<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a1bee769e483ad8d74b5577d9725070c6">RS2_OPTION_LLD_TEMPERATURE</a>, 
+<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2ae5bc14bc540702d159049df9f53b10c4">RS2_OPTION_MC_TEMPERATURE</a>, 
+<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a589074417f2328c0ef846b3886a03a08">RS2_OPTION_MA_TEMPERATURE</a>, 
+<br />
+&#160;&#160;<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2ad530ce062836c005674305bf839da8b4">RS2_OPTION_HARDWARE_PRESET</a>, 
+<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a19afe71bbf8d3531d036005055e35199">RS2_OPTION_GLOBAL_TIME_ENABLED</a>, 
+<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2adb885d16814a9b3625644e75c6413e02">RS2_OPTION_APD_TEMPERATURE</a>, 
+<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2aeb13e81afe0a3aaf197e369e6987e830">RS2_OPTION_ENABLE_MAPPING</a>, 
+<br />
+&#160;&#160;<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a9df00e78ebd036cdb0875538579fbf2e">RS2_OPTION_ENABLE_RELOCALIZATION</a>, 
+<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a3f98264e5395800e54a81f81562bbe19">RS2_OPTION_ENABLE_POSE_JUMPING</a>, 
+<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a0e7347b70091d7fbf2c87c34e72e9025">RS2_OPTION_ENABLE_DYNAMIC_CALIBRATION</a>, 
+<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a6fb422f8c33bd8c4001734845c97e067">RS2_OPTION_DEPTH_OFFSET</a>, 
+<br />
+&#160;&#160;<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a4158983f553ef28b078dd7716ce73419">RS2_OPTION_COUNT</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a8b9c011f705cfab20c7eaaa7a26040e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines general configuration controls. These can generally be mapped to camera UVC controls, and unless stated otherwise, can be set/queried at any time.  <a href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2">More...</a><br /></td></tr>
+<tr class="memdesc:a8b9c011f705cfab20c7eaaa7a26040e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines general configuration controls. These can generally be mapped to camera UVC controls, and can be set / queried at any time unless stated otherwise.  <a href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2">More...</a><br /></td></tr>
 <tr class="separator:a8b9c011f705cfab20c7eaaa7a26040e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07402b9eb861d1defe57dbab8befa3ad"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__option_8h.html#a07402b9eb861d1defe57dbab8befa3ad">rs2_sr300_visual_preset</a> { <br />
 &#160;&#160;<a class="el" href="rs__option_8h.html#a07402b9eb861d1defe57dbab8befa3adac4c13a99c5c0c3fab1d743c12671ad70">RS2_SR300_VISUAL_PRESET_SHORT_RANGE</a>, 
@@ -179,6 +201,16 @@ Functions</h2></td></tr>
 <tr class="separator:afd731fbcfb4f43b3c46bd23d720b506a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63da38ef9bd518a9977b9c5136a305fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__option_8h.html#a63da38ef9bd518a9977b9c5136a305fa">rs2_set_option</a> (const <a class="el" href="rs__types_8h.html#ae51b2a412b632c6caef98bf91629f274">rs2_options</a> *options, <a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2">rs2_option</a> option, float value, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:a63da38ef9bd518a9977b9c5136a305fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6255ba380af37f5e24e74f102ba0aaab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__types_8h.html#ad178343e6e89d8c5fefdca16b05d66db">rs2_options_list</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__option_8h.html#a6255ba380af37f5e24e74f102ba0aaab">rs2_get_options_list</a> (const <a class="el" href="rs__types_8h.html#ae51b2a412b632c6caef98bf91629f274">rs2_options</a> *options, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a6255ba380af37f5e24e74f102ba0aaab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81985c7b526152957a6d2cab85e1fcfb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__option_8h.html#a81985c7b526152957a6d2cab85e1fcfb">rs2_get_options_list_size</a> (const <a class="el" href="rs__types_8h.html#ad178343e6e89d8c5fefdca16b05d66db">rs2_options_list</a> *options, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a81985c7b526152957a6d2cab85e1fcfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dc13827b68f600b685aaed53dc8ae20"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__option_8h.html#a7dc13827b68f600b685aaed53dc8ae20">rs2_get_option_name</a> (const <a class="el" href="rs__types_8h.html#ae51b2a412b632c6caef98bf91629f274">rs2_options</a> *options, <a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2">rs2_option</a> option, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a7dc13827b68f600b685aaed53dc8ae20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa998989d365d1715924867f7e9ff7e06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2">rs2_option</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__option_8h.html#aa998989d365d1715924867f7e9ff7e06">rs2_get_option_from_list</a> (const <a class="el" href="rs__types_8h.html#ad178343e6e89d8c5fefdca16b05d66db">rs2_options_list</a> *options, int i, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:aa998989d365d1715924867f7e9ff7e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf9e29586eaee47273b852b54300568f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__option_8h.html#abf9e29586eaee47273b852b54300568f">rs2_delete_options_list</a> (<a class="el" href="rs__types_8h.html#ad178343e6e89d8c5fefdca16b05d66db">rs2_options_list</a> *list)</td></tr>
+<tr class="separator:abf9e29586eaee47273b852b54300568f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff3a12716b94f055007c92303f257c69"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__option_8h.html#aff3a12716b94f055007c92303f257c69">rs2_supports_option</a> (const <a class="el" href="rs__types_8h.html#ae51b2a412b632c6caef98bf91629f274">rs2_options</a> *options, <a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2">rs2_option</a> option, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:aff3a12716b94f055007c92303f257c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc51e41945795f8c6ebbc8afa007632b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__option_8h.html#adc51e41945795f8c6ebbc8afa007632b">rs2_get_option_range</a> (const <a class="el" href="rs__types_8h.html#ae51b2a412b632c6caef98bf91629f274">rs2_options</a> *sensor, <a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2">rs2_option</a> option, float *min, float *max, float *step, float *def, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
@@ -203,7 +235,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Defines general configuration controls. These can generally be mapped to camera UVC controls, and unless stated otherwise, can be set/queried at any time. </p>
+<p>Defines general configuration controls. These can generally be mapped to camera UVC controls, and can be set / queried at any time unless stated otherwise. </p>
 
 </div>
 </div>
@@ -252,7 +284,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Defines general configuration controls. These can generally be mapped to camera UVC controls, and unless stated otherwise, can be set/queried at any time. </p>
+<p>Defines general configuration controls. These can generally be mapped to camera UVC controls, and can be set / queried at any time unless stated otherwise. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a1b190100d8ca308207b8661d5cd7e049"></a>RS2_OPTION_BACKLIGHT_COMPENSATION&#160;</td><td class="fielddoc"><p>Enable / disable color backlight compensation </p>
 </td></tr>
@@ -340,6 +372,40 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2aae51d09ca8ee365a720b4994ef8d6c14"></a>RS2_OPTION_INTER_CAM_SYNC_MODE&#160;</td><td class="fielddoc"><p>Impose Inter-camera HW synchronization mode. Applicable for D400/Rolling Shutter SKUs </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a0f0f22301cd0afdb9d254570fe86ddca"></a>RS2_OPTION_STREAM_FILTER&#160;</td><td class="fielddoc"><p>Select a stream to process </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2ae03f27f570581f6b74c9f3f69f455429"></a>RS2_OPTION_STREAM_FORMAT_FILTER&#160;</td><td class="fielddoc"><p>Select a stream format to process </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a89b0d2023d760b5d0c11331ec269ed97"></a>RS2_OPTION_STREAM_INDEX_FILTER&#160;</td><td class="fielddoc"><p>Select a stream index to process </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a60149cf7438c0ccce8e0e9e05e762baf"></a>RS2_OPTION_EMITTER_ON_OFF&#160;</td><td class="fielddoc"><p>When supported, this option make the camera to switch the emitter state every frame. 0 for disabled, 1 for enabled </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a2462faee03e8b67bbed8922af141b3ee"></a>RS2_OPTION_ZERO_ORDER_POINT_X&#160;</td><td class="fielddoc"><p>Zero order point x </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2ab692aa5265ad1eb2451c9871367362c3"></a>RS2_OPTION_ZERO_ORDER_POINT_Y&#160;</td><td class="fielddoc"><p>Zero order point y </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a1bee769e483ad8d74b5577d9725070c6"></a>RS2_OPTION_LLD_TEMPERATURE&#160;</td><td class="fielddoc"><p>LLD temperature </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2ae5bc14bc540702d159049df9f53b10c4"></a>RS2_OPTION_MC_TEMPERATURE&#160;</td><td class="fielddoc"><p>MC temperature </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a589074417f2328c0ef846b3886a03a08"></a>RS2_OPTION_MA_TEMPERATURE&#160;</td><td class="fielddoc"><p>MA temperature </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2ad530ce062836c005674305bf839da8b4"></a>RS2_OPTION_HARDWARE_PRESET&#160;</td><td class="fielddoc"><p>Hardware stream configuration </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a19afe71bbf8d3531d036005055e35199"></a>RS2_OPTION_GLOBAL_TIME_ENABLED&#160;</td><td class="fielddoc"><p>disable global time </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2adb885d16814a9b3625644e75c6413e02"></a>RS2_OPTION_APD_TEMPERATURE&#160;</td><td class="fielddoc"><p>APD temperature </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2aeb13e81afe0a3aaf197e369e6987e830"></a>RS2_OPTION_ENABLE_MAPPING&#160;</td><td class="fielddoc"><p>Enable an internal map </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a9df00e78ebd036cdb0875538579fbf2e"></a>RS2_OPTION_ENABLE_RELOCALIZATION&#160;</td><td class="fielddoc"><p>Enable appearance based relocalization </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a3f98264e5395800e54a81f81562bbe19"></a>RS2_OPTION_ENABLE_POSE_JUMPING&#160;</td><td class="fielddoc"><p>Enable position jumping </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a0e7347b70091d7fbf2c87c34e72e9025"></a>RS2_OPTION_ENABLE_DYNAMIC_CALIBRATION&#160;</td><td class="fielddoc"><p>Enable dynamic calibration </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a6fb422f8c33bd8c4001734845c97e067"></a>RS2_OPTION_DEPTH_OFFSET&#160;</td><td class="fielddoc"><p>Offset from sensor to depth origin in millimetrers </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a4158983f553ef28b078dd7716ce73419"></a>RS2_OPTION_COUNT&#160;</td><td class="fielddoc"><p>Number of enumeration values. Not a valid input: intended to be used in for-loops. </p>
 </td></tr>
 </table>
@@ -415,6 +481,30 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="abf9e29586eaee47273b852b54300568f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf9e29586eaee47273b852b54300568f">&#9670;&nbsp;</a></span>rs2_delete_options_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rs2_delete_options_list </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ad178343e6e89d8c5fefdca16b05d66db">rs2_options_list</a> *&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Deletes options list </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">list</td><td>list to delete </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="afd731fbcfb4f43b3c46bd23d720b506a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afd731fbcfb4f43b3c46bd23d720b506a">&#9670;&nbsp;</a></span>rs2_get_option()</h2>
 
@@ -498,6 +588,90 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>human-readable option description </dd></dl>
+
+</div>
+</div>
+<a id="aa998989d365d1715924867f7e9ff7e06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa998989d365d1715924867f7e9ff7e06">&#9670;&nbsp;</a></span>rs2_get_option_from_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2">rs2_option</a> rs2_get_option_from_list </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="rs__types_8h.html#ad178343e6e89d8c5fefdca16b05d66db">rs2_options_list</a> *&#160;</td>
+          <td class="paramname"><em>options</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>get the specific option from options list </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>the index of the option </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>if non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7dc13827b68f600b685aaed53dc8ae20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dc13827b68f600b685aaed53dc8ae20">&#9670;&nbsp;</a></span>rs2_get_option_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* rs2_get_option_name </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="rs__types_8h.html#ae51b2a412b632c6caef98bf91629f274">rs2_options</a> *&#160;</td>
+          <td class="paramname"><em>options</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2">rs2_option</a>&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>get option name </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">options</td><td>options object </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">option</td><td>option id to be checked </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>if non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>human-readable option name </dd></dl>
 
 </div>
 </div>
@@ -618,6 +792,76 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>human-readable description of a specific value of an option or null if no special meaning </dd></dl>
+
+</div>
+</div>
+<a id="a6255ba380af37f5e24e74f102ba0aaab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6255ba380af37f5e24e74f102ba0aaab">&#9670;&nbsp;</a></span>rs2_get_options_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rs__types_8h.html#ad178343e6e89d8c5fefdca16b05d66db">rs2_options_list</a>* rs2_get_options_list </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="rs__types_8h.html#ae51b2a412b632c6caef98bf91629f274">rs2_options</a> *&#160;</td>
+          <td class="paramname"><em>options</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>get the list of supported options of options container </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">options</td><td>the options container </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>if non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a81985c7b526152957a6d2cab85e1fcfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81985c7b526152957a6d2cab85e1fcfb">&#9670;&nbsp;</a></span>rs2_get_options_list_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int rs2_get_options_list_size </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="rs__types_8h.html#ad178343e6e89d8c5fefdca16b05d66db">rs2_options_list</a> *&#160;</td>
+          <td class="paramname"><em>options</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>get the size of options list </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">options</td><td>the option list </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>if non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

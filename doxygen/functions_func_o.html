@@ -55,6 +55,9 @@ $(function() {
 , <a class="el" href="structrs2__frame__callback.html#a60ffdf391badaf1a4762f0b45381d4dc">rs2_frame_callback</a>
 , <a class="el" href="structrs2__frame__processor__callback.html#aac9e60aa7a38cb19eb9adfc53c7418dd">rs2_frame_processor_callback</a>
 </li>
+<li>on_motion_frame()
+: <a class="el" href="classrs2_1_1software__sensor.html#accce729dbbcebeeef05ed7e808259749">rs2::software_sensor</a>
+</li>
 <li>on_notification()
 : <a class="el" href="classrs2_1_1notifications__callback.html#a3c7a3103036204a5010baa838e02ce8e">rs2::notifications_callback&lt; T &gt;</a>
 , <a class="el" href="structrs2__notifications__callback.html#aa67c796ae9eca0c56e13ad14610a66f7">rs2_notifications_callback</a>
@@ -62,6 +65,13 @@ $(function() {
 <li>on_playback_status_changed()
 : <a class="el" href="classrs2_1_1status__changed__callback.html#aff04f29b334e10787e885a89cd94efa9">rs2::status_changed_callback&lt; T &gt;</a>
 , <a class="el" href="structrs2__playback__status__changed__callback.html#a37d7c985fb578360168e4a5db37138cd">rs2_playback_status_changed_callback</a>
+</li>
+<li>on_pose_frame()
+: <a class="el" href="classrs2_1_1software__sensor.html#a307e78da60ae468740a7a4a3da411687">rs2::software_sensor</a>
+</li>
+<li>on_update_progress()
+: <a class="el" href="classrs2_1_1update__progress__callback.html#ad82a6303390de7e26f4d2fc3a67313fe">rs2::update_progress_callback&lt; T &gt;</a>
+, <a class="el" href="structrs2__update__progress__callback.html#a4c501cebeecddd6023d32ffbc46f2986">rs2_update_progress_callback</a>
 </li>
 <li>on_video_frame()
 : <a class="el" href="classrs2_1_1software__sensor.html#aac7f95533e26782aa262a28765f94e8a">rs2::software_sensor</a>
@@ -73,11 +83,14 @@ $(function() {
 : <a class="el" href="classrs2_1_1depth__sensor.html#af9deab3ee38bfbb7089a022c9020bbe8">rs2::depth_sensor</a>
 , <a class="el" href="classrs2_1_1depth__stereo__sensor.html#a0273f76e087d6daa380ca395a98e0d41">rs2::depth_stereo_sensor</a>
 , <a class="el" href="classrs2_1_1device.html#ab1204ef56264c3897acdc9d8ba691ef1">rs2::device</a>
+, <a class="el" href="classrs2_1_1filter.html#afae74db0eadf6026f033e89fab78dc98">rs2::filter</a>
 , <a class="el" href="classrs2_1_1frame.html#a00366ad9a456e6e65b56a7f63c6e633b">rs2::frame</a>
 , <a class="el" href="classrs2_1_1pipeline__profile.html#a66140ff896065a2b0eab1b5dd4f0d463">rs2::pipeline_profile</a>
+, <a class="el" href="classrs2_1_1pose__sensor.html#a9f5b6808826bb59c5d31d24650b3037e">rs2::pose_sensor</a>
 , <a class="el" href="classrs2_1_1roi__sensor.html#a640e02c4e1cfb61169b8406b170e5091">rs2::roi_sensor</a>
 , <a class="el" href="classrs2_1_1sensor.html#acd4b485ea01dc1d42cb5000d2e8ec530">rs2::sensor</a>
 , <a class="el" href="classrs2_1_1stream__profile.html#ab8a9b2ae1fc8a7be81d55b7ff99a9617">rs2::stream_profile</a>
+, <a class="el" href="classrs2_1_1wheel__odometer.html#a352bb0065553828950c8cfbae83f3f3d">rs2::wheel_odometer</a>
 </li>
 <li>operator const float *()
 : <a class="el" href="structrs2_1_1texture__coordinate.html#ae13ce580a8530471aae1382a31c7fe09">rs2::texture_coordinate</a>
@@ -86,11 +99,38 @@ $(function() {
 <li>operator const rs2_stream_profile *()
 : <a class="el" href="classrs2_1_1stream__profile.html#a050a19e735faf594b61fb0ad4a38e1fa">rs2::stream_profile</a>
 </li>
+<li>operator rs2_frame *()
+: <a class="el" href="classrs2_1_1frame.html#a9e5311820f1598730ccb588e1a379c10">rs2::frame</a>
+</li>
 <li>operator rs2_options *()
 : <a class="el" href="classrs2_1_1processing__block.html#a16241d7395b1e8ccfd0ba9300f33648f">rs2::processing_block</a>
 </li>
+<li>operator std::shared_ptr&lt; rs2_config &gt;()
+: <a class="el" href="classrs2_1_1config.html#a68b0d516f557a1526fb2aa80def2b75e">rs2::config</a>
+</li>
+<li>operator std::shared_ptr&lt; rs2_context &gt;()
+: <a class="el" href="classrs2_1_1context.html#a8c0294189e56af7dc56c3c0029f4c7ad">rs2::context</a>
+</li>
+<li>operator std::shared_ptr&lt; rs2_device &gt;()
+: <a class="el" href="classrs2_1_1device.html#a1eec4004c98efe11ffbc953f1443fb51">rs2::device</a>
+</li>
+<li>operator std::shared_ptr&lt; rs2_device_hub &gt;()
+: <a class="el" href="classrs2_1_1device__hub.html#adb28b68390828ca259464ebcd9215666">rs2::device_hub</a>
+</li>
+<li>operator std::shared_ptr&lt; rs2_device_list &gt;()
+: <a class="el" href="classrs2_1_1device__list.html#a507044743a4a4098fcf800a0cf2fe362">rs2::device_list</a>
+</li>
 <li>operator std::shared_ptr&lt; rs2_pipeline &gt;()
 : <a class="el" href="classrs2_1_1pipeline.html#ac121c039ba2561ee3bb71c02e4cb8a72">rs2::pipeline</a>
+</li>
+<li>operator std::shared_ptr&lt; rs2_pipeline_profile &gt;()
+: <a class="el" href="classrs2_1_1pipeline__profile.html#afe2c6066f4bca8b314a03a20c31e7ced">rs2::pipeline_profile</a>
+</li>
+<li>operator std::shared_ptr&lt; rs2_sensor &gt;()
+: <a class="el" href="classrs2_1_1sensor.html#af810b1ba7f47a0850847c6ec9dc66330">rs2::sensor</a>
+</li>
+<li>operator std::shared_ptr&lt; rs2_stream_profile &gt;()
+: <a class="el" href="classrs2_1_1stream__profile.html#a40a6e3cd4452805984b053895cab0b09">rs2::stream_profile</a>
 </li>
 <li>operator std::vector&lt; device &gt;()
 : <a class="el" href="classrs2_1_1device__list.html#ae21450262106b566fd1baf93aa211d4c">rs2::device_list</a>
@@ -100,18 +140,8 @@ $(function() {
 , <a class="el" href="classrs2_1_1frameset_1_1iterator.html#a0a1bfa115ee58c9dfbc303c41fce5f56">rs2::frameset::iterator</a>
 </li>
 <li>operator()()
-: <a class="el" href="classrs2_1_1align.html#ae728c1f8aa367ff9ac258017aedeba6d">rs2::align</a>
-, <a class="el" href="classrs2_1_1asynchronous__syncer.html#a6642ecf8d4000db2f220b4585634a6db">rs2::asynchronous_syncer</a>
-, <a class="el" href="classrs2_1_1colorizer.html#ae1b08adfc1f5e93881309d22395b9a13">rs2::colorizer</a>
-, <a class="el" href="classrs2_1_1decimation__filter.html#a9b0fa58badd2ca367bdbde83333ac0b3">rs2::decimation_filter</a>
-, <a class="el" href="classrs2_1_1disparity__transform.html#ad22fa0e24370e96a22a66f2f6e927ecf">rs2::disparity_transform</a>
-, <a class="el" href="classrs2_1_1frame__queue.html#aa8c43415d74bcb09e6ce126ae4b5c362">rs2::frame_queue</a>
-, <a class="el" href="classrs2_1_1hole__filling__filter.html#a71e5ab64f76f1fb5a414ac3b0362d1aa">rs2::hole_filling_filter</a>
-, <a class="el" href="classrs2_1_1process__interface.html#aafb9be13ff8096b3d48ed8a5972dd222">rs2::process_interface</a>
-, <a class="el" href="classrs2_1_1processing__block.html#aab96fbdd7afcee6fb720fb206e69543c">rs2::processing_block</a>
-, <a class="el" href="classrs2_1_1spatial__filter.html#a7e49dad8be224b5b940de52e216c2890">rs2::spatial_filter</a>
+: <a class="el" href="classrs2_1_1frame__queue.html#aa8c43415d74bcb09e6ce126ae4b5c362">rs2::frame_queue</a>
 , <a class="el" href="classrs2_1_1syncer.html#a912d63db3ddf76c85e4d1d24246543e6">rs2::syncer</a>
-, <a class="el" href="classrs2_1_1temporal__filter.html#ac792c18b20c6eb7f3a4fb54ba9673cd8">rs2::temporal_filter</a>
 </li>
 <li>operator*()
 : <a class="el" href="classrs2_1_1device__list_1_1device__list__iterator.html#a4f0e11c3a01a44bac444717bad2cae9d">rs2::device_list::device_list_iterator</a>
@@ -122,7 +152,7 @@ $(function() {
 , <a class="el" href="classrs2_1_1frameset_1_1iterator.html#ad32540cd526f39e9dc08775b955dce60">rs2::frameset::iterator</a>
 </li>
 <li>operator=()
-: <a class="el" href="classrs2_1_1device.html#acd3dd84c4a678efd0337233683433523">rs2::device</a>
+: <a class="el" href="classrs2_1_1device.html#a64271f278e0ea4aa3c6aa8515a5b4352">rs2::device</a>
 , <a class="el" href="classrs2_1_1device__list.html#a8498c6e52f04f0d389ba6169752b32b8">rs2::device_list</a>
 , <a class="el" href="classrs2_1_1frame.html#aaa05b9b3c9b4871b8d2552ff672ec241">rs2::frame</a>
 , <a class="el" href="classrs2_1_1options.html#a2d211991c6b29ad19e6750acc27920c1">rs2::options</a>

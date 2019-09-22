@@ -76,6 +76,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8feb92b9ed64f88d03c463e085e35a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f5f5d3f8520737400ba538363ef84b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1tm2.html#a0f5f5d3f8520737400ba538363ef84b1">disconnect_controller</a> (int id)</td></tr>
 <tr class="separator:a0f5f5d3f8520737400ba538363ef84b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab98da0efb4cb1060d9f7c219f3dd1ec0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1tm2.html#ab98da0efb4cb1060d9f7c219f3dd1ec0">set_intrinsics</a> (int fisheye_sensor_id, const <a class="el" href="structrs2__intrinsics.html">rs2_intrinsics</a> &amp;intrinsics)</td></tr>
+<tr class="separator:ab98da0efb4cb1060d9f7c219f3dd1ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad907fab7d751fea8c23664f0e7cc077"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1tm2.html#aad907fab7d751fea8c23664f0e7cc077">set_extrinsics</a> (<a class="el" href="rs__sensor_8h.html#a01b4027af33139de861408872dd11b93">rs2_stream</a> from_stream, int from_id, <a class="el" href="rs__sensor_8h.html#a01b4027af33139de861408872dd11b93">rs2_stream</a> to_stream, int to_id, <a class="el" href="structrs2__extrinsics.html">rs2_extrinsics</a> &amp;extrinsics)</td></tr>
+<tr class="separator:aad907fab7d751fea8c23664f0e7cc077"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67a855bce24c4a6329142681eddb4ccf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1tm2.html#a67a855bce24c4a6329142681eddb4ccf">set_motion_device_intrinsics</a> (<a class="el" href="rs__sensor_8h.html#a01b4027af33139de861408872dd11b93">rs2_stream</a> stream_type, const <a class="el" href="structrs2__motion__device__intrinsic.html">rs2_motion_device_intrinsic</a> &amp;motion_intriniscs)</td></tr>
+<tr class="separator:a67a855bce24c4a6329142681eddb4ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55bcb3ce1b9a032fe5f5c005d5f0c37f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1tm2.html#a55bcb3ce1b9a032fe5f5c005d5f0c37f">reset_to_factory_calibration</a> ()</td></tr>
+<tr class="separator:a55bcb3ce1b9a032fe5f5c005d5f0c37f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d6ae897a464a2d6438d7654462c057b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1tm2.html#a7d6ae897a464a2d6438d7654462c057b">write_calibration</a> ()</td></tr>
+<tr class="separator:a7d6ae897a464a2d6438d7654462c057b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classrs2_1_1device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classrs2_1_1device')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classrs2_1_1device.html">rs2::device</a></td></tr>
 <tr class="memitem:ac8cab78a80e1ff20a3886fe97c8a5330 inherit pub_methods_classrs2_1_1device"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classrs2_1_1sensor.html">sensor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1device.html#ac8cab78a80e1ff20a3886fe97c8a5330">query_sensors</a> () const</td></tr>
 <tr class="separator:ac8cab78a80e1ff20a3886fe97c8a5330 inherit pub_methods_classrs2_1_1device"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -106,12 +116,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a18d05901425bbea9e8d529319741fe05 inherit pub_methods_classrs2_1_1device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13b9d3b58992cd1357d6df0b60a93fe1 inherit pub_methods_classrs2_1_1device"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1device.html#a13b9d3b58992cd1357d6df0b60a93fe1">~device</a> ()</td></tr>
 <tr class="separator:a13b9d3b58992cd1357d6df0b60a93fe1 inherit pub_methods_classrs2_1_1device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eec4004c98efe11ffbc953f1443fb51 inherit pub_methods_classrs2_1_1device"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1device.html#a1eec4004c98efe11ffbc953f1443fb51">operator std::shared_ptr&lt; rs2_device &gt;</a> ()</td></tr>
+<tr class="separator:a1eec4004c98efe11ffbc953f1443fb51 inherit pub_methods_classrs2_1_1device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f3e7832cd8d3a7bad5514eef3c4c946 inherit pub_methods_classrs2_1_1device"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1device.html#a0f3e7832cd8d3a7bad5514eef3c4c946">device</a> (std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> &gt; dev)</td></tr>
+<tr class="separator:a0f3e7832cd8d3a7bad5514eef3c4c946 inherit pub_methods_classrs2_1_1device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_methods_classrs2_1_1device"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classrs2_1_1device')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classrs2_1_1device.html">rs2::device</a></td></tr>
-<tr class="memitem:a0f3e7832cd8d3a7bad5514eef3c4c946 inherit pro_methods_classrs2_1_1device"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1device.html#a0f3e7832cd8d3a7bad5514eef3c4c946">device</a> (std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> &gt; dev)</td></tr>
-<tr class="separator:a0f3e7832cd8d3a7bad5514eef3c4c946 inherit pro_methods_classrs2_1_1device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classrs2_1_1device"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classrs2_1_1device')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classrs2_1_1device.html">rs2::device</a></td></tr>
 <tr class="memitem:a99799284c168f0a3cb7b271c5ee0a80c inherit pro_attribs_classrs2_1_1device"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1device.html#a99799284c168f0a3cb7b271c5ee0a80c">_dev</a></td></tr>
 <tr class="separator:a99799284c168f0a3cb7b271c5ee0a80c inherit pro_attribs_classrs2_1_1device"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -292,8 +303,222 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a55bcb3ce1b9a032fe5f5c005d5f0c37f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55bcb3ce1b9a032fe5f5c005d5f0c37f">&#9670;&nbsp;</a></span>reset_to_factory_calibration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rs2::tm2::reset_to_factory_calibration </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reset <a class="el" href="classrs2_1_1tm2.html">tm2</a> to factory calibration </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td><a class="el" href="classrs2_1_1tm2.html">tm2</a> device </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aad907fab7d751fea8c23664f0e7cc077"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad907fab7d751fea8c23664f0e7cc077">&#9670;&nbsp;</a></span>set_extrinsics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rs2::tm2::set_extrinsics </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__sensor_8h.html#a01b4027af33139de861408872dd11b93">rs2_stream</a>&#160;</td>
+          <td class="paramname"><em>from_stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>from_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__sensor_8h.html#a01b4027af33139de861408872dd11b93">rs2_stream</a>&#160;</td>
+          <td class="paramname"><em>to_stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>to_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structrs2__extrinsics.html">rs2_extrinsics</a> &amp;&#160;</td>
+          <td class="paramname"><em>extrinsics</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set <a class="el" href="classrs2_1_1tm2.html">tm2</a> camera extrinsics </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">from_stream</td><td>only support RS2_STREAM_FISHEYE </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">from_id</td><td>only support left fisheye = 1 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">to_stream</td><td>only support RS2_STREAM_FISHEYE </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">to_id</td><td>only support right fisheye = 2 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">extrinsics</td><td>extrinsics value to be written to the device </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab98da0efb4cb1060d9f7c219f3dd1ec0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab98da0efb4cb1060d9f7c219f3dd1ec0">&#9670;&nbsp;</a></span>set_intrinsics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rs2::tm2::set_intrinsics </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fisheye_sensor_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structrs2__intrinsics.html">rs2_intrinsics</a> &amp;&#160;</td>
+          <td class="paramname"><em>intrinsics</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set <a class="el" href="classrs2_1_1tm2.html">tm2</a> camera intrinsics </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fisheye_senor_id</td><td>The ID of the fisheye sensor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">intrinsics</td><td>value to be written to the device </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a67a855bce24c4a6329142681eddb4ccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67a855bce24c4a6329142681eddb4ccf">&#9670;&nbsp;</a></span>set_motion_device_intrinsics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rs2::tm2::set_motion_device_intrinsics </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__sensor_8h.html#a01b4027af33139de861408872dd11b93">rs2_stream</a>&#160;</td>
+          <td class="paramname"><em>stream_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structrs2__motion__device__intrinsic.html">rs2_motion_device_intrinsic</a> &amp;&#160;</td>
+          <td class="paramname"><em>motion_intriniscs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set <a class="el" href="classrs2_1_1tm2.html">tm2</a> motion device intrinsics </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream_type</td><td>stream type of the motion device </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">motion_intriniscs</td><td>intrinsics value to be written to the device </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7d6ae897a464a2d6438d7654462c057b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d6ae897a464a2d6438d7654462c057b">&#9670;&nbsp;</a></span>write_calibration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rs2::tm2::write_calibration </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Write calibration to <a class="el" href="classrs2_1_1tm2.html">tm2</a> device's EEPROM </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td><a class="el" href="classrs2_1_1tm2.html">tm2</a> device </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/jenkins_sys_rsbuild/workspace/LRS_doxygen/source/include/librealsense2/hpp/<a class="el" href="rs__device_8hpp_source.html">rs_device.hpp</a></li>
+<li>C:/jenkins_sys_rsbuild/workspace/LRS_doxygen_pipeline/source/include/librealsense2/hpp/<a class="el" href="rs__device_8hpp_source.html">rs_device.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

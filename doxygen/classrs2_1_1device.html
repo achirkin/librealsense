@@ -45,7 +45,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classrs2_1_1device-members.html">List of all members</a>  </div>
@@ -61,12 +60,14 @@ Inheritance diagram for rs2::device:</div>
  <div class="center">
   <img src="classrs2_1_1device.png" usemap="#rs2::device_map" alt=""/>
   <map id="rs2::device_map" name="rs2::device_map">
-<area href="classrs2_1_1debug__protocol.html" alt="rs2::debug_protocol" shape="rect" coords="0,56,143,80"/>
-<area href="classrs2_1_1playback.html" alt="rs2::playback" shape="rect" coords="153,56,296,80"/>
-<area href="classrs2_1_1recorder.html" alt="rs2::recorder" shape="rect" coords="306,56,449,80"/>
-<area href="classrs2_1_1software__device.html" alt="rs2::software_device" shape="rect" coords="459,56,602,80"/>
-<area href="classrs2_1_1tm2.html" alt="rs2::tm2" shape="rect" coords="612,56,755,80"/>
-<area href="classrs400_1_1advanced__mode.html" alt="rs400::advanced_mode" shape="rect" coords="765,56,908,80"/>
+<area href="classrs2_1_1debug__protocol.html" alt="rs2::debug_protocol" shape="rect" coords="153,56,296,80"/>
+<area href="classrs2_1_1playback.html" alt="rs2::playback" shape="rect" coords="153,112,296,136"/>
+<area href="classrs2_1_1recorder.html" alt="rs2::recorder" shape="rect" coords="153,168,296,192"/>
+<area href="classrs2_1_1software__device.html" alt="rs2::software_device" shape="rect" coords="153,224,296,248"/>
+<area href="classrs2_1_1tm2.html" alt="rs2::tm2" shape="rect" coords="153,280,296,304"/>
+<area href="classrs2_1_1updatable.html" alt="rs2::updatable" shape="rect" coords="153,336,296,360"/>
+<area href="classrs2_1_1update__device.html" alt="rs2::update_device" shape="rect" coords="153,392,296,416"/>
+<area href="classrs400_1_1advanced__mode.html" alt="rs400::advanced_mode" shape="rect" coords="153,448,296,472"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -101,9 +102,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a18d05901425bbea9e8d529319741fe05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13b9d3b58992cd1357d6df0b60a93fe1"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1device.html#a13b9d3b58992cd1357d6df0b60a93fe1">~device</a> ()</td></tr>
 <tr class="separator:a13b9d3b58992cd1357d6df0b60a93fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
+<tr class="memitem:a1eec4004c98efe11ffbc953f1443fb51"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1device.html#a1eec4004c98efe11ffbc953f1443fb51">operator std::shared_ptr&lt; rs2_device &gt;</a> ()</td></tr>
+<tr class="separator:a1eec4004c98efe11ffbc953f1443fb51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f3e7832cd8d3a7bad5514eef3c4c946"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1device.html#a0f3e7832cd8d3a7bad5514eef3c4c946">device</a> (std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> &gt; dev)</td></tr>
 <tr class="separator:a0f3e7832cd8d3a7bad5514eef3c4c946"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -193,7 +193,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -385,6 +385,31 @@ template&lt;class T &gt; </div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1eec4004c98efe11ffbc953f1443fb51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1eec4004c98efe11ffbc953f1443fb51">&#9670;&nbsp;</a></span>operator std::shared_ptr&lt; rs2_device &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rs2::device::operator std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> &gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -615,7 +640,7 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/jenkins_sys_rsbuild/workspace/LRS_doxygen/source/include/librealsense2/hpp/<a class="el" href="rs__device_8hpp_source.html">rs_device.hpp</a></li>
+<li>C:/jenkins_sys_rsbuild/workspace/LRS_doxygen_pipeline/source/include/librealsense2/hpp/<a class="el" href="rs__device_8hpp_source.html">rs_device.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

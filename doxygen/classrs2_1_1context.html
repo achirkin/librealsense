@@ -45,7 +45,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classrs2_1_1context-members.html">List of all members</a>  </div>
@@ -72,6 +71,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ade72fcd550e5b515588de57b0587b2ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e0bfd3451cab5a32ab78f8037a4d793"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrs2_1_1device__list.html">device_list</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1context.html#a0e0bfd3451cab5a32ab78f8037a4d793">query_devices</a> () const</td></tr>
 <tr class="separator:a0e0bfd3451cab5a32ab78f8037a4d793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33514ec26332d5862bbad0faebecd0b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrs2_1_1device__list.html">device_list</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1context.html#a33514ec26332d5862bbad0faebecd0b6">query_devices</a> (int mask) const</td></tr>
+<tr class="separator:a33514ec26332d5862bbad0faebecd0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a956ea208063bc6c5b26fb19fae723048"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classrs2_1_1sensor.html">sensor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1context.html#a956ea208063bc6c5b26fb19fae723048">query_all_sensors</a> () const</td></tr>
 <tr class="memdesc:a956ea208063bc6c5b26fb19fae723048"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a flat list of all available sensors from all RealSense devices.  <a href="#a956ea208063bc6c5b26fb19fae723048">More...</a><br /></td></tr>
 <tr class="separator:a956ea208063bc6c5b26fb19fae723048"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -84,11 +85,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7d650bdbb59e9cddf370601df212bf8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e80bc1628728ed972a4e015fe31ac5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1context.html#a2e80bc1628728ed972a4e015fe31ac5d">unload_device</a> (const std::string &amp;file)</td></tr>
 <tr class="separator:a2e80bc1628728ed972a4e015fe31ac5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
+<tr class="memitem:a54da7c39c59d648d3da1ca1e8c710cc0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1context.html#a54da7c39c59d648d3da1ca1e8c710cc0">unload_tracking_module</a> ()</td></tr>
+<tr class="separator:a54da7c39c59d648d3da1ca1e8c710cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae663e2ccd950a625a2c72777a53cd14c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1context.html#ae663e2ccd950a625a2c72777a53cd14c">context</a> (std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#afd11a8b49d022780bcb990ae0e8f13c0">rs2_context</a> &gt; ctx)</td></tr>
 <tr class="separator:ae663e2ccd950a625a2c72777a53cd14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c0294189e56af7dc56c3c0029f4c7ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1context.html#a8c0294189e56af7dc56c3c0029f4c7ad">operator std::shared_ptr&lt; rs2_context &gt;</a> ()</td></tr>
+<tr class="separator:a8c0294189e56af7dc56c3c0029f4c7ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -101,6 +103,8 @@ Friends</h2></td></tr>
 <tr class="separator:adb37ab67b0dfe459192f26bca26537b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66cf6c93ed14199f6f7f51d0d8355fd5"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1context.html#a66cf6c93ed14199f6f7f51d0d8355fd5">rs2::device_hub</a></td></tr>
 <tr class="separator:a66cf6c93ed14199f6f7f51d0d8355fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ac9d473b697e9d735800f9cfa0aec4a"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1context.html#a9ac9d473b697e9d735800f9cfa0aec4a">rs2::software_device</a></td></tr>
+<tr class="separator:a9ac9d473b697e9d735800f9cfa0aec4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>default librealsense context class includes realsense API version as provided by RS2_API_VERSION macro </p>
@@ -149,7 +153,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -217,6 +221,31 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a8c0294189e56af7dc56c3c0029f4c7ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c0294189e56af7dc56c3c0029f4c7ad">&#9670;&nbsp;</a></span>operator std::shared_ptr&lt; rs2_context &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rs2::context::operator std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#afd11a8b49d022780bcb990ae0e8f13c0">rs2_context</a> &gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a956ea208063bc6c5b26fb19fae723048"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a956ea208063bc6c5b26fb19fae723048">&#9670;&nbsp;</a></span>query_all_sensors()</h2>
 
@@ -246,7 +275,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a0e0bfd3451cab5a32ab78f8037a4d793"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e0bfd3451cab5a32ab78f8037a4d793">&#9670;&nbsp;</a></span>query_devices()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e0bfd3451cab5a32ab78f8037a4d793">&#9670;&nbsp;</a></span>query_devices() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -258,6 +287,33 @@ Friends</h2></td></tr>
           <td class="memname"><a class="el" href="classrs2_1_1device__list.html">device_list</a> rs2::context::query_devices </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>create a static snapshot of all connected devices at the time of the call </p><dl class="section return"><dt>Returns</dt><dd>the list of devices connected devices at the time of the call </dd></dl>
+
+</div>
+</div>
+<a id="a33514ec26332d5862bbad0faebecd0b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33514ec26332d5862bbad0faebecd0b6">&#9670;&nbsp;</a></span>query_devices() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classrs2_1_1device__list.html">device_list</a> rs2::context::query_devices </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mask</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -331,6 +387,31 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
+<a id="a54da7c39c59d648d3da1ca1e8c710cc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54da7c39c59d648d3da1ca1e8c710cc0">&#9670;&nbsp;</a></span>unload_tracking_module()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rs2::context::unload_tracking_module </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
 <a id="a66cf6c93ed14199f6f7f51d0d8355fd5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a66cf6c93ed14199f6f7f51d0d8355fd5">&#9670;&nbsp;</a></span>rs2::device_hub</h2>
@@ -376,6 +457,28 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
+<a id="a9ac9d473b697e9d735800f9cfa0aec4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ac9d473b697e9d735800f9cfa0aec4a">&#9670;&nbsp;</a></span>rs2::software_device</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classrs2_1_1software__device.html">rs2::software_device</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a71fbe6f52c71819ee7b808a8e0934511"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a71fbe6f52c71819ee7b808a8e0934511">&#9670;&nbsp;</a></span>_context</h2>
@@ -400,7 +503,7 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/jenkins_sys_rsbuild/workspace/LRS_doxygen/source/include/librealsense2/hpp/<a class="el" href="rs__context_8hpp_source.html">rs_context.hpp</a></li>
+<li>C:/jenkins_sys_rsbuild/workspace/LRS_doxygen_pipeline/source/include/librealsense2/hpp/<a class="el" href="rs__context_8hpp_source.html">rs_context.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

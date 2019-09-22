@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Intel® RealSense™ Cross Platform API: C:/jenkins_sys_rsbuild/workspace/LRS_doxygen/source/include/librealsense2/h/rs_sensor.h File Reference</title>
+<title>Intel® RealSense™ Cross Platform API: C:/jenkins_sys_rsbuild/workspace/LRS_doxygen_pipeline/source/include/librealsense2/h/rs_sensor.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrs2__extrinsics.html">rs2_extrinsics</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cross-stream extrinsics: encode the topology describing how the different devices are connected.  <a href="structrs2__extrinsics.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cross-stream extrinsics: encodes the topology describing how the different devices are oriented.  <a href="structrs2__extrinsics.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -74,10 +74,10 @@ Typedefs</h2></td></tr>
 <tr class="memdesc:accbd4016ab72a1aace0977fc251ed635"><td class="mdescLeft">&#160;</td><td class="mdescRight">Streams are different types of data provided by RealSense devices.  <a href="#accbd4016ab72a1aace0977fc251ed635">More...</a><br /></td></tr>
 <tr class="separator:accbd4016ab72a1aace0977fc251ed635"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1fd00c31c53a0b7e8a7ce582c899cc0"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7">rs2_format</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#ad1fd00c31c53a0b7e8a7ce582c899cc0">rs2_format</a></td></tr>
-<tr class="memdesc:ad1fd00c31c53a0b7e8a7ce582c899cc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format identifies how binary data is encoded within a frame.  <a href="#ad1fd00c31c53a0b7e8a7ce582c899cc0">More...</a><br /></td></tr>
+<tr class="memdesc:ad1fd00c31c53a0b7e8a7ce582c899cc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">A stream's format identifies how binary data is encoded within a frame.  <a href="#ad1fd00c31c53a0b7e8a7ce582c899cc0">More...</a><br /></td></tr>
 <tr class="separator:ad1fd00c31c53a0b7e8a7ce582c899cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53a714f3248db1fcdf4ff74aa3352508"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structrs2__extrinsics.html">rs2_extrinsics</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#a53a714f3248db1fcdf4ff74aa3352508">rs2_extrinsics</a></td></tr>
-<tr class="memdesc:a53a714f3248db1fcdf4ff74aa3352508"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cross-stream extrinsics: encode the topology describing how the different devices are connected.  <a href="#a53a714f3248db1fcdf4ff74aa3352508">More...</a><br /></td></tr>
+<tr class="memdesc:a53a714f3248db1fcdf4ff74aa3352508"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cross-stream extrinsics: encodes the topology describing how the different devices are oriented.  <a href="#a53a714f3248db1fcdf4ff74aa3352508">More...</a><br /></td></tr>
 <tr class="separator:a53a714f3248db1fcdf4ff74aa3352508"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -95,7 +95,10 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="rs__sensor_8h.html#aa607d93c1bac40af3ec1c9b0345f59afa6d9f6aea6ecc297f4391ef7a58d44c51">RS2_CAMERA_INFO_CAMERA_LOCKED</a>, 
 <a class="el" href="rs__sensor_8h.html#aa607d93c1bac40af3ec1c9b0345f59afa60868ca900176a2387ede0876e5569ad">RS2_CAMERA_INFO_USB_TYPE_DESCRIPTOR</a>, 
-<a class="el" href="rs__sensor_8h.html#aa607d93c1bac40af3ec1c9b0345f59afa8f5df734ba9377454f9575c706201907">RS2_CAMERA_INFO_COUNT</a>
+<a class="el" href="rs__sensor_8h.html#aa607d93c1bac40af3ec1c9b0345f59afa23c9371e3b57e68ae0ab1b9347c1de7d">RS2_CAMERA_INFO_PRODUCT_LINE</a>, 
+<a class="el" href="rs__sensor_8h.html#aa607d93c1bac40af3ec1c9b0345f59afa13916f745779200e1c2e192ccd44dfbc">RS2_CAMERA_INFO_ASIC_SERIAL_NUMBER</a>, 
+<br />
+&#160;&#160;<a class="el" href="rs__sensor_8h.html#aa607d93c1bac40af3ec1c9b0345f59afa8f5df734ba9377454f9575c706201907">RS2_CAMERA_INFO_COUNT</a>
 <br />
  }</td></tr>
 <tr class="memdesc:aa607d93c1bac40af3ec1c9b0345f59af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read-only strings that can be queried from the device. Not all information attributes are available on all camera types. This information is mainly available for camera debug and troubleshooting and should not be used in applications.  <a href="rs__sensor_8h.html#aa607d93c1bac40af3ec1c9b0345f59af">More...</a><br /></td></tr>
@@ -144,10 +147,13 @@ Enumerations</h2></td></tr>
 <a class="el" href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7a1944a29cce3440225ab7a3fd83a29b2e">RS2_FORMAT_6DOF</a>, 
 <a class="el" href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7a3c43c0d27ce2d3983cb36aefffbd4dda">RS2_FORMAT_DISPARITY32</a>, 
 <br />
-&#160;&#160;<a class="el" href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7a3b3eef6c57034e8b9472c9166290afd0">RS2_FORMAT_COUNT</a>
+&#160;&#160;<a class="el" href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7a99ee0671b1344a08ac3c0fdff5876ad0">RS2_FORMAT_Y10BPACK</a>, 
+<a class="el" href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7a4b5edfca54e485a9e25299ab249fb3bc">RS2_FORMAT_DISTANCE</a>, 
+<a class="el" href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7a04ecec4dbd0e34203d35e8051df8733d">RS2_FORMAT_MJPEG</a>, 
+<a class="el" href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7a3b3eef6c57034e8b9472c9166290afd0">RS2_FORMAT_COUNT</a>
 <br />
  }</td></tr>
-<tr class="memdesc:ae04b7887ce35d16dbd9d2d295d23aac7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format identifies how binary data is encoded within a frame.  <a href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7">More...</a><br /></td></tr>
+<tr class="memdesc:ae04b7887ce35d16dbd9d2d295d23aac7"><td class="mdescLeft">&#160;</td><td class="mdescRight">A stream's format identifies how binary data is encoded within a frame.  <a href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7">More...</a><br /></td></tr>
 <tr class="separator:ae04b7887ce35d16dbd9d2d295d23aac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -178,6 +184,8 @@ Functions</h2></td></tr>
 <tr class="separator:a1a900804f73146c29267962d47a7a98e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1151401e80bea9d6f5904d8dcdc94f63"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#a1151401e80bea9d6f5904d8dcdc94f63">rs2_depth_stereo_frame_get_baseline</a> (const <a class="el" href="rs__types_8h.html#af280a50e5484323c1b20b76eda3d370d">rs2_frame</a> *frame_ref, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:a1151401e80bea9d6f5904d8dcdc94f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb8c400790f3cf02005f25d75bb03d1c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#abb8c400790f3cf02005f25d75bb03d1c">rs2_get_stereo_baseline</a> (<a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *sensor, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:abb8c400790f3cf02005f25d75bb03d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a457c886c822167821da60151700f0d5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#a457c886c822167821da60151700f0d5f">rs2_set_region_of_interest</a> (const <a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *sensor, int min_x, int min_y, int max_x, int max_y, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="memdesc:a457c886c822167821da60151700f0d5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the active region of interest to be used by auto-exposure algorithm  <a href="#a457c886c822167821da60151700f0d5f">More...</a><br /></td></tr>
 <tr class="separator:a457c886c822167821da60151700f0d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -222,6 +230,8 @@ Functions</h2></td></tr>
 <tr class="separator:a5c5428a587f7d354cbe93b31b413df1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6b9f5bcadea05cbd2f8aa047ec9651a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__types_8h.html#a338107a48471d20ecacac3e4c9e024e2">rs2_stream_profile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#ad6b9f5bcadea05cbd2f8aa047ec9651a">rs2_clone_stream_profile</a> (const <a class="el" href="rs__types_8h.html#a338107a48471d20ecacac3e4c9e024e2">rs2_stream_profile</a> *mode, <a class="el" href="rs__sensor_8h.html#a01b4027af33139de861408872dd11b93">rs2_stream</a> stream, int index, <a class="el" href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7">rs2_format</a> format, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:ad6b9f5bcadea05cbd2f8aa047ec9651a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a707b26d096f410e222a11197e7060b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__types_8h.html#a338107a48471d20ecacac3e4c9e024e2">rs2_stream_profile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#a9a707b26d096f410e222a11197e7060b">rs2_clone_video_stream_profile</a> (const <a class="el" href="rs__types_8h.html#a338107a48471d20ecacac3e4c9e024e2">rs2_stream_profile</a> *mode, <a class="el" href="rs__sensor_8h.html#a01b4027af33139de861408872dd11b93">rs2_stream</a> stream, int index, <a class="el" href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7">rs2_format</a> format, int width, int height, const <a class="el" href="structrs2__intrinsics.html">rs2_intrinsics</a> *intr, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a9a707b26d096f410e222a11197e7060b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a189fe4f6c1ae19c23289db05931a620e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#a189fe4f6c1ae19c23289db05931a620e">rs2_delete_stream_profile</a> (<a class="el" href="rs__types_8h.html#a338107a48471d20ecacac3e4c9e024e2">rs2_stream_profile</a> *mode)</td></tr>
 <tr class="separator:a189fe4f6c1ae19c23289db05931a620e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ae4ca1cc2a0dee0e248a537175cca47"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#a3ae4ca1cc2a0dee0e248a537175cca47">rs2_stream_profile_is</a> (const <a class="el" href="rs__types_8h.html#a338107a48471d20ecacac3e4c9e024e2">rs2_stream_profile</a> *mode, <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8a">rs2_extension</a> type, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
@@ -242,6 +252,32 @@ Functions</h2></td></tr>
 <tr class="separator:af7a0fe058cc5c5b32d8ba128392f870e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88232260753d539b9f11bc0b9e6537fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#a88232260753d539b9f11bc0b9e6537fd">rs2_get_video_stream_intrinsics</a> (const <a class="el" href="rs__types_8h.html#a338107a48471d20ecacac3e4c9e024e2">rs2_stream_profile</a> *mode, <a class="el" href="structrs2__intrinsics.html">rs2_intrinsics</a> *intrinsics, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:a88232260753d539b9f11bc0b9e6537fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a251e33529589e04bf1be761187604751"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__types_8h.html#a654dfc89c03d451fe5d73b8ebac98dd6">rs2_processing_block_list</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#a251e33529589e04bf1be761187604751">rs2_get_recommended_processing_blocks</a> (<a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *sensor, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a251e33529589e04bf1be761187604751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6949767f330e2336b40314f89a904557"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__types_8h.html#af50408eba1d9935d29eb72553ae53dd0">rs2_processing_block</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#a6949767f330e2336b40314f89a904557">rs2_get_processing_block</a> (const <a class="el" href="rs__types_8h.html#a654dfc89c03d451fe5d73b8ebac98dd6">rs2_processing_block_list</a> *list, int index, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a6949767f330e2336b40314f89a904557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13f416a1724732c89e6af10fea8505a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#a13f416a1724732c89e6af10fea8505a5">rs2_get_recommended_processing_blocks_count</a> (const <a class="el" href="rs__types_8h.html#a654dfc89c03d451fe5d73b8ebac98dd6">rs2_processing_block_list</a> *list, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a13f416a1724732c89e6af10fea8505a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad83ffcef8404493ff8a3d74867996957"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#ad83ffcef8404493ff8a3d74867996957">rs2_delete_recommended_processing_blocks</a> (<a class="el" href="rs__types_8h.html#a654dfc89c03d451fe5d73b8ebac98dd6">rs2_processing_block_list</a> *list)</td></tr>
+<tr class="separator:ad83ffcef8404493ff8a3d74867996957"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac902eb3c40da9c95ee4eb0119a15b5e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#ac902eb3c40da9c95ee4eb0119a15b5e2">rs2_import_localization_map</a> (const <a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *sensor, const unsigned char *lmap_blob, unsigned int blob_size, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:ac902eb3c40da9c95ee4eb0119a15b5e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f522921ea5f9eeb8028c61cab6c8200"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="rs__types_8h.html#ab811c9b19a9d7c4608062eb12a6e3f2e">rs2_raw_data_buffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#a7f522921ea5f9eeb8028c61cab6c8200">rs2_export_localization_map</a> (const <a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *sensor, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a7f522921ea5f9eeb8028c61cab6c8200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23f18324e747cafc6ee32ef2bc791172"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#a23f18324e747cafc6ee32ef2bc791172">rs2_set_static_node</a> (const <a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *sensor, const char *guid, const <a class="el" href="structrs2__vector.html">rs2_vector</a> pos, const <a class="el" href="structrs2__quaternion.html">rs2_quaternion</a> orient, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a23f18324e747cafc6ee32ef2bc791172"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0be93641a230044d1b2ddee214a714c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#af0be93641a230044d1b2ddee214a714c">rs2_get_static_node</a> (const <a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *sensor, const char *guid, <a class="el" href="structrs2__vector.html">rs2_vector</a> *pos, <a class="el" href="structrs2__quaternion.html">rs2_quaternion</a> *orient, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:af0be93641a230044d1b2ddee214a714c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67d68d826346018064f00aa704b8ccc7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#a67d68d826346018064f00aa704b8ccc7">rs2_load_wheel_odometry_config</a> (const <a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *sensor, const unsigned char *odometry_config_buf, unsigned int blob_size, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a67d68d826346018064f00aa704b8ccc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75980d3632b1c8a5eecacc39e84b845b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#a75980d3632b1c8a5eecacc39e84b845b">rs2_send_wheel_odometry</a> (const <a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *sensor, char wo_sensor_id, unsigned int frame_num, const <a class="el" href="structrs2__vector.html">rs2_vector</a> translational_velocity, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a75980d3632b1c8a5eecacc39e84b845b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1e8ebbd1e75fac3f1d7e9cc174dadbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#ac1e8ebbd1e75fac3f1d7e9cc174dadbd">rs2_set_intrinsics</a> (const <a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *sensor, const <a class="el" href="rs__types_8h.html#a338107a48471d20ecacac3e4c9e024e2">rs2_stream_profile</a> *profile, const <a class="el" href="structrs2__intrinsics.html">rs2_intrinsics</a> *intrinsics, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:ac1e8ebbd1e75fac3f1d7e9cc174dadbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57d2c60421e255d7c185bf9fa4c068d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#a57d2c60421e255d7c185bf9fa4c068d6">rs2_set_extrinsics</a> (const <a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *from_sensor, const <a class="el" href="rs__types_8h.html#a338107a48471d20ecacac3e4c9e024e2">rs2_stream_profile</a> *from_profile, <a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *to_sensor, const <a class="el" href="rs__types_8h.html#a338107a48471d20ecacac3e4c9e024e2">rs2_stream_profile</a> *to_profile, const <a class="el" href="structrs2__extrinsics.html">rs2_extrinsics</a> *extrinsics, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a57d2c60421e255d7c185bf9fa4c068d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab08dcd1c1c51fd3e777f421f69791cdd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#ab08dcd1c1c51fd3e777f421f69791cdd">rs2_set_motion_device_intrinsics</a> (const <a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *sensor, const <a class="el" href="rs__types_8h.html#a338107a48471d20ecacac3e4c9e024e2">rs2_stream_profile</a> *profile, const <a class="el" href="structrs2__motion__device__intrinsic.html">rs2_motion_device_intrinsic</a> *intrinsics, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:ab08dcd1c1c51fd3e777f421f69791cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Exposes RealSense sensor functionality for C compilers. </p>
@@ -274,7 +310,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Cross-stream extrinsics: encode the topology describing how the different devices are connected. </p>
+<p>Cross-stream extrinsics: encodes the topology describing how the different devices are oriented. </p>
 
 </div>
 </div>
@@ -290,7 +326,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Format identifies how binary data is encoded within a frame. </p>
+<p>A stream's format identifies how binary data is encoded within a frame. </p>
 
 </div>
 </div>
@@ -345,6 +381,10 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="aa607d93c1bac40af3ec1c9b0345f59afa60868ca900176a2387ede0876e5569ad"></a>RS2_CAMERA_INFO_USB_TYPE_DESCRIPTOR&#160;</td><td class="fielddoc"><p>Designated USB specification: USB2/USB3 </p>
 </td></tr>
+<tr><td class="fieldname"><a id="aa607d93c1bac40af3ec1c9b0345f59afa23c9371e3b57e68ae0ab1b9347c1de7d"></a>RS2_CAMERA_INFO_PRODUCT_LINE&#160;</td><td class="fielddoc"><p>Device product line D400/SR300/L500/T200 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa607d93c1bac40af3ec1c9b0345f59afa13916f745779200e1c2e192ccd44dfbc"></a>RS2_CAMERA_INFO_ASIC_SERIAL_NUMBER&#160;</td><td class="fielddoc"><p>ASIC serial number </p>
+</td></tr>
 <tr><td class="fieldname"><a id="aa607d93c1bac40af3ec1c9b0345f59afa8f5df734ba9377454f9575c706201907"></a>RS2_CAMERA_INFO_COUNT&#160;</td><td class="fielddoc"><p>Number of enumeration values. Not a valid input: intended to be used in for-loops. </p>
 </td></tr>
 </table>
@@ -363,13 +403,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Format identifies how binary data is encoded within a frame. </p>
+<p>A stream's format identifies how binary data is encoded within a frame. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae04b7887ce35d16dbd9d2d295d23aac7afe7a8d8bb65c27ce4ff5ef225e5c86ae"></a>RS2_FORMAT_ANY&#160;</td><td class="fielddoc"><p>When passed to enable stream, librealsense will try to provide best suited format </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ae04b7887ce35d16dbd9d2d295d23aac7af0b4265515bc4e6d520bf0ab8d43d89f"></a>RS2_FORMAT_Z16&#160;</td><td class="fielddoc"><p>16-bit linear depth values. The depth is meters is equal to depth scale * pixel value. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae04b7887ce35d16dbd9d2d295d23aac7a07774d774840b1eca577afb18b43f22f"></a>RS2_FORMAT_DISPARITY16&#160;</td><td class="fielddoc"><p>16-bit linear disparity values. The depth in meters is equal to depth scale / pixel value. </p>
+<tr><td class="fieldname"><a id="ae04b7887ce35d16dbd9d2d295d23aac7a07774d774840b1eca577afb18b43f22f"></a>RS2_FORMAT_DISPARITY16&#160;</td><td class="fielddoc"><p>16-bit float-point disparity values. Depth-&gt;Disparity conversion : Disparity = Baseline*FocalLength/Depth. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ae04b7887ce35d16dbd9d2d295d23aac7ae9192e350b531cd76baae593b09f0c6a"></a>RS2_FORMAT_XYZ32F&#160;</td><td class="fielddoc"><p>32-bit floating point 3D coordinates. </p>
 </td></tr>
@@ -387,7 +427,7 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ae04b7887ce35d16dbd9d2d295d23aac7a86289594da74a6177499ed9cb38e724a"></a>RS2_FORMAT_Y16&#160;</td><td class="fielddoc"><p>16-bit per-pixel grayscale image </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae04b7887ce35d16dbd9d2d295d23aac7a5d862a212fe8cb46a7d096ad8067daad"></a>RS2_FORMAT_RAW10&#160;</td><td class="fielddoc"><p>Four 10-bit luminance values encoded into a 5-byte macropixel </p>
+<tr><td class="fieldname"><a id="ae04b7887ce35d16dbd9d2d295d23aac7a5d862a212fe8cb46a7d096ad8067daad"></a>RS2_FORMAT_RAW10&#160;</td><td class="fielddoc"><p>Four 10 bits per pixel luminance values packed into a 5-byte macropixel </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ae04b7887ce35d16dbd9d2d295d23aac7ade5a2ef53896420d36fa99a2b05b114e"></a>RS2_FORMAT_RAW16&#160;</td><td class="fielddoc"><p>16-bit raw image </p>
 </td></tr>
@@ -404,6 +444,12 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="ae04b7887ce35d16dbd9d2d295d23aac7a1944a29cce3440225ab7a3fd83a29b2e"></a>RS2_FORMAT_6DOF&#160;</td><td class="fielddoc"><p>Pose data packed as floats array, containing translation vector, rotation quaternion and prediction velocities and accelerations vectors </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ae04b7887ce35d16dbd9d2d295d23aac7a3c43c0d27ce2d3983cb36aefffbd4dda"></a>RS2_FORMAT_DISPARITY32&#160;</td><td class="fielddoc"><p>32-bit float-point disparity values. Depth-&gt;Disparity conversion : Disparity = Baseline*FocalLength/Depth </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae04b7887ce35d16dbd9d2d295d23aac7a99ee0671b1344a08ac3c0fdff5876ad0"></a>RS2_FORMAT_Y10BPACK&#160;</td><td class="fielddoc"><p>16-bit per-pixel grayscale image unpacked from 10 bits per pixel packed ([8:8:8:8:2222]) grey-scale image. The data is unpacked to LSB and padded with 6 zero bits </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae04b7887ce35d16dbd9d2d295d23aac7a4b5edfca54e485a9e25299ab249fb3bc"></a>RS2_FORMAT_DISTANCE&#160;</td><td class="fielddoc"><p>32-bit float-point depth distance value. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae04b7887ce35d16dbd9d2d295d23aac7a04ecec4dbd0e34203d35e8051df8733d"></a>RS2_FORMAT_MJPEG&#160;</td><td class="fielddoc"><p>Bitstream encoding for video in which an image of each frame is encoded as JPEG-DIB </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ae04b7887ce35d16dbd9d2d295d23aac7a3b3eef6c57034e8b9472c9166290afd0"></a>RS2_FORMAT_COUNT&#160;</td><td class="fielddoc"><p>Number of enumeration values. Not a valid input: intended to be used in for-loops. </p>
 </td></tr>
@@ -442,7 +488,8 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a01b4027af33139de861408872dd11b93aca8232029db741f594390d2c091f17a5"></a>RS2_STREAM_POSE&#160;</td><td class="fielddoc"><p>6 Degrees of Freedom pose data, calculated by RealSense device </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a01b4027af33139de861408872dd11b93a1d81b17757d6da3aa94cacd48db9ff05"></a>RS2_STREAM_CONFIDENCE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a01b4027af33139de861408872dd11b93a1d81b17757d6da3aa94cacd48db9ff05"></a>RS2_STREAM_CONFIDENCE&#160;</td><td class="fielddoc"><p>4 bit per-pixel depth confidence level </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a01b4027af33139de861408872dd11b93aa3017f2e78d17ce364cc13b84ee56d4d"></a>RS2_STREAM_COUNT&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
@@ -515,6 +562,84 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>input stream profile </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">stream</td><td>stream type for the profile </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>binary data format of the profile </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>stream index the profile in case there are multiple streams of the same type </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>if non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>new stream profile, must be deleted by rs2_delete_stream_profile </dd></dl>
+
+</div>
+</div>
+<a id="a9a707b26d096f410e222a11197e7060b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a707b26d096f410e222a11197e7060b">&#9670;&nbsp;</a></span>rs2_clone_video_stream_profile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rs__types_8h.html#a338107a48471d20ecacac3e4c9e024e2">rs2_stream_profile</a>* rs2_clone_video_stream_profile </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="rs__types_8h.html#a338107a48471d20ecacac3e4c9e024e2">rs2_stream_profile</a> *&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__sensor_8h.html#a01b4027af33139de861408872dd11b93">rs2_stream</a>&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7">rs2_format</a>&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structrs2__intrinsics.html">rs2_intrinsics</a> *&#160;</td>
+          <td class="paramname"><em>intr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates a copy of stream profile, assigning new values to some of the fields </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>input stream profile </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream</td><td>stream type for the profile </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>binary data format of the profile </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>new width for the profile </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">height</td><td>new height for the profile </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">intr</td><td>new intrinsics for the profile </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>stream index the profile in case there are multiple streams of the same type </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>if non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
   </table>
@@ -634,6 +759,30 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the requested sensor, should be released by rs2_delete_sensor </dd></dl>
+
+</div>
+</div>
+<a id="ad83ffcef8404493ff8a3d74867996957"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad83ffcef8404493ff8a3d74867996957">&#9670;&nbsp;</a></span>rs2_delete_recommended_processing_blocks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rs2_delete_recommended_processing_blocks </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a654dfc89c03d451fe5d73b8ebac98dd6">rs2_processing_block_list</a> *&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Deletes processing blocks list </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">list</td><td>list to delete </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -758,13 +907,50 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Retrieve the stereoscopic baseline value. Applicable to stereo-based depth modules </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Retrieve the stereoscopic baseline value from frame. Applicable to stereo-based depth modules </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">float</td><td>Stereoscopic baseline in millimeters </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>if non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a7f522921ea5f9eeb8028c61cab6c8200"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f522921ea5f9eeb8028c61cab6c8200">&#9670;&nbsp;</a></span>rs2_export_localization_map()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="rs__types_8h.html#ab811c9b19a9d7c4608062eb12a6e3f2e">rs2_raw_data_buffer</a>* rs2_export_localization_map </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *&#160;</td>
+          <td class="paramname"><em>sensor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Extract and store the localization map of tm2 tracking device to file </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sensor</td><td>TM2 position-tracking sensor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lmap_fname</td><td>The file name of the localization map </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Device's response in a rs2_raw_data_buffer, which should be released by rs2_delete_raw_data </dd></dl>
 
 </div>
 </div>
@@ -1093,6 +1279,121 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a6949767f330e2336b40314f89a904557"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6949767f330e2336b40314f89a904557">&#9670;&nbsp;</a></span>rs2_get_processing_block()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rs__types_8h.html#af50408eba1d9935d29eb72553ae53dd0">rs2_processing_block</a>* rs2_get_processing_block </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="rs__types_8h.html#a654dfc89c03d451fe5d73b8ebac98dd6">rs2_processing_block_list</a> *&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns specific processing blocks from processing blocks list </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">list</td><td>the processing blocks list </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>the requested processing block </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>if non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>processing block </dd></dl>
+
+</div>
+</div>
+<a id="a251e33529589e04bf1be761187604751"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a251e33529589e04bf1be761187604751">&#9670;&nbsp;</a></span>rs2_get_recommended_processing_blocks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rs__types_8h.html#a654dfc89c03d451fe5d73b8ebac98dd6">rs2_processing_block_list</a>* rs2_get_recommended_processing_blocks </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *&#160;</td>
+          <td class="paramname"><em>sensor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the list of recommended processing blocks for a specific sensor. Order and configuration of the blocks are decided by the sensor </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sensor</td><td>input sensor </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>if non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>list of supported sensor recommended processing blocks </dd></dl>
+
+</div>
+</div>
+<a id="a13f416a1724732c89e6af10fea8505a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13f416a1724732c89e6af10fea8505a5">&#9670;&nbsp;</a></span>rs2_get_recommended_processing_blocks_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int rs2_get_recommended_processing_blocks_count </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="rs__types_8h.html#a654dfc89c03d451fe5d73b8ebac98dd6">rs2_processing_block_list</a> *&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the processing blocks list size </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">list</td><td>the processing blocks list </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>if non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the processing block list size </dd></dl>
+
+</div>
+</div>
 <a id="aff51a9f0b0b7faf29e1e99dc757267a7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aff51a9f0b0b7faf29e1e99dc757267a7">&#9670;&nbsp;</a></span>rs2_get_region_of_interest()</h2>
 
@@ -1234,6 +1535,98 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Sensors count </dd></dl>
+
+</div>
+</div>
+<a id="af0be93641a230044d1b2ddee214a714c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0be93641a230044d1b2ddee214a714c">&#9670;&nbsp;</a></span>rs2_get_static_node()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int rs2_get_static_node </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *&#160;</td>
+          <td class="paramname"><em>sensor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>guid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structrs2__vector.html">rs2_vector</a> *&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structrs2__quaternion.html">rs2_quaternion</a> *&#160;</td>
+          <td class="paramname"><em>orient</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create a named location tag </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sensor</td><td>T2xx position-tracking sensor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">guid</td><td>Null-terminated string of up to 127 characters </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pos</td><td>Position in meters of the tagged (stored) location </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">orient</td><td>Quaternion orientation of the tagged (stored) location </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero if succeeded, otherwise 0 </dd></dl>
+
+</div>
+</div>
+<a id="abb8c400790f3cf02005f25d75bb03d1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb8c400790f3cf02005f25d75bb03d1c">&#9670;&nbsp;</a></span>rs2_get_stereo_baseline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float rs2_get_stereo_baseline </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *&#160;</td>
+          <td class="paramname"><em>sensor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retrieve the stereoscopic baseline value from sensor. Applicable to stereo-based depth modules </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">float</td><td>Stereoscopic baseline in millimeters </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>if non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1512,6 +1905,56 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ac902eb3c40da9c95ee4eb0119a15b5e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac902eb3c40da9c95ee4eb0119a15b5e2">&#9670;&nbsp;</a></span>rs2_import_localization_map()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int rs2_import_localization_map </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *&#160;</td>
+          <td class="paramname"><em>sensor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>lmap_blob</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>blob_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Imports a localization map from file to tm2 tracking device </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sensor</td><td>TM2 position-tracking sensor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lmap_blob</td><td>Localization map raw buffer, serialized </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blob_size</td><td>The buffer's size in bytes </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero if succeeded, otherwise 0 </dd></dl>
+
+</div>
+</div>
 <a id="a8257ad323ac36f16f43073d0276f19b0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8257ad323ac36f16f43073d0276f19b0">&#9670;&nbsp;</a></span>rs2_is_sensor_extendable_to()</h2>
 
@@ -1588,6 +2031,53 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>non-zero if selected profile is recommended for the sensor </dd></dl>
+
+</div>
+</div>
+<a id="a67d68d826346018064f00aa704b8ccc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67d68d826346018064f00aa704b8ccc7">&#9670;&nbsp;</a></span>rs2_load_wheel_odometry_config()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int rs2_load_wheel_odometry_config </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *&#160;</td>
+          <td class="paramname"><em>sensor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>odometry_config_buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>blob_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Load Wheel odometer settings from host to device </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">odometry_config_buf</td><td>odometer configuration/calibration blob serialized from jsom file </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true on success </dd></dl>
 
 </div>
 </div>
@@ -1725,6 +2215,222 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">to</td><td>target stream profile </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">extrin</td><td>extrinsics from origin to target </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>if non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a75980d3632b1c8a5eecacc39e84b845b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75980d3632b1c8a5eecacc39e84b845b">&#9670;&nbsp;</a></span>rs2_send_wheel_odometry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int rs2_send_wheel_odometry </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *&#160;</td>
+          <td class="paramname"><em>sensor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>wo_sensor_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>frame_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structrs2__vector.html">rs2_vector</a>&#160;</td>
+          <td class="paramname"><em>translational_velocity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Send wheel odometry data for each individual sensor (wheel) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wo_sensor_id</td><td>- Zero-based index of (wheel) sensor with the same type within device </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame_num</td><td>- Monotonocally increasing frame number, managed per sensor. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">translational_velocity</td><td>- Translational velocity of the wheel sensor [meter/sec] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true on success </dd></dl>
+
+</div>
+</div>
+<a id="a57d2c60421e255d7c185bf9fa4c068d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57d2c60421e255d7c185bf9fa4c068d6">&#9670;&nbsp;</a></span>rs2_set_extrinsics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rs2_set_extrinsics </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *&#160;</td>
+          <td class="paramname"><em>from_sensor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="rs__types_8h.html#a338107a48471d20ecacac3e4c9e024e2">rs2_stream_profile</a> *&#160;</td>
+          <td class="paramname"><em>from_profile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *&#160;</td>
+          <td class="paramname"><em>to_sensor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="rs__types_8h.html#a338107a48471d20ecacac3e4c9e024e2">rs2_stream_profile</a> *&#160;</td>
+          <td class="paramname"><em>to_profile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structrs2__extrinsics.html">rs2_extrinsics</a> *&#160;</td>
+          <td class="paramname"><em>extrinsics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set extrinsics between two sensors </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">from_sensor</td><td>Origin sensor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">from_profile</td><td>Origin profile </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">to_sensor</td><td>Target sensor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">to_profile</td><td>Target profile </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">extrinsics</td><td>Extrinsics from origin to target </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac1e8ebbd1e75fac3f1d7e9cc174dadbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1e8ebbd1e75fac3f1d7e9cc174dadbd">&#9670;&nbsp;</a></span>rs2_set_intrinsics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rs2_set_intrinsics </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *&#160;</td>
+          <td class="paramname"><em>sensor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="rs__types_8h.html#a338107a48471d20ecacac3e4c9e024e2">rs2_stream_profile</a> *&#160;</td>
+          <td class="paramname"><em>profile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structrs2__intrinsics.html">rs2_intrinsics</a> *&#160;</td>
+          <td class="paramname"><em>intrinsics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set intrinsics of a given sensor </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sensor</td><td>The RealSense device </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">profile</td><td>Target stream profile </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">intrinsics</td><td>Intrinsics value to be written to the device </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab08dcd1c1c51fd3e777f421f69791cdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab08dcd1c1c51fd3e777f421f69791cdd">&#9670;&nbsp;</a></span>rs2_set_motion_device_intrinsics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rs2_set_motion_device_intrinsics </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *&#160;</td>
+          <td class="paramname"><em>sensor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="rs__types_8h.html#a338107a48471d20ecacac3e4c9e024e2">rs2_stream_profile</a> *&#160;</td>
+          <td class="paramname"><em>profile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structrs2__motion__device__intrinsic.html">rs2_motion_device_intrinsic</a> *&#160;</td>
+          <td class="paramname"><em>intrinsics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set motion device intrinsics </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sensor</td><td>Motion sensor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">profile</td><td>Motion stream profile </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">intrinsics</td><td>Pointer to the struct to store the data in </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
   </table>
   </dd>
 </dl>
@@ -1883,6 +2589,63 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a23f18324e747cafc6ee32ef2bc791172"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23f18324e747cafc6ee32ef2bc791172">&#9670;&nbsp;</a></span>rs2_set_static_node()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int rs2_set_static_node </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *&#160;</td>
+          <td class="paramname"><em>sensor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>guid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structrs2__vector.html">rs2_vector</a>&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structrs2__quaternion.html">rs2_quaternion</a>&#160;</td>
+          <td class="paramname"><em>orient</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create a named location tag </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sensor</td><td>T2xx position-tracking sensor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">guid</td><td>Null-terminated string of up to 127 characters </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td>Position in meters, relative to the current tracking session </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">orient</td><td>Quaternion orientation, expressed the the coordinate system of the current tracking session </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero if succeeded, otherwise 0 </dd></dl>
 
 </div>
 </div>

@@ -85,12 +85,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4ff9ae18bf1b3aaaaaf9bba524b04d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e6fc0e54fd640da0754344101464d9a"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#acfaa5076cefeda6a29710ea95f5e4e35">rs2_config</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1config.html#a2e6fc0e54fd640da0754344101464d9a">get</a> () const</td></tr>
 <tr class="separator:a2e6fc0e54fd640da0754344101464d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68b0d516f557a1526fb2aa80def2b75e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1config.html#a68b0d516f557a1526fb2aa80def2b75e">operator std::shared_ptr&lt; rs2_config &gt;</a> () const</td></tr>
+<tr class="separator:a68b0d516f557a1526fb2aa80def2b75e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a317c1ebafabd22d4bb887fdb64aad518"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1config.html#a317c1ebafabd22d4bb887fdb64aad518">config</a> (std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#acfaa5076cefeda6a29710ea95f5e4e35">rs2_config</a> &gt; cfg)</td></tr>
+<tr class="separator:a317c1ebafabd22d4bb887fdb64aad518"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The config allows pipeline users to request filters for the pipeline streams and device selection and configuration. This is an optional step in pipeline creation, as the pipeline resolves its streaming device internally. Config provides its users a way to set the filters and test if there is no conflict with the pipeline requirements from the device. It also allows the user to find a matching device for the config filters and the pipeline, in order to select a device explicitly, and modify its controls before streaming starts. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aac0368db4b110a54d25d4f3f65c97de7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac0368db4b110a54d25d4f3f65c97de7">&#9670;&nbsp;</a></span>config()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aac0368db4b110a54d25d4f3f65c97de7">&#9670;&nbsp;</a></span>config() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -102,6 +106,32 @@ Public Member Functions</h2></td></tr>
           <td class="memname">rs2::config::config </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a317c1ebafabd22d4bb887fdb64aad518"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a317c1ebafabd22d4bb887fdb64aad518">&#9670;&nbsp;</a></span>config() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rs2::config::config </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#acfaa5076cefeda6a29710ea95f5e4e35">rs2_config</a> &gt;&#160;</td>
+          <td class="paramname"><em>cfg</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -310,7 +340,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Select a recorded device from a file, to be used by the pipeline through playback. The device available streams are as recorded to the file, and <code><a class="el" href="classrs2_1_1config.html#ae9e55d91bbee3658c4bbf865dec352d3">resolve()</a></code> considers only this device and configuration as available. This request cannot be used if <a class="el" href="classrs2_1_1config.html#aa40acfc1b90b7031b3e4c64cdd1f6d69">enable_record_to_file()</a> is called for the current config, and vise versa</p>
+<p>Select a recorded device from a file, to be used by the pipeline through playback. The device available streams are as recorded to the file, and <code><a class="el" href="classrs2_1_1config.html#ae9e55d91bbee3658c4bbf865dec352d3">resolve()</a></code> considers only this device and configuration as available. This request cannot be used if <code><a class="el" href="classrs2_1_1config.html#aa40acfc1b90b7031b3e4c64cdd1f6d69">enable_record_to_file()</a></code> is called for the current config, and vice versa.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">file_name</td><td>The playback file of the device </td></tr>
@@ -343,7 +373,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Requires that the resolved device would be recorded to file This request cannot be used if <a class="el" href="classrs2_1_1config.html#a6f2691bbc1616ae01997fca0b97ca09c">enable_device_from_file()</a> is called for the current config, and vise versa as available.</p>
+<p>Requires that the resolved device would be recorded to file. This request cannot be used if <code><a class="el" href="classrs2_1_1config.html#a6f2691bbc1616ae01997fca0b97ca09c">enable_device_from_file()</a></code> is called for the current config, and vice versa. as available.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">file_name</td><td>The desired file for the output record </td></tr>
@@ -458,6 +488,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Stream type and possibly also stream index. Other parameters are resolved internally.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream_type</td><td>Stream type to be enabled </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream_index</td><td>Stream index, used for multiple streams of the same type. -1 indicates any. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -512,6 +550,17 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Stream type and resolution, and possibly format and frame rate. Other parameters are resolved internally.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream_type</td><td>Stream type to be enabled </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>Stream image width - for images streams. 0 indicates any. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">height</td><td>Stream image height - for images streams. 0 indicates any. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>Stream data format - pixel format for images streams, of data type for other streams. RS2_FORMAT_ANY indicates any. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">framerate</td><td>Stream frames per second. 0 indicates any. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -554,6 +603,15 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Stream type and format, and possibly frame rate. Other parameters are resolved internally.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream_type</td><td>Stream type to be enabled </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>Stream data format - pixel format for images streams, of data type for other streams. RS2_FORMAT_ANY indicates any. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">framerate</td><td>Stream frames per second. 0 indicates any. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -602,6 +660,16 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Stream type, index, and format, and possibly framerate. Other parameters are resolved internally.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream_type</td><td>Stream type to be enabled </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream_index</td><td>Stream index, used for multiple streams of the same type. -1 indicates any. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>Stream data format - pixel format for images streams, of data type for other streams. RS2_FORMAT_ANY indicates any. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">framerate</td><td>Stream frames per second. 0 indicates any. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -624,6 +692,31 @@ Public Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68b0d516f557a1526fb2aa80def2b75e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68b0d516f557a1526fb2aa80def2b75e">&#9670;&nbsp;</a></span>operator std::shared_ptr&lt; rs2_config &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rs2::config::operator std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#acfaa5076cefeda6a29710ea95f5e4e35">rs2_config</a> &gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -665,7 +758,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/jenkins_sys_rsbuild/workspace/LRS_doxygen/source/include/librealsense2/hpp/<a class="el" href="rs__pipeline_8hpp_source.html">rs_pipeline.hpp</a></li>
+<li>C:/jenkins_sys_rsbuild/workspace/LRS_doxygen_pipeline/source/include/librealsense2/hpp/<a class="el" href="rs__pipeline_8hpp_source.html">rs_pipeline.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

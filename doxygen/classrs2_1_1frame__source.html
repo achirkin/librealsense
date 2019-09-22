@@ -59,6 +59,8 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:adf7c8dfbd6e5aa1161bcc9440c0cc88b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrs2_1_1frame.html">frame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame__source.html#adf7c8dfbd6e5aa1161bcc9440c0cc88b">allocate_video_frame</a> (const <a class="el" href="classrs2_1_1stream__profile.html">stream_profile</a> &amp;profile, const <a class="el" href="classrs2_1_1frame.html">frame</a> &amp;original, int new_bpp=0, int new_width=0, int new_height=0, int new_stride=0, <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8a">rs2_extension</a> frame_type=<a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa4d5f5b031efbea7e0d831234f90595c2">RS2_EXTENSION_VIDEO_FRAME</a>) const</td></tr>
 <tr class="separator:adf7c8dfbd6e5aa1161bcc9440c0cc88b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af373c5706db167e541b295c2f8816a3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrs2_1_1frame.html">frame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame__source.html#af373c5706db167e541b295c2f8816a3b">allocate_points</a> (const <a class="el" href="classrs2_1_1stream__profile.html">stream_profile</a> &amp;profile, const <a class="el" href="classrs2_1_1frame.html">frame</a> &amp;original) const</td></tr>
+<tr class="separator:af373c5706db167e541b295c2f8816a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a181df2d231e3e7a31f49121dd22711b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrs2_1_1frame.html">frame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame__source.html#a181df2d231e3e7a31f49121dd22711b9">allocate_composite_frame</a> (std::vector&lt; <a class="el" href="classrs2_1_1frame.html">frame</a> &gt; frames) const</td></tr>
 <tr class="separator:a181df2d231e3e7a31f49121dd22711b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a46a2189644b9b7054927b4d0def9a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame__source.html#a1a46a2189644b9b7054927b4d0def9a7">frame_ready</a> (<a class="el" href="classrs2_1_1frame.html">frame</a> result) const</td></tr>
@@ -75,7 +77,9 @@ Friends</h2></td></tr>
 <tr class="memitem:a7bee62b1b34df4f3021ce5480ae9f452"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame__source.html#a7bee62b1b34df4f3021ce5480ae9f452">frame_processor_callback</a></td></tr>
 <tr class="separator:a7bee62b1b34df4f3021ce5480ae9f452"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The source used to generate frames, which is usually done by the low level driver for each sensor. <a class="el" href="classrs2_1_1frame__source.html">frame_source</a> is one of the parameters of <a class="el" href="classrs2_1_1processing__block.html">processing_block</a>'s callback function, which can be used to re-generate the frame and via frame_ready invoke another callback function to notify application frame is ready. Please refer to "video_processing_thread" code snippet in rs-measure.cpp for a detailed usage example. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a181df2d231e3e7a31f49121dd22711b9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a181df2d231e3e7a31f49121dd22711b9">&#9670;&nbsp;</a></span>allocate_composite_frame()</h2>
 
@@ -91,6 +95,50 @@ Friends</h2></td></tr>
           <td class="paramtype">std::vector&lt; <a class="el" href="classrs2_1_1frame.html">frame</a> &gt;&#160;</td>
           <td class="paramname"><em>frames</em></td><td>)</td>
           <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Allocate composite frame with given params</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">frames</td><td>Frame vecotor used to create composite frame, the size of composite frame will be the same as vector size. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The allocated composite frame </dd></dl>
+
+</div>
+</div>
+<a id="af373c5706db167e541b295c2f8816a3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af373c5706db167e541b295c2f8816a3b">&#9670;&nbsp;</a></span>allocate_points()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classrs2_1_1frame.html">frame</a> rs2::frame_source::allocate_points </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classrs2_1_1stream__profile.html">stream_profile</a> &amp;&#160;</td>
+          <td class="paramname"><em>profile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classrs2_1_1frame.html">frame</a> &amp;&#160;</td>
+          <td class="paramname"><em>original</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -165,6 +213,20 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Allocate a new video frame with given params</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">profile</td><td>Stream profile going to allocate. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">original</td><td>Original frame, if new_bpp, new_width, new_height or new_stride is zero, newly created frame will base on original frame's metadata to allocate new frame. If frame_type is RS2_EXTENSION_DEPTH_FRAME, the original of the returned frame will be set to it. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_bpp</td><td>Frame bit per pixel to create. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_width</td><td>Frame width to create. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_height</td><td>Frame height to create. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_stride</td><td>Frame stride to crate. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame_type</td><td>Which frame type are going to create. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The allocated frame </dd></dl>
 
 </div>
 </div>
@@ -191,6 +253,13 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Invoke the callback funtion informing the frame is ready.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">frames</td><td>frame to send to callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -235,7 +304,7 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/jenkins_sys_rsbuild/workspace/LRS_doxygen/source/include/librealsense2/hpp/<a class="el" href="rs__processing_8hpp_source.html">rs_processing.hpp</a></li>
+<li>C:/jenkins_sys_rsbuild/workspace/LRS_doxygen_pipeline/source/include/librealsense2/hpp/<a class="el" href="rs__processing_8hpp_source.html">rs_processing.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Intel® RealSense™ Cross Platform API: C:/jenkins_sys_rsbuild/workspace/LRS_doxygen/source/include/librealsense2/rs_advanced_mode.h File Reference</title>
+<title>Intel® RealSense™ Cross Platform API: C:/jenkins_sys_rsbuild/workspace/LRS_doxygen_pipeline/source/include/librealsense2/rs_advanced_mode.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -114,6 +114,10 @@ Functions</h2></td></tr>
 <tr class="separator:ae95981a3807fb440db216bf2f23cd10f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a277b97d9fc80b2252edce8bc0ac5e771"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__advanced__mode_8h.html#a277b97d9fc80b2252edce8bc0ac5e771">rs2_get_census</a> (<a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *dev, <a class="el" href="struct_s_t_census_radius.html">STCensusRadius</a> *group, int mode, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:a277b97d9fc80b2252edce8bc0ac5e771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9774e8c9a7d3f6b77ae349a9c443e5f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__advanced__mode_8h.html#a9774e8c9a7d3f6b77ae349a9c443e5f2">rs2_set_amp_factor</a> (<a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *dev, const <a class="el" href="struct_s_t_a_factor.html">STAFactor</a> *group, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a9774e8c9a7d3f6b77ae349a9c443e5f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea2c70b48184c70bcaef21d542a5ee95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__advanced__mode_8h.html#aea2c70b48184c70bcaef21d542a5ee95">rs2_get_amp_factor</a> (<a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *dev, <a class="el" href="struct_s_t_a_factor.html">STAFactor</a> *group, int mode, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:aea2c70b48184c70bcaef21d542a5ee95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2a9cf695704530f2ad3b4b8b2a1eb1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__advanced__mode_8h.html#af2a9cf695704530f2ad3b4b8b2a1eb1a">rs2_load_json</a> (<a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *dev, const void *json_content, unsigned content_size, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:af2a9cf695704530f2ad3b4b8b2a1eb1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39e27e7134093a89567ff4f95fb62e5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__types_8h.html#ab811c9b19a9d7c4608062eb12a6e3f2e">rs2_raw_data_buffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__advanced__mode_8h.html#a39e27e7134093a89567ff4f95fb62e5e">rs2_serialize_json</a> (<a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *dev, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
@@ -151,6 +155,46 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="struct_s_t_a_e_control.html">STAEControl</a> *&#160;</td>
+          <td class="paramname"><em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea2c70b48184c70bcaef21d542a5ee95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea2c70b48184c70bcaef21d542a5ee95">&#9670;&nbsp;</a></span>rs2_get_amp_factor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rs2_get_amp_factor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_s_t_a_factor.html">STAFactor</a> *&#160;</td>
           <td class="paramname"><em>group</em>, </td>
         </tr>
         <tr>
@@ -733,6 +777,40 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="struct_s_t_a_e_control.html">STAEControl</a> *&#160;</td>
+          <td class="paramname"><em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9774e8c9a7d3f6b77ae349a9c443e5f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9774e8c9a7d3f6b77ae349a9c443e5f2">&#9670;&nbsp;</a></span>rs2_set_amp_factor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rs2_set_amp_factor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_s_t_a_factor.html">STAFactor</a> *&#160;</td>
           <td class="paramname"><em>group</em>, </td>
         </tr>
         <tr>

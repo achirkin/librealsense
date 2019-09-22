@@ -123,14 +123,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a18d05901425bbea9e8d529319741fe05 inherit pub_methods_classrs2_1_1device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13b9d3b58992cd1357d6df0b60a93fe1 inherit pub_methods_classrs2_1_1device"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1device.html#a13b9d3b58992cd1357d6df0b60a93fe1">~device</a> ()</td></tr>
 <tr class="separator:a13b9d3b58992cd1357d6df0b60a93fe1 inherit pub_methods_classrs2_1_1device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eec4004c98efe11ffbc953f1443fb51 inherit pub_methods_classrs2_1_1device"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1device.html#a1eec4004c98efe11ffbc953f1443fb51">operator std::shared_ptr&lt; rs2_device &gt;</a> ()</td></tr>
+<tr class="separator:a1eec4004c98efe11ffbc953f1443fb51 inherit pub_methods_classrs2_1_1device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f3e7832cd8d3a7bad5514eef3c4c946 inherit pub_methods_classrs2_1_1device"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1device.html#a0f3e7832cd8d3a7bad5514eef3c4c946">device</a> (std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> &gt; dev)</td></tr>
+<tr class="separator:a0f3e7832cd8d3a7bad5514eef3c4c946 inherit pub_methods_classrs2_1_1device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a3b17216dc4f9d4a2fc8f764cca8ebf21"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1playback.html#a3b17216dc4f9d4a2fc8f764cca8ebf21">playback</a> (std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> &gt; dev)</td></tr>
 <tr class="separator:a3b17216dc4f9d4a2fc8f764cca8ebf21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classrs2_1_1device"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classrs2_1_1device')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classrs2_1_1device.html">rs2::device</a></td></tr>
-<tr class="memitem:a0f3e7832cd8d3a7bad5514eef3c4c946 inherit pro_methods_classrs2_1_1device"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1device.html#a0f3e7832cd8d3a7bad5514eef3c4c946">device</a> (std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> &gt; dev)</td></tr>
-<tr class="separator:a0f3e7832cd8d3a7bad5514eef3c4c946 inherit pro_methods_classrs2_1_1device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -505,7 +506,7 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<p>Callbacks are invoked from the reading thread, any heavy processing in the callback handler will affect the reading thread and may cause frame drops\ high latency </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Callbacks are invoked from the reading thread, and as such any heavy processing in the callback handler will affect the reading thread and may cause frame drops\ high latency </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>A callback handler that will be invoked when the playback status changes, can be any callable object accepting rs2_playback_status </td></tr>
   </table>
@@ -564,7 +565,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/jenkins_sys_rsbuild/workspace/LRS_doxygen/source/include/librealsense2/hpp/<a class="el" href="rs__record__playback_8hpp_source.html">rs_record_playback.hpp</a></li>
+<li>C:/jenkins_sys_rsbuild/workspace/LRS_doxygen_pipeline/source/include/librealsense2/hpp/<a class="el" href="rs__record__playback_8hpp_source.html">rs_record_playback.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

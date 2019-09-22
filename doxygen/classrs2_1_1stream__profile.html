@@ -45,7 +45,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classrs2_1_1stream__profile-members.html">List of all members</a>  </div>
@@ -62,7 +61,8 @@ Inheritance diagram for rs2::stream_profile:</div>
   <img src="classrs2_1_1stream__profile.png" usemap="#rs2::stream_5Fprofile_map" alt=""/>
   <map id="rs2::stream_5Fprofile_map" name="rs2::stream_5Fprofile_map">
 <area href="classrs2_1_1motion__stream__profile.html" alt="rs2::motion_stream_profile" shape="rect" coords="0,56,159,80"/>
-<area href="classrs2_1_1video__stream__profile.html" alt="rs2::video_stream_profile" shape="rect" coords="169,56,328,80"/>
+<area href="classrs2_1_1pose__stream__profile.html" alt="rs2::pose_stream_profile" shape="rect" coords="169,56,328,80"/>
+<area href="classrs2_1_1video__stream__profile.html" alt="rs2::video_stream_profile" shape="rect" coords="338,56,497,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -98,17 +98,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab8a9b2ae1fc8a7be81d55b7ff99a9617"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14015d1ac341a6066ed5a50deaf00a59"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="rs__types_8h.html#a338107a48471d20ecacac3e4c9e024e2">rs2_stream_profile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1stream__profile.html#a14015d1ac341a6066ed5a50deaf00a59">get</a> () const</td></tr>
 <tr class="separator:a14015d1ac341a6066ed5a50deaf00a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a050a19e735faf594b61fb0ad4a38e1fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1stream__profile.html#a050a19e735faf594b61fb0ad4a38e1fa">operator const rs2_stream_profile *</a> ()</td></tr>
-<tr class="separator:a050a19e735faf594b61fb0ad4a38e1fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0085b1f54ac6078c638ceb53ff89cc95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structrs2__extrinsics.html">rs2_extrinsics</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1stream__profile.html#a0085b1f54ac6078c638ceb53ff89cc95">get_extrinsics_to</a> (const <a class="el" href="classrs2_1_1stream__profile.html">stream_profile</a> &amp;to) const</td></tr>
 <tr class="separator:a0085b1f54ac6078c638ceb53ff89cc95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab037f6e2676caef369f8fa1f56c04c6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1stream__profile.html#ab037f6e2676caef369f8fa1f56c04c6d">register_extrinsics_to</a> (const <a class="el" href="classrs2_1_1stream__profile.html">stream_profile</a> &amp;to, <a class="el" href="structrs2__extrinsics.html">rs2_extrinsics</a> extrinsics)</td></tr>
 <tr class="separator:ab037f6e2676caef369f8fa1f56c04c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
+<tr class="memitem:afda5eee8de8da64f8cf89793bf71bbea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1stream__profile.html#afda5eee8de8da64f8cf89793bf71bbea">is_cloned</a> ()</td></tr>
+<tr class="separator:afda5eee8de8da64f8cf89793bf71bbea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a050ef661e6879fa825d1d818ad09df00"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1stream__profile.html#a050ef661e6879fa825d1d818ad09df00">stream_profile</a> (const <a class="el" href="rs__types_8h.html#a338107a48471d20ecacac3e4c9e024e2">rs2_stream_profile</a> *profile)</td></tr>
 <tr class="separator:a050ef661e6879fa825d1d818ad09df00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a050a19e735faf594b61fb0ad4a38e1fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1stream__profile.html#a050a19e735faf594b61fb0ad4a38e1fa">operator const rs2_stream_profile *</a> ()</td></tr>
+<tr class="separator:a050a19e735faf594b61fb0ad4a38e1fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40a6e3cd4452805984b053895cab0b09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1stream__profile.html#a40a6e3cd4452805984b053895cab0b09">operator std::shared_ptr&lt; rs2_stream_profile &gt;</a> ()</td></tr>
+<tr class="separator:a40a6e3cd4452805984b053895cab0b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -137,8 +138,8 @@ Friends</h2></td></tr>
 <tr class="separator:ae5020372ab2c0b59dfd5b8a73dc634a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa4705f0a94552245069cfaea97ec811"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1stream__profile.html#aaa4705f0a94552245069cfaea97ec811">rs2::pipeline_profile</a></td></tr>
 <tr class="separator:aaa4705f0a94552245069cfaea97ec811"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2094a79679ff7a91490c153bf71578c6"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1stream__profile.html#a2094a79679ff7a91490c153bf71578c6">software_sensor</a></td></tr>
-<tr class="separator:a2094a79679ff7a91490c153bf71578c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a262a02ebefc4e53baa0ea30ad7ad4eef"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1stream__profile.html#a262a02ebefc4e53baa0ea30ad7ad4eef">rs2::video_stream_profile</a></td></tr>
+<tr class="separator:a262a02ebefc4e53baa0ea30ad7ad4eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2f1a6866401e20c21cdcb1e86eb7216b"></a>
@@ -163,6 +164,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Class to store the profile of stream </p>
 
 </div>
 </div>
@@ -185,7 +187,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -217,6 +219,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Template function, casting the instance as another class type </p><dl class="section return"><dt>Returns</dt><dd>class instance - pointer or null. </dd></dl>
 
 </div>
 </div>
@@ -259,6 +262,15 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Clone the current profile and change the type, index and format to input parameters </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>- will change the stream type from the cloned profile. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- will change the stream index from the cloned profile. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>- will change the stream format from the cloned profile. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classrs2_1_1stream__profile.html">stream_profile</a> - return the cloned stream profile. </dd></dl>
 
 </div>
 </div>
@@ -284,6 +296,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Return the stream format </p><dl class="section return"><dt>Returns</dt><dd>rs2_format - stream format </dd></dl>
 
 </div>
 </div>
@@ -309,6 +322,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Return the stream frame per second </p><dl class="section return"><dt>Returns</dt><dd>int - frame rate </dd></dl>
 
 </div>
 </div>
@@ -334,6 +348,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Get back the internal stream profile instance </p><dl class="section return"><dt>Returns</dt><dd>rs2_stream_profile* - internal implementation of the profile class </dd></dl>
 
 </div>
 </div>
@@ -360,6 +375,14 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Operator implement, return the internal stream profile instance. </p><dl class="section return"><dt>Returns</dt><dd>rs2_stream_profile* - internal instance to communicate with real implementation. Get the extrinsic transformation between two profiles (representing physical sensors) </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname"><a class="el" href="classrs2_1_1stream__profile.html">stream_profile</a></td><td>to - the stream profile (another sensor) to be based to return the extrinsic </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>rs2_stream_profile* - internal instance to communicate with real implementation. </dd></dl>
 
 </div>
 </div>
@@ -379,6 +402,32 @@ template&lt;class T &gt; </div>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Template function, checking if the instance belongs to specific class type </p><dl class="section return"><dt>Returns</dt><dd>bool - true or false. </dd></dl>
+
+</div>
+</div>
+<a id="afda5eee8de8da64f8cf89793bf71bbea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afda5eee8de8da64f8cf89793bf71bbea">&#9670;&nbsp;</a></span>is_cloned()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool rs2::stream_profile::is_cloned </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -412,6 +461,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Checks if stream profile is marked/assigned as default, meaning that the profile will be selected when the user requests stream configuration using wildcards (RS2_DEPTH, -1,-1,... </p><dl class="section return"><dt>Returns</dt><dd>bool - true or false. </dd></dl>
 
 </div>
 </div>
@@ -437,6 +487,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Checks if the profile is valid </p><dl class="section return"><dt>Returns</dt><dd>bool - true or false. </dd></dl>
 
 </div>
 </div>
@@ -459,6 +510,31 @@ template&lt;class T &gt; </div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a40a6e3cd4452805984b053895cab0b09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40a6e3cd4452805984b053895cab0b09">&#9670;&nbsp;</a></span>operator std::shared_ptr&lt; rs2_stream_profile &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rs2::stream_profile::operator std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#a338107a48471d20ecacac3e4c9e024e2">rs2_stream_profile</a> &gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -488,6 +564,13 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Comparison operator, compare if two stream profiles are the same </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>- stream profile to compare with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool - true or false. </dd></dl>
 
 </div>
 </div>
@@ -524,6 +607,13 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Assign extrinsic transformation parameters to a specific profile (sensor). The extrinsic information is generally available as part of the camera calibration, and librealsense is responsible for retrieving and assigning these parameters where appropriate. This specific function is intended for synthetic/mock-up (software) devices for which the parameters are produced and injected by the user. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname"><a class="el" href="classrs2_1_1stream__profile.html">stream_profile</a></td><td>to - which stream profile to be registered with the extrinsic. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname"><a class="el" href="structrs2__extrinsics.html" title="Cross-stream extrinsics: encodes the topology describing how the different devices are oriented...">rs2_extrinsics</a></td><td>extrinsics - the extrinsics to be registered. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -549,6 +639,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Return the specific stream index </p><dl class="section return"><dt>Returns</dt><dd>int - stream index </dd></dl>
 
 </div>
 </div>
@@ -574,6 +665,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Return the string of stream name </p><dl class="section return"><dt>Returns</dt><dd>string - stream name. </dd></dl>
 
 </div>
 </div>
@@ -599,6 +691,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Return the stream type </p><dl class="section return"><dt>Returns</dt><dd>rs2_stream - stream type </dd></dl>
 
 </div>
 </div>
@@ -624,6 +717,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Return the assigned unique index when the stream was created </p><dl class="section return"><dt>Returns</dt><dd>int - unique id </dd></dl>
 
 </div>
 </div>
@@ -694,8 +788,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="a2094a79679ff7a91490c153bf71578c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2094a79679ff7a91490c153bf71578c6">&#9670;&nbsp;</a></span>software_sensor</h2>
+<a id="a262a02ebefc4e53baa0ea30ad7ad4eef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a262a02ebefc4e53baa0ea30ad7ad4eef">&#9670;&nbsp;</a></span>rs2::video_stream_profile</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -704,7 +798,7 @@ template&lt;class T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend class <a class="el" href="classrs2_1_1software__sensor.html">software_sensor</a></td>
+          <td class="memname">friend class <a class="el" href="classrs2_1_1video__stream__profile.html">rs2::video_stream_profile</a></td>
         </tr>
       </table>
   </td>
@@ -894,7 +988,7 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/jenkins_sys_rsbuild/workspace/LRS_doxygen/source/include/librealsense2/hpp/<a class="el" href="rs__frame_8hpp_source.html">rs_frame.hpp</a></li>
+<li>C:/jenkins_sys_rsbuild/workspace/LRS_doxygen_pipeline/source/include/librealsense2/hpp/<a class="el" href="rs__frame_8hpp_source.html">rs_frame.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

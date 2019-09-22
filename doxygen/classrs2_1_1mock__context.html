@@ -64,8 +64,8 @@ Inheritance diagram for rs2::mock_context:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad739d3991b8633b926a97604dbce2af6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1mock__context.html#ad739d3991b8633b926a97604dbce2af6">mock_context</a> (const std::string &amp;filename, const std::string &amp;section=&quot;&quot;)</td></tr>
-<tr class="separator:ad739d3991b8633b926a97604dbce2af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a21608c6d5415d4a557397e68080d4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1mock__context.html#a8a21608c6d5415d4a557397e68080d4c">mock_context</a> (const std::string &amp;filename, const std::string &amp;section=&quot;&quot;, const std::string &amp;min_api_version=&quot;0.0.0&quot;)</td></tr>
+<tr class="separator:a8a21608c6d5415d4a557397e68080d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37443929788a5297673d2e5dcc75c45e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1mock__context.html#a37443929788a5297673d2e5dcc75c45e">mock_context</a> ()=delete</td></tr>
 <tr class="separator:a37443929788a5297673d2e5dcc75c45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classrs2_1_1context"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classrs2_1_1context')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classrs2_1_1context.html">rs2::context</a></td></tr>
@@ -73,6 +73,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ade72fcd550e5b515588de57b0587b2ff inherit pub_methods_classrs2_1_1context"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e0bfd3451cab5a32ab78f8037a4d793 inherit pub_methods_classrs2_1_1context"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrs2_1_1device__list.html">device_list</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1context.html#a0e0bfd3451cab5a32ab78f8037a4d793">query_devices</a> () const</td></tr>
 <tr class="separator:a0e0bfd3451cab5a32ab78f8037a4d793 inherit pub_methods_classrs2_1_1context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33514ec26332d5862bbad0faebecd0b6 inherit pub_methods_classrs2_1_1context"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrs2_1_1device__list.html">device_list</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1context.html#a33514ec26332d5862bbad0faebecd0b6">query_devices</a> (int mask) const</td></tr>
+<tr class="separator:a33514ec26332d5862bbad0faebecd0b6 inherit pub_methods_classrs2_1_1context"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a956ea208063bc6c5b26fb19fae723048 inherit pub_methods_classrs2_1_1context"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classrs2_1_1sensor.html">sensor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1context.html#a956ea208063bc6c5b26fb19fae723048">query_all_sensors</a> () const</td></tr>
 <tr class="memdesc:a956ea208063bc6c5b26fb19fae723048 inherit pub_methods_classrs2_1_1context"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a flat list of all available sensors from all RealSense devices.  <a href="classrs2_1_1context.html#a956ea208063bc6c5b26fb19fae723048">More...</a><br /></td></tr>
 <tr class="separator:a956ea208063bc6c5b26fb19fae723048 inherit pub_methods_classrs2_1_1context"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -85,19 +87,22 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7d650bdbb59e9cddf370601df212bf8b inherit pub_methods_classrs2_1_1context"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e80bc1628728ed972a4e015fe31ac5d inherit pub_methods_classrs2_1_1context"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1context.html#a2e80bc1628728ed972a4e015fe31ac5d">unload_device</a> (const std::string &amp;file)</td></tr>
 <tr class="separator:a2e80bc1628728ed972a4e015fe31ac5d inherit pub_methods_classrs2_1_1context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54da7c39c59d648d3da1ca1e8c710cc0 inherit pub_methods_classrs2_1_1context"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1context.html#a54da7c39c59d648d3da1ca1e8c710cc0">unload_tracking_module</a> ()</td></tr>
+<tr class="separator:a54da7c39c59d648d3da1ca1e8c710cc0 inherit pub_methods_classrs2_1_1context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae663e2ccd950a625a2c72777a53cd14c inherit pub_methods_classrs2_1_1context"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1context.html#ae663e2ccd950a625a2c72777a53cd14c">context</a> (std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#afd11a8b49d022780bcb990ae0e8f13c0">rs2_context</a> &gt; ctx)</td></tr>
+<tr class="separator:ae663e2ccd950a625a2c72777a53cd14c inherit pub_methods_classrs2_1_1context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c0294189e56af7dc56c3c0029f4c7ad inherit pub_methods_classrs2_1_1context"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1context.html#a8c0294189e56af7dc56c3c0029f4c7ad">operator std::shared_ptr&lt; rs2_context &gt;</a> ()</td></tr>
+<tr class="separator:a8c0294189e56af7dc56c3c0029f4c7ad inherit pub_methods_classrs2_1_1context"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_methods_classrs2_1_1context"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classrs2_1_1context')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classrs2_1_1context.html">rs2::context</a></td></tr>
-<tr class="memitem:ae663e2ccd950a625a2c72777a53cd14c inherit pro_methods_classrs2_1_1context"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1context.html#ae663e2ccd950a625a2c72777a53cd14c">context</a> (std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#afd11a8b49d022780bcb990ae0e8f13c0">rs2_context</a> &gt; ctx)</td></tr>
-<tr class="separator:ae663e2ccd950a625a2c72777a53cd14c inherit pro_methods_classrs2_1_1context"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classrs2_1_1context"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classrs2_1_1context')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classrs2_1_1context.html">rs2::context</a></td></tr>
 <tr class="memitem:a71fbe6f52c71819ee7b808a8e0934511 inherit pro_attribs_classrs2_1_1context"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#afd11a8b49d022780bcb990ae0e8f13c0">rs2_context</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1context.html#a71fbe6f52c71819ee7b808a8e0934511">_context</a></td></tr>
 <tr class="separator:a71fbe6f52c71819ee7b808a8e0934511 inherit pro_attribs_classrs2_1_1context"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad739d3991b8633b926a97604dbce2af6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad739d3991b8633b926a97604dbce2af6">&#9670;&nbsp;</a></span>mock_context() <span class="overload">[1/2]</span></h2>
+<a id="a8a21608c6d5415d4a557397e68080d4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a21608c6d5415d4a557397e68080d4c">&#9670;&nbsp;</a></span>mock_context() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -115,7 +120,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>section</em> = <code>&quot;&quot;</code>&#160;</td>
+          <td class="paramname"><em>section</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>min_api_version</em> = <code>&quot;0.0.0&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -164,7 +175,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/jenkins_sys_rsbuild/workspace/LRS_doxygen/source/include/librealsense2/hpp/<a class="el" href="rs__internal_8hpp_source.html">rs_internal.hpp</a></li>
+<li>C:/jenkins_sys_rsbuild/workspace/LRS_doxygen_pipeline/source/include/librealsense2/hpp/<a class="el" href="rs__internal_8hpp_source.html">rs_internal.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

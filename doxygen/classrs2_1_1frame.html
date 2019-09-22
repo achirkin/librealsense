@@ -61,12 +61,13 @@ Inheritance diagram for rs2::frame:</div>
   <img src="classrs2_1_1frame.png" usemap="#rs2::frame_map" alt=""/>
   <map id="rs2::frame_map" name="rs2::frame_map">
 <area href="classrs2_1_1frameset.html" alt="rs2::frameset" shape="rect" coords="0,56,123,80"/>
-<area href="classrs2_1_1motion__frame.html" alt="rs2::motion_frame" shape="rect" coords="133,56,256,80"/>
-<area href="classrs2_1_1points.html" alt="rs2::points" shape="rect" coords="266,56,389,80"/>
-<area href="classrs2_1_1pose__frame.html" alt="rs2::pose_frame" shape="rect" coords="399,56,522,80"/>
-<area href="classrs2_1_1video__frame.html" alt="rs2::video_frame" shape="rect" coords="532,56,655,80"/>
-<area href="classrs2_1_1depth__frame.html" alt="rs2::depth_frame" shape="rect" coords="532,112,655,136"/>
-<area href="classrs2_1_1disparity__frame.html" alt="rs2::disparity_frame" shape="rect" coords="532,168,655,192"/>
+<area href="classrs2_1_1gl_1_1gpu__frame.html" alt="rs2::gl::gpu_frame" shape="rect" coords="133,56,256,80"/>
+<area href="classrs2_1_1motion__frame.html" alt="rs2::motion_frame" shape="rect" coords="266,56,389,80"/>
+<area href="classrs2_1_1points.html" alt="rs2::points" shape="rect" coords="399,56,522,80"/>
+<area href="classrs2_1_1pose__frame.html" alt="rs2::pose_frame" shape="rect" coords="532,56,655,80"/>
+<area href="classrs2_1_1video__frame.html" alt="rs2::video_frame" shape="rect" coords="665,56,788,80"/>
+<area href="classrs2_1_1depth__frame.html" alt="rs2::depth_frame" shape="rect" coords="665,112,788,136"/>
+<area href="classrs2_1_1disparity__frame.html" alt="rs2::disparity_frame" shape="rect" coords="665,168,788,192"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -74,8 +75,8 @@ Inheritance diagram for rs2::frame:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a533c348361561a73bf90a62ef4683f10"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame.html#a533c348361561a73bf90a62ef4683f10">frame</a> ()</td></tr>
 <tr class="separator:a533c348361561a73bf90a62ef4683f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7db37f9dcc3cfeff4197df5621ae0233"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame.html#a7db37f9dcc3cfeff4197df5621ae0233">frame</a> (<a class="el" href="rs__types_8h.html#af280a50e5484323c1b20b76eda3d370d">rs2_frame</a> *frame_ref)</td></tr>
-<tr class="separator:a7db37f9dcc3cfeff4197df5621ae0233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a015307c22fe87e2af22854e929d13d13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame.html#a015307c22fe87e2af22854e929d13d13">frame</a> (<a class="el" href="rs__types_8h.html#af280a50e5484323c1b20b76eda3d370d">rs2_frame</a> *ref)</td></tr>
+<tr class="separator:a015307c22fe87e2af22854e929d13d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a453d19fed637922d6e3f2af12d5d1724"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame.html#a453d19fed637922d6e3f2af12d5d1724">frame</a> (<a class="el" href="classrs2_1_1frame.html">frame</a> &amp;&amp;other) noexcept</td></tr>
 <tr class="separator:a453d19fed637922d6e3f2af12d5d1724"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa05b9b3c9b4871b8d2552ff672ec241"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrs2_1_1frame.html">frame</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame.html#aaa05b9b3c9b4871b8d2552ff672ec241">operator=</a> (<a class="el" href="classrs2_1_1frame.html">frame</a> other)</td></tr>
@@ -90,6 +91,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a80976e05465a1f15a09877a4aa948c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00366ad9a456e6e65b56a7f63c6e633b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame.html#a00366ad9a456e6e65b56a7f63c6e633b">operator bool</a> () const</td></tr>
 <tr class="separator:a00366ad9a456e6e65b56a7f63c6e633b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5144336180ad1e3f310b77ce2a8452de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame.html#a5144336180ad1e3f310b77ce2a8452de">get_sensor</a> ()</td></tr>
+<tr class="separator:a5144336180ad1e3f310b77ce2a8452de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25f71d45193f2f4d77960320276b83f1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame.html#a25f71d45193f2f4d77960320276b83f1">get_timestamp</a> () const</td></tr>
 <tr class="separator:a25f71d45193f2f4d77960320276b83f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21c0e6615083c0a8d667a05adf6db03e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__frame_8h.html#a55750afe3461ea7748fbb2ef6fb19e8a">rs2_timestamp_domain</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame.html#a21c0e6615083c0a8d667a05adf6db03e">get_frame_timestamp_domain</a> () const</td></tr>
@@ -100,6 +103,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aaedadb7867151dd0532c2e4efa7cefa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac937e74ea40e08cd5ca46fe0ad302939"><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame.html#ac937e74ea40e08cd5ca46fe0ad302939">get_frame_number</a> () const</td></tr>
 <tr class="separator:ac937e74ea40e08cd5ca46fe0ad302939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3665db740b156cc9ef447796d349d31"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame.html#ab3665db740b156cc9ef447796d349d31">get_data_size</a> () const</td></tr>
+<tr class="separator:ab3665db740b156cc9ef447796d349d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b373fc81617be881b691a97b0f8358c"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame.html#a4b373fc81617be881b691a97b0f8358c">get_data</a> () const</td></tr>
 <tr class="separator:a4b373fc81617be881b691a97b0f8358c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac0387b1fe014785ea70b2aca157cf5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrs2_1_1stream__profile.html">stream_profile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame.html#aac0387b1fe014785ea70b2aca157cf5d">get_profile</a> () const</td></tr>
@@ -112,6 +117,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac018d0721bbcaa71bb188be575c7286a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89674ffbf7c21ffbec047c95aab2850c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__types_8h.html#af280a50e5484323c1b20b76eda3d370d">rs2_frame</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame.html#a89674ffbf7c21ffbec047c95aab2850c">get</a> () const</td></tr>
 <tr class="separator:a89674ffbf7c21ffbec047c95aab2850c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e5311820f1598730ccb588e1a379c10"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame.html#a9e5311820f1598730ccb588e1a379c10">operator rs2_frame *</a> ()</td></tr>
+<tr class="separator:a9e5311820f1598730ccb588e1a379c10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85aacfcaf45c2740bb118d62d3f1f00c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrs2_1_1frame.html">frame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame.html#a85aacfcaf45c2740bb118d62d3f1f00c">apply_filter</a> (<a class="el" href="classrs2_1_1filter__interface.html">filter_interface</a> &amp;<a class="el" href="classrs2_1_1filter.html">filter</a>)</td></tr>
+<tr class="separator:a85aacfcaf45c2740bb118d62d3f1f00c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -158,11 +167,12 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Base class for multiple frame extensions </p>
 
 </div>
 </div>
-<a id="a7db37f9dcc3cfeff4197df5621ae0233"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7db37f9dcc3cfeff4197df5621ae0233">&#9670;&nbsp;</a></span>frame() <span class="overload">[2/4]</span></h2>
+<a id="a015307c22fe87e2af22854e929d13d13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a015307c22fe87e2af22854e929d13d13">&#9670;&nbsp;</a></span>frame() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,7 +184,7 @@ Friends</h2></td></tr>
           <td class="memname">rs2::frame::frame </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="rs__types_8h.html#af280a50e5484323c1b20b76eda3d370d">rs2_frame</a> *&#160;</td>
-          <td class="paramname"><em>frame_ref</em></td><td>)</td>
+          <td class="paramname"><em>ref</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -184,6 +194,12 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Base class for multiple frame extensions with internal frame handle </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rs2_frame</td><td>frame_ref - internal frame instance </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -210,6 +226,12 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Change the internal frame handle to the one in parameter, then put the other frame internal frame handle to nullptr </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>other - another frame instance to be pointed to </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -236,6 +258,12 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Set the internal frame handle to the one in parameter, the function create additional reference if internal reference exist. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>other - another frame instance to be pointed to </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -288,13 +316,39 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>create additional reference to a frame without duplicating frame data </p><dl class="params"><dt>Parameters</dt><dd>
+<p>add additional reference to a frame without duplicating frame data </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>new frame reference, release by destructor </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if cloning was successful </dd></dl>
+
+</div>
+</div>
+<a id="a85aacfcaf45c2740bb118d62d3f1f00c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85aacfcaf45c2740bb118d62d3f1f00c">&#9670;&nbsp;</a></span>apply_filter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classrs2_1_1frame.html">frame</a> rs2::frame::apply_filter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classrs2_1_1filter__interface.html">filter_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>filter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -322,6 +376,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Template function, cast current instance as the type of another class </p><dl class="section return"><dt>Returns</dt><dd>class instance. </dd></dl>
 
 </div>
 </div>
@@ -347,6 +402,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Retrieve back the internal frame handle </p><dl class="section return"><dt>Returns</dt><dd>rs2_frame - internal frame handle. </dd></dl>
 
 </div>
 </div>
@@ -373,6 +429,32 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>retrieve data from frame handle </p><dl class="section return"><dt>Returns</dt><dd>the pointer to the start of the frame data </dd></dl>
+
+</div>
+</div>
+<a id="ab3665db740b156cc9ef447796d349d31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3665db740b156cc9ef447796d349d31">&#9670;&nbsp;</a></span>get_data_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int rs2::frame::get_data_size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>retrieve data size from frame handle </p><dl class="section return"><dt>Returns</dt><dd>the pointer to the start of the frame data </dd></dl>
 
 </div>
 </div>
@@ -483,6 +565,32 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>retrieve stream profile from frame handle </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="classrs2_1_1stream__profile.html">stream_profile</a> - the pointer to the stream profile </dd></dl>
+
+</div>
+</div>
+<a id="a5144336180ad1e3f310b77ce2a8452de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5144336180ad1e3f310b77ce2a8452de">&#9670;&nbsp;</a></span>get_sensor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a>* rs2::frame::get_sensor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -508,7 +616,14 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>retrieve the time at which the frame was captured </p><dl class="section return"><dt>Returns</dt><dd>the timestamp of the frame, in milliseconds since the device was started </dd></dl>
+<p>retrieve the time at which the frame was captured During the frame's lifetime it receives timestamps both at the device and host levels. The different timestamps are gathered and managed under the frame's Metadata attributes. Chronologically the list of timestamps comprises of: SENSOR_TIMESTAMP - Device clock. For video sensors designates the middle of exposure. Requires metadata support. FRAME_TIMESTAMP - Device clock. Stamped at the beginning of frame readout and transfer. Requires metadata support. BACKEND_TIMESTAMP - Host (EPOCH) clock in Kernel space. Frame transfer from USB Controller to the USB Driver. TIME_OF_ARRIVAL - Host (EPOCH) clock in User space. Frame transfer from the USB Driver to Librealsense.</p>
+<p>During runtime the SDK dynamically selects the most correct representaion, based on both device and host capabilities: In case the frame metadata is not configured:</p><ul>
+<li>The function call provides the TIME_OF_ARRIVAL stamp. In case the metadata is available the function returns:</li>
+<li><code>HW Timestamp</code> (SENSOR_TIMESTAMP), or</li>
+<li><code>Global Timestamp</code> Host-corrected derivative of <code>HW Timestamp</code> required for multi-sensor/device synchronization</li>
+<li>The user can select between the unmodified and the host-calculated Hardware Timestamp by toggling the <code>RS2_OPTION_GLOBAL_TIME_ENABLED</code> option. To query which of the three alternatives is active use <code><a class="el" href="classrs2_1_1frame.html#a21c0e6615083c0a8d667a05adf6db03e">get_frame_timestamp_domain()</a></code> function call <dl class="section return"><dt>Returns</dt><dd>the timestamp of the frame, in milliseconds according to the elaborated flow </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -536,6 +651,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Template function, checking if current instance is the type of another class </p><dl class="section return"><dt>Returns</dt><dd>bool - true or false. </dd></dl>
 
 </div>
 </div>
@@ -561,6 +677,7 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>keep the frame, otherwise if no refernce to the frame, the frame will be released. </p>
 
 </div>
 </div>
@@ -583,6 +700,32 @@ template&lt;class T &gt; </div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Parenthesis operator check if internal frame handle is valid. </p><dl class="section return"><dt>Returns</dt><dd>bool - true or false. </dd></dl>
+
+</div>
+</div>
+<a id="a9e5311820f1598730ccb588e1a379c10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e5311820f1598730ccb588e1a379c10">&#9670;&nbsp;</a></span>operator rs2_frame *()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rs2::frame::operator <a class="el" href="rs__types_8h.html#af280a50e5484323c1b20b76eda3d370d">rs2_frame</a> * </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -612,6 +755,12 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Change the internal frame handle to the one in parameter, the function exchange the internal frame handle. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>other - another frame instance to be pointed to </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -696,6 +845,12 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Swap the internal frame handle with the one in parameter </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>other - another frame instance to be swaped </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -833,7 +988,7 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/jenkins_sys_rsbuild/workspace/LRS_doxygen/source/include/librealsense2/hpp/<a class="el" href="rs__frame_8hpp_source.html">rs_frame.hpp</a></li>
+<li>C:/jenkins_sys_rsbuild/workspace/LRS_doxygen_pipeline/source/include/librealsense2/hpp/<a class="el" href="rs__frame_8hpp_source.html">rs_frame.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
