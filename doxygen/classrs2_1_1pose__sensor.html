@@ -248,7 +248,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Extract SLAM localization map from device and store on host </p><dl class="section return"><dt>Returns</dt><dd>- localization map blob </dd></dl>
+<p>Get relocalization map that is currently on device, created and updated during most recent tracking session. Can be called before or after <a class="el" href="classrs2_1_1sensor.html#a9680dd4fff95e14150c4bae324f1d805">stop()</a>. </p><dl class="section return"><dt>Returns</dt><dd>map data as a binary blob </dd></dl>
 
 </div>
 </div>
@@ -291,15 +291,15 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Retrieve a named reference frame anchored to a specific 3D pose </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Gets the current pose of a static node that was created in the current map or in an imported map. Static nodes of imported maps are available after relocalizing the imported map. The static node's pose is returned relative to the current origin of coordinates of device poses. Thus, poses of static nodes of an imported map are consistent with current device poses after relocalization. This function fails if the current tracker confidence is below 3 (high confidence). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">guid</td><td>String to designate the reference (limited to 127 chars) </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">pos</td><td>3D Pose position in meters </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">orient</td><td>3D Pose attitude (quaternion) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">guid</td><td>unique name of the static node (limited to 127 chars). </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pos</td><td>position of the static node in the 3D space. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">orient_quat</td><td>orientation of the static node in the 3D space, represented by a unit quaternion. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true on success </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if success. </dd></dl>
 
 </div>
 </div>
@@ -326,13 +326,13 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Load SLAM localization map from host to device </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Load relocalization map onto device. Only one relocalization map can be imported at a time; any previously existing map will be overwritten. The imported map exists simultaneously with the map created during the most tracking session after <a class="el" href="classrs2_1_1sensor.html#ad6de719ac45ed36e1c6213c5f4408e41">start()</a>, and they are merged after the imported map is relocalized. This operation must be done before <a class="el" href="classrs2_1_1sensor.html#ad6de719ac45ed36e1c6213c5f4408e41">start()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">lmap_buf</td><td>localization map blob </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lmap_buf</td><td>map data as a binary blob </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true on success </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if success </dd></dl>
 
 </div>
 </div>
@@ -400,15 +400,15 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Create a named reference frame anchored to a specific 3D pose </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Creates a named virtual landmark in the current map, known as static node. The static node's pose is provided relative to the origin of current coordinate system of device poses. This function fails if the current tracker confidence is below 3 (high confidence). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">guid</td><td>String to designate the reference (limited to 127 chars) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td>3D Pose position in meters </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">orient</td><td>3D Pose attitude (quaternion) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">guid</td><td>unique name of the static node (limited to 127 chars). If a static node with the same name already exists in the current map or the imported map, the static node is overwritten. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td>position of the static node in the 3D space. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">orient_quat</td><td>orientation of the static node in the 3D space, represented by a unit quaternion. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true on success </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if success. </dd></dl>
 
 </div>
 </div>
