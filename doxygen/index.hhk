@@ -223,7 +223,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structrs2__pose__stream.html#a80cc95775ab0f9150de14a1e7b1333d8"><param name="Name" value="rs2_pose_stream"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structrs2__video__stream.html#afaa4955a174c72cda7e81f3ae9d02d1e"><param name="Name" value="rs2_video_stream"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classrs2_1_1frameset.html#aa7a8cd6968c4fa75c7c4d77bc1c875c4"><param name="Name" value="foreach"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classrs2_1_1frameset.html#a7f0dca7b644868023ac31e7a546ff274"><param name="Name" value="foreach_rs"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classrs2_1_1stream__profile.html#a0464470f3c97b8ceb0cfaaf8f59b364d"><param name="Name" value="format"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classrs2_1_1stream__profile.html#a98c300cb3304233f6b53e3e405b964bc"><param name="Name" value="fps"></OBJECT>
   <UL>
@@ -970,7 +970,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classrs2_1_1frameset.html#a899233cacfa8a64078fb95573ec1ddda"><param name="Name" value="end"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classrs2_1_1frameset.html#ae78478b6b585a36d42b4316f8e12f64e"><param name="Name" value="first"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classrs2_1_1frameset.html#a0ed00a056eb31a53f106189989dd73b0"><param name="Name" value="first_or_default"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classrs2_1_1frameset.html#aa7a8cd6968c4fa75c7c4d77bc1c875c4"><param name="Name" value="foreach"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classrs2_1_1frameset.html#a7f0dca7b644868023ac31e7a546ff274"><param name="Name" value="foreach_rs"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classrs2_1_1frameset.html#ade2eec0ff61558d94f466ea386b1a462"><param name="Name" value="frameset"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classrs2_1_1frameset.html#a982d5e274eed193ba0a34151cbe5c00c"><param name="Name" value="get_color_frame"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classrs2_1_1frameset.html#ad47bc7437fc5ca4f23d6e5006665024c"><param name="Name" value="get_depth_frame"></OBJECT>
@@ -1876,6 +1876,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__types_8h.html#a5b8efd94f1165be36acea964bf3bdd8daa7837801771bf604a69533aa4dbf1f0c"><param name="Name" value="RS2_NOTIFICATION_CATEGORY_FRAMES_TIMEOUT"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__types_8h.html#a5b8efd94f1165be36acea964bf3bdd8daf807af475497f84043208ee858896a16"><param name="Name" value="RS2_NOTIFICATION_CATEGORY_HARDWARE_ERROR"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__types_8h.html#a5b8efd94f1165be36acea964bf3bdd8daae4400ee66d783823b6829fbf08f62ca"><param name="Name" value="RS2_NOTIFICATION_CATEGORY_HARDWARE_EVENT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__types_8h.html#a5b8efd94f1165be36acea964bf3bdd8da607e32badcb765d81c4234565d351203"><param name="Name" value="RS2_NOTIFICATION_CATEGORY_POSE_RELOCALIZATION"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__types_8h.html#ae5a5086c91241d2e1594ca45bf4bcbf7"><param name="Name" value="rs2_notification_category_to_string"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__types_8h.html#a5b8efd94f1165be36acea964bf3bdd8da95fd1a425f12f8350953853769873308"><param name="Name" value="RS2_NOTIFICATION_CATEGORY_UNKNOWN_ERROR"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structrs2__notifications__callback.html"><param name="Name" value="rs2_notifications_callback"></OBJECT>
@@ -2968,6 +2969,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__types_8h.html#a5b8efd94f1165be36acea964bf3bdd8daa7837801771bf604a69533aa4dbf1f0c"><param name="Name" value="RS2_NOTIFICATION_CATEGORY_FRAMES_TIMEOUT"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__types_8h.html#a5b8efd94f1165be36acea964bf3bdd8daf807af475497f84043208ee858896a16"><param name="Name" value="RS2_NOTIFICATION_CATEGORY_HARDWARE_ERROR"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__types_8h.html#a5b8efd94f1165be36acea964bf3bdd8daae4400ee66d783823b6829fbf08f62ca"><param name="Name" value="RS2_NOTIFICATION_CATEGORY_HARDWARE_EVENT"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__types_8h.html#a5b8efd94f1165be36acea964bf3bdd8da607e32badcb765d81c4234565d351203"><param name="Name" value="RS2_NOTIFICATION_CATEGORY_POSE_RELOCALIZATION"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__types_8h.html#ae5a5086c91241d2e1594ca45bf4bcbf7"><param name="Name" value="rs2_notification_category_to_string"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__types_8h.html#a5b8efd94f1165be36acea964bf3bdd8da95fd1a425f12f8350953853769873308"><param name="Name" value="RS2_NOTIFICATION_CATEGORY_UNKNOWN_ERROR"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__types_8h.html#ac4cfaf43c30c37843a3ac1d27d1ac870"><param name="Name" value="rs2_notifications_callback"></OBJECT>
