@@ -30,6 +30,7 @@ pyrealsense2.notification_category
       ~notification_category.frames_timeout
       ~notification_category.hardware_error
       ~notification_category.hardware_event
+      ~notification_category.pose_relocalization
       ~notification_category.unknown_error
    
    

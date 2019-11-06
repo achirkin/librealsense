@@ -26,6 +26,7 @@ pyrealsense2.option
    .. autosummary::
    
       ~option.accuracy
+      ~option.apd_temperature
       ~option.asic_temperature
       ~option.auto_exposure_converge_step
       ~option.auto_exposure_mode
@@ -35,12 +36,17 @@ pyrealsense2.option
       ~option.color_scheme
       ~option.confidence_threshold
       ~option.contrast
+      ~option.depth_offset
       ~option.depth_units
       ~option.emitter_enabled
       ~option.emitter_on_off
       ~option.enable_auto_exposure
       ~option.enable_auto_white_balance
+      ~option.enable_dynamic_calibration
+      ~option.enable_mapping
       ~option.enable_motion_correction
+      ~option.enable_pose_jumping
+      ~option.enable_relocalization
       ~option.error_polling_enabled
       ~option.exposure
       ~option.filter_magnitude

@@ -24,6 +24,7 @@ pyrealsense2.motion_frame
       ~motion_frame.as_pose_frame
       ~motion_frame.as_video_frame
       ~motion_frame.get_data
+      ~motion_frame.get_data_size
       ~motion_frame.get_frame_metadata
       ~motion_frame.get_frame_number
       ~motion_frame.get_frame_timestamp_domain

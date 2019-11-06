@@ -28,6 +28,7 @@ pyrealsense2.composite_frame
       ~composite_frame.foreach
       ~composite_frame.get_color_frame
       ~composite_frame.get_data
+      ~composite_frame.get_data_size
       ~composite_frame.get_depth_frame
       ~composite_frame.get_fisheye_frame
       ~composite_frame.get_frame_metadata

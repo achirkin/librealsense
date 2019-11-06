@@ -16,13 +16,28 @@ pyrealsense2.zero_order_invalidation
    .. autosummary::
    
       ~zero_order_invalidation.__init__
+      ~zero_order_invalidation.as_decimation_filter
+      ~zero_order_invalidation.as_disparity_transform
+      ~zero_order_invalidation.as_hole_filling_filter
+      ~zero_order_invalidation.as_spatial_filter
+      ~zero_order_invalidation.as_temporal_filter
+      ~zero_order_invalidation.as_threshold_filter
+      ~zero_order_invalidation.as_zero_order_invalidation
+      ~zero_order_invalidation.get_info
       ~zero_order_invalidation.get_option
       ~zero_order_invalidation.get_option_description
       ~zero_order_invalidation.get_option_range
       ~zero_order_invalidation.get_option_value_description
       ~zero_order_invalidation.get_supported_options
       ~zero_order_invalidation.invoke
+      ~zero_order_invalidation.is_decimation_filter
+      ~zero_order_invalidation.is_disparity_transform
+      ~zero_order_invalidation.is_hole_filling_filter
       ~zero_order_invalidation.is_option_read_only
+      ~zero_order_invalidation.is_spatial_filter
+      ~zero_order_invalidation.is_temporal_filter
+      ~zero_order_invalidation.is_threshold_filter
+      ~zero_order_invalidation.is_zero_order_invalidation
       ~zero_order_invalidation.process
       ~zero_order_invalidation.set_option
       ~zero_order_invalidation.start

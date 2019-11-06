@@ -34,8 +34,10 @@ pyrealsense2.extension
       ~extension.depth_stereo_sensor
       ~extension.disparity_filter
       ~extension.disparity_frame
+      ~extension.global_timer
       ~extension.hole_filling_filter
       ~extension.info
+      ~extension.l500_depth_sensor
       ~extension.motion
       ~extension.motion_frame
       ~extension.motion_profile
@@ -55,7 +57,10 @@ pyrealsense2.extension
       ~extension.temporal_filter
       ~extension.threshold_filter
       ~extension.tm2
+      ~extension.tm2_sensor
       ~extension.unknown
+      ~extension.updatable
+      ~extension.update_device
       ~extension.video
       ~extension.video_frame
       ~extension.video_profile

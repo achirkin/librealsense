@@ -22,6 +22,7 @@ pyrealsense2.context
       ~context.query_devices
       ~context.set_devices_changed_callback
       ~context.unload_device
+      ~context.unload_tracking_module
    
    
    

@@ -16,13 +16,28 @@ pyrealsense2.yuy_decoder
    .. autosummary::
    
       ~yuy_decoder.__init__
+      ~yuy_decoder.as_decimation_filter
+      ~yuy_decoder.as_disparity_transform
+      ~yuy_decoder.as_hole_filling_filter
+      ~yuy_decoder.as_spatial_filter
+      ~yuy_decoder.as_temporal_filter
+      ~yuy_decoder.as_threshold_filter
+      ~yuy_decoder.as_zero_order_invalidation
+      ~yuy_decoder.get_info
       ~yuy_decoder.get_option
       ~yuy_decoder.get_option_description
       ~yuy_decoder.get_option_range
       ~yuy_decoder.get_option_value_description
       ~yuy_decoder.get_supported_options
       ~yuy_decoder.invoke
+      ~yuy_decoder.is_decimation_filter
+      ~yuy_decoder.is_disparity_transform
+      ~yuy_decoder.is_hole_filling_filter
       ~yuy_decoder.is_option_read_only
+      ~yuy_decoder.is_spatial_filter
+      ~yuy_decoder.is_temporal_filter
+      ~yuy_decoder.is_threshold_filter
+      ~yuy_decoder.is_zero_order_invalidation
       ~yuy_decoder.process
       ~yuy_decoder.set_option
       ~yuy_decoder.start

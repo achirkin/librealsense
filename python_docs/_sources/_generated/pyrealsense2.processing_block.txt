@@ -16,6 +16,7 @@ pyrealsense2.processing_block
    .. autosummary::
    
       ~processing_block.__init__
+      ~processing_block.get_info
       ~processing_block.get_option
       ~processing_block.get_option_description
       ~processing_block.get_option_range

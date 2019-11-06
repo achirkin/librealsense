@@ -20,6 +20,8 @@ pyrealsense2.tm2
       ~tm2.as_playback
       ~tm2.as_recorder
       ~tm2.as_tm2
+      ~tm2.as_updatable
+      ~tm2.as_update_device
       ~tm2.connect_controller
       ~tm2.disable_loopback
       ~tm2.disconnect_controller
@@ -34,8 +36,15 @@ pyrealsense2.tm2
       ~tm2.is_playback
       ~tm2.is_recorder
       ~tm2.is_tm2
+      ~tm2.is_updatable
+      ~tm2.is_update_device
       ~tm2.query_sensors
+      ~tm2.reset_to_factory_calibration
+      ~tm2.set_extrinsics
+      ~tm2.set_intrinsics
+      ~tm2.set_motion_device_intrinsics
       ~tm2.supports
+      ~tm2.write_calibration
    
    
    

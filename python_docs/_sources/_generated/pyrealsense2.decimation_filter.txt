@@ -16,13 +16,28 @@ pyrealsense2.decimation_filter
    .. autosummary::
    
       ~decimation_filter.__init__
+      ~decimation_filter.as_decimation_filter
+      ~decimation_filter.as_disparity_transform
+      ~decimation_filter.as_hole_filling_filter
+      ~decimation_filter.as_spatial_filter
+      ~decimation_filter.as_temporal_filter
+      ~decimation_filter.as_threshold_filter
+      ~decimation_filter.as_zero_order_invalidation
+      ~decimation_filter.get_info
       ~decimation_filter.get_option
       ~decimation_filter.get_option_description
       ~decimation_filter.get_option_range
       ~decimation_filter.get_option_value_description
       ~decimation_filter.get_supported_options
       ~decimation_filter.invoke
+      ~decimation_filter.is_decimation_filter
+      ~decimation_filter.is_disparity_transform
+      ~decimation_filter.is_hole_filling_filter
       ~decimation_filter.is_option_read_only
+      ~decimation_filter.is_spatial_filter
+      ~decimation_filter.is_temporal_filter
+      ~decimation_filter.is_threshold_filter
+      ~decimation_filter.is_zero_order_invalidation
       ~decimation_filter.process
       ~decimation_filter.set_option
       ~decimation_filter.start

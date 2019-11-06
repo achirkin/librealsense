@@ -26,6 +26,7 @@ pyrealsense2.video_frame
       ~video_frame.get_bits_per_pixel
       ~video_frame.get_bytes_per_pixel
       ~video_frame.get_data
+      ~video_frame.get_data_size
       ~video_frame.get_frame_metadata
       ~video_frame.get_frame_number
       ~video_frame.get_frame_timestamp_domain

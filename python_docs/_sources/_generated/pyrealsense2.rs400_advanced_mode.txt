@@ -17,6 +17,7 @@ pyrealsense2.rs400_advanced_mode
    
       ~rs400_advanced_mode.__init__
       ~rs400_advanced_mode.get_ae_control
+      ~rs400_advanced_mode.get_amp_factor
       ~rs400_advanced_mode.get_census
       ~rs400_advanced_mode.get_color_control
       ~rs400_advanced_mode.get_color_correction
@@ -32,6 +33,7 @@ pyrealsense2.rs400_advanced_mode
       ~rs400_advanced_mode.load_json
       ~rs400_advanced_mode.serialize_json
       ~rs400_advanced_mode.set_ae_control
+      ~rs400_advanced_mode.set_amp_factor
       ~rs400_advanced_mode.set_census
       ~rs400_advanced_mode.set_color_control
       ~rs400_advanced_mode.set_color_correction

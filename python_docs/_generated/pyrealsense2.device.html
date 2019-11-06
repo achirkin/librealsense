@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>pyrealsense2.device &mdash; pyrealsense2 2.22.0 documentation</title>
+    <title>pyrealsense2.device &mdash; pyrealsense2 2.30.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.22.0',
+        VERSION:     '2.30.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="pyrealsense2 2.22.0 documentation" href="../index.html" /> 
+    <link rel="top" title="pyrealsense2 2.30.0 documentation" href="../index.html" /> 
   </head>
   <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
@@ -35,7 +35,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.22.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.30.0 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -76,6 +76,12 @@
 <tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.device.as_tm2" title="pyrealsense2.device.as_tm2"><code class="xref py py-obj docutils literal"><span class="pre">as_tm2</span></code></a>((self:&nbsp;pyrealsense2.device)&nbsp;-&gt;&nbsp;rs2::tm2)</td>
 <td></td>
 </tr>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.device.as_updatable" title="pyrealsense2.device.as_updatable"><code class="xref py py-obj docutils literal"><span class="pre">as_updatable</span></code></a>(...)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.device.as_update_device" title="pyrealsense2.device.as_update_device"><code class="xref py py-obj docutils literal"><span class="pre">as_update_device</span></code></a>(...)</td>
+<td></td>
+</tr>
 <tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.device.first_depth_sensor" title="pyrealsense2.device.first_depth_sensor"><code class="xref py py-obj docutils literal"><span class="pre">first_depth_sensor</span></code></a>(...)</td>
 <td></td>
 </tr>
@@ -101,6 +107,12 @@
 <td></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.device.is_tm2" title="pyrealsense2.device.is_tm2"><code class="xref py py-obj docutils literal"><span class="pre">is_tm2</span></code></a>((self:&nbsp;pyrealsense2.device)&nbsp;-&gt;&nbsp;bool)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.device.is_updatable" title="pyrealsense2.device.is_updatable"><code class="xref py py-obj docutils literal"><span class="pre">is_updatable</span></code></a>((self:&nbsp;pyrealsense2.device)&nbsp;-&gt;&nbsp;bool)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.device.is_update_device" title="pyrealsense2.device.is_update_device"><code class="xref py py-obj docutils literal"><span class="pre">is_update_device</span></code></a>(...)</td>
 <td></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.device.query_sensors" title="pyrealsense2.device.query_sensors"><code class="xref py py-obj docutils literal"><span class="pre">query_sensors</span></code></a>(...)</td>
@@ -144,18 +156,28 @@
 <dd></dd></dl>
 
 <dl class="method">
+<dt id="pyrealsense2.device.as_updatable">
+<code class="descname">as_updatable</code><span class="sig-paren">(</span><em>self: pyrealsense2.device</em><span class="sig-paren">)</span> &rarr; rs2::updatable<a class="headerlink" href="#pyrealsense2.device.as_updatable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrealsense2.device.as_update_device">
+<code class="descname">as_update_device</code><span class="sig-paren">(</span><em>self: pyrealsense2.device</em><span class="sig-paren">)</span> &rarr; rs2::update_device<a class="headerlink" href="#pyrealsense2.device.as_update_device" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
 <dt id="pyrealsense2.device.first_depth_sensor">
-<code class="descname">first_depth_sensor</code><span class="sig-paren">(</span><em>self: pyrealsense2.device</em><span class="sig-paren">)</span> &rarr; rs2::depth_sensor<a class="headerlink" href="#pyrealsense2.device.first_depth_sensor" title="Permalink to this definition">¶</a></dt>
+<code class="descname">first_depth_sensor</code><span class="sig-paren">(</span><em>self: pyrealsense2.device</em><span class="sig-paren">)</span> &rarr; pyrealsense2.depth_sensor<a class="headerlink" href="#pyrealsense2.device.first_depth_sensor" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="pyrealsense2.device.first_pose_sensor">
-<code class="descname">first_pose_sensor</code><span class="sig-paren">(</span><em>self: pyrealsense2.device</em><span class="sig-paren">)</span> &rarr; rs2::pose_sensor<a class="headerlink" href="#pyrealsense2.device.first_pose_sensor" title="Permalink to this definition">¶</a></dt>
+<code class="descname">first_pose_sensor</code><span class="sig-paren">(</span><em>self: pyrealsense2.device</em><span class="sig-paren">)</span> &rarr; pyrealsense2.pose_sensor<a class="headerlink" href="#pyrealsense2.device.first_pose_sensor" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="pyrealsense2.device.first_roi_sensor">
-<code class="descname">first_roi_sensor</code><span class="sig-paren">(</span><em>self: pyrealsense2.device</em><span class="sig-paren">)</span> &rarr; rs2::roi_sensor<a class="headerlink" href="#pyrealsense2.device.first_roi_sensor" title="Permalink to this definition">¶</a></dt>
+<code class="descname">first_roi_sensor</code><span class="sig-paren">(</span><em>self: pyrealsense2.device</em><span class="sig-paren">)</span> &rarr; pyrealsense2.roi_sensor<a class="headerlink" href="#pyrealsense2.device.first_roi_sensor" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -191,8 +213,18 @@
 <dd></dd></dl>
 
 <dl class="method">
+<dt id="pyrealsense2.device.is_updatable">
+<code class="descname">is_updatable</code><span class="sig-paren">(</span><em>self: pyrealsense2.device</em><span class="sig-paren">)</span> &rarr; bool<a class="headerlink" href="#pyrealsense2.device.is_updatable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrealsense2.device.is_update_device">
+<code class="descname">is_update_device</code><span class="sig-paren">(</span><em>self: pyrealsense2.device</em><span class="sig-paren">)</span> &rarr; bool<a class="headerlink" href="#pyrealsense2.device.is_update_device" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
 <dt id="pyrealsense2.device.query_sensors">
-<code class="descname">query_sensors</code><span class="sig-paren">(</span><em>self: pyrealsense2.device</em><span class="sig-paren">)</span> &rarr; List[rs2::sensor]<a class="headerlink" href="#pyrealsense2.device.query_sensors" title="Permalink to this definition">¶</a></dt>
+<code class="descname">query_sensors</code><span class="sig-paren">(</span><em>self: pyrealsense2.device</em><span class="sig-paren">)</span> &rarr; List[pyrealsense2.sensor]<a class="headerlink" href="#pyrealsense2.device.query_sensors" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the list of adjacent devices, sharing the same physical parent composite device.</p>
 </dd></dl>
 
@@ -251,7 +283,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.22.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.30.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

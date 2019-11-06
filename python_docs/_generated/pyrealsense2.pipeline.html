@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>pyrealsense2.pipeline &mdash; pyrealsense2 2.22.0 documentation</title>
+    <title>pyrealsense2.pipeline &mdash; pyrealsense2 2.30.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.22.0',
+        VERSION:     '2.30.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="pyrealsense2 2.22.0 documentation" href="../index.html" /> 
+    <link rel="top" title="pyrealsense2 2.30.0 documentation" href="../index.html" /> 
   </head>
   <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
@@ -35,7 +35,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.22.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.30.0 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -56,7 +56,7 @@ The pipeline can manage computer vision modules, which are implemented as a proc
 The pipeline is the consumer of the processing block interface, while the application consumes the computer vision interface.</p>
 <dl class="method">
 <dt id="pyrealsense2.pipeline.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>self: pyrealsense2.pipeline</em>, <em>ctx: pyrealsense2.context=&lt;pyrealsense2.context object at 0x7fe312c4bc00&gt;</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#pyrealsense2.pipeline.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>self: pyrealsense2.pipeline</em>, <em>ctx: pyrealsense2.context=&lt;pyrealsense2.context object at 0x7f9f30386f48&gt;</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#pyrealsense2.pipeline.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>The caller can provide a context created by the application, usually for playback or testing purposes.</p>
 </dd></dl>
 
@@ -92,7 +92,7 @@ The pipeline is the consumer of the processing block interface, while the applic
 </table>
 <dl class="method">
 <dt id="pyrealsense2.pipeline.get_active_profile">
-<code class="descname">get_active_profile</code><span class="sig-paren">(</span><em>self: pyrealsense2.pipeline</em><span class="sig-paren">)</span> &rarr; rs2::pipeline_profile<a class="headerlink" href="#pyrealsense2.pipeline.get_active_profile" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_active_profile</code><span class="sig-paren">(</span><em>self: pyrealsense2.pipeline</em><span class="sig-paren">)</span> &rarr; pyrealsense2.pipeline_profile<a class="headerlink" href="#pyrealsense2.pipeline.get_active_profile" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -112,7 +112,15 @@ The application can maintain the frames handles to defer processing. However, if
 <code class="descname">start</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pyrealsense2.pipeline.start" title="Permalink to this definition">¶</a></dt>
 <dd><p>Overloaded function.</p>
 <ol class="arabic simple">
-<li>start(self: pyrealsense2.pipeline, config: rs2::config) -&gt; rs2::pipeline_profile</li>
+<li>start(self: pyrealsense2.pipeline) -&gt; pyrealsense2.pipeline_profile</li>
+</ol>
+<p>Start the pipeline streaming with its default configuration.
+The pipeline streaming loop captures samples from the device, and delivers them to the attached computer vision modules and processing blocks, according to each module requirements and threading model.
+During the loop execution, the application can access the camera streams by calling wait_for_frames() or poll_for_frames().
+The streaming loop runs until the pipeline is stopped.
+Starting the pipeline is possible only when it is not started. If the pipeline was started, an exception is raised.</p>
+<ol class="arabic simple" start="2">
+<li>start(self: pyrealsense2.pipeline, config: pyrealsense2.config) -&gt; pyrealsense2.pipeline_profile</li>
 </ol>
 <p>Start the pipeline streaming according to the configuraion.
 The pipeline streaming loop captures samples from the device, and delivers them to the attached computer vision modules and processing blocks, according to each module requirements and threading model.
@@ -123,26 +131,36 @@ The pipeline selects and activates the device upon start, according to configura
 When the rs2::config is provided to the method, the pipeline tries to activate the config resolve() result.
 If the application requests are conflicting with pipeline computer vision modules or no matching device is available on the platform, the method fails.
 Available configurations and devices may change between config resolve() call and pipeline start, in case devices are connected or disconnected, or another application acquires ownership of a device.</p>
-<ol class="arabic simple" start="2">
-<li>start(self: pyrealsense2.pipeline) -&gt; rs2::pipeline_profile</li>
-</ol>
-<p>Start the pipeline streaming with its default configuration.
-The pipeline streaming loop captures samples from the device, and delivers them to the attached computer vision modules and processing blocks, according to each module requirements and threading model.
-During the loop execution, the application can access the camera streams by calling wait_for_frames() or poll_for_frames().
-The streaming loop runs until the pipeline is stopped.
-Starting the pipeline is possible only when it is not started. If the pipeline was started, an exception is raised.</p>
 <ol class="arabic simple" start="3">
-<li>start(self: pyrealsense2.pipeline, callback: Callable[[pyrealsense2.frame], None]) -&gt; None</li>
+<li>start(self: pyrealsense2.pipeline, callback: Callable[[pyrealsense2.frame], None]) -&gt; pyrealsense2.pipeline_profile</li>
 </ol>
 <p>Start the pipeline streaming with its default configuration.
-The pipeline captures samples from the device, and delivers them to the through the provided frame callback.
+The pipeline captures samples from the device, and delivers them to the provided frame callback.
 Starting the pipeline is possible only when it is not started. If the pipeline was started, an exception is raised.
 When starting the pipeline with a callback both wait_for_frames() and poll_for_frames() will throw exception.</p>
 <ol class="arabic simple" start="4">
-<li>start(self: pyrealsense2.pipeline, config: rs2::config, callback: Callable[[pyrealsense2.frame], None]) -&gt; None</li>
+<li>start(self: pyrealsense2.pipeline, config: pyrealsense2.config, callback: Callable[[pyrealsense2.frame], None]) -&gt; pyrealsense2.pipeline_profile</li>
 </ol>
 <p>Start the pipeline streaming according to the configuraion.
-The pipeline captures samples from the device, and delivers them to the through the provided frame callback.
+The pipeline captures samples from the device, and delivers them to the provided frame callback.
+Starting the pipeline is possible only when it is not started. If the pipeline was started, an exception is raised.
+When starting the pipeline with a callback both wait_for_frames() and poll_for_frames() will throw exception.
+The pipeline selects and activates the device upon start, according to configuration or a default configuration.
+When the rs2::config is provided to the method, the pipeline tries to activate the config resolve() result.
+If the application requests are conflicting with pipeline computer vision modules or no matching device is available on the platform, the method fails.
+Available configurations and devices may change between config resolve() call and pipeline start, in case devices are connected or disconnected, or another application acquires ownership of a device.</p>
+<ol class="arabic simple" start="5">
+<li>start(self: pyrealsense2.pipeline, queue: pyrealsense2.frame_queue) -&gt; pyrealsense2.pipeline_profile</li>
+</ol>
+<p>Start the pipeline streaming with its default configuration.
+The pipeline captures samples from the device, and delivers them to the provided frame queue.
+Starting the pipeline is possible only when it is not started. If the pipeline was started, an exception is raised.
+When starting the pipeline with a callback both wait_for_frames() and poll_for_frames() will throw exception.</p>
+<ol class="arabic simple" start="6">
+<li>start(self: pyrealsense2.pipeline, config: pyrealsense2.config, queue: pyrealsense2.frame_queue) -&gt; pyrealsense2.pipeline_profile</li>
+</ol>
+<p>Start the pipeline streaming according to the configuraion.
+The pipeline captures samples from the device, and delivers them to the provided frame queue.
 Starting the pipeline is possible only when it is not started. If the pipeline was started, an exception is raised.
 When starting the pipeline with a callback both wait_for_frames() and poll_for_frames() will throw exception.
 The pipeline selects and activates the device upon start, according to configuration or a default configuration.
@@ -218,7 +236,7 @@ The application can maintain the frames handles to defer processing. However, if
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.22.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.30.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

@@ -16,13 +16,28 @@ pyrealsense2.align
    .. autosummary::
    
       ~align.__init__
+      ~align.as_decimation_filter
+      ~align.as_disparity_transform
+      ~align.as_hole_filling_filter
+      ~align.as_spatial_filter
+      ~align.as_temporal_filter
+      ~align.as_threshold_filter
+      ~align.as_zero_order_invalidation
+      ~align.get_info
       ~align.get_option
       ~align.get_option_description
       ~align.get_option_range
       ~align.get_option_value_description
       ~align.get_supported_options
       ~align.invoke
+      ~align.is_decimation_filter
+      ~align.is_disparity_transform
+      ~align.is_hole_filling_filter
       ~align.is_option_read_only
+      ~align.is_spatial_filter
+      ~align.is_temporal_filter
+      ~align.is_threshold_filter
+      ~align.is_zero_order_invalidation
       ~align.process
       ~align.set_option
       ~align.start

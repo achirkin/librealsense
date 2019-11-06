@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>pyrealsense2.frame_source &mdash; pyrealsense2 2.22.0 documentation</title>
+    <title>pyrealsense2.frame_source &mdash; pyrealsense2 2.30.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.22.0',
+        VERSION:     '2.30.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="pyrealsense2 2.22.0 documentation" href="../index.html" /> 
+    <link rel="top" title="pyrealsense2 2.30.0 documentation" href="../index.html" /> 
   </head>
   <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
@@ -35,7 +35,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.22.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.30.0 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -70,7 +70,7 @@
 <td></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame_source.allocate_video_frame" title="pyrealsense2.frame_source.allocate_video_frame"><code class="xref py py-obj docutils literal"><span class="pre">allocate_video_frame</span></code></a>(...)</td>
-<td></td>
+<td>Allocate a new video frame with given params</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame_source.frame_ready" title="pyrealsense2.frame_source.frame_ready"><code class="xref py py-obj docutils literal"><span class="pre">frame_ready</span></code></a>(...)</td>
 <td>Invoke the callback funtion informing the frame is ready.</td>
@@ -85,13 +85,14 @@
 
 <dl class="method">
 <dt id="pyrealsense2.frame_source.allocate_points">
-<code class="descname">allocate_points</code><span class="sig-paren">(</span><em>self: pyrealsense2.frame_source</em>, <em>profile: rs2::stream_profile</em>, <em>original: pyrealsense2.frame</em><span class="sig-paren">)</span> &rarr; pyrealsense2.frame<a class="headerlink" href="#pyrealsense2.frame_source.allocate_points" title="Permalink to this definition">¶</a></dt>
+<code class="descname">allocate_points</code><span class="sig-paren">(</span><em>self: pyrealsense2.frame_source</em>, <em>profile: pyrealsense2.stream_profile</em>, <em>original: pyrealsense2.frame</em><span class="sig-paren">)</span> &rarr; pyrealsense2.frame<a class="headerlink" href="#pyrealsense2.frame_source.allocate_points" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="pyrealsense2.frame_source.allocate_video_frame">
-<code class="descname">allocate_video_frame</code><span class="sig-paren">(</span><em>self: pyrealsense2.frame_source</em>, <em>Allocate a new video frame with given paramsprofile: rs2::stream_profile</em>, <em>original: pyrealsense2.frame</em>, <em>new_bpp: int=0</em>, <em>new_width: int=0</em>, <em>new_height: int=0</em>, <em>new_stride: int=0</em>, <em>frame_type: pyrealsense2.extension=extension.video_frame</em><span class="sig-paren">)</span> &rarr; pyrealsense2.frame<a class="headerlink" href="#pyrealsense2.frame_source.allocate_video_frame" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<code class="descname">allocate_video_frame</code><span class="sig-paren">(</span><em>self: pyrealsense2.frame_source</em>, <em>profile: pyrealsense2.stream_profile</em>, <em>original: pyrealsense2.frame</em>, <em>new_bpp: int=0</em>, <em>new_width: int=0</em>, <em>new_height: int=0</em>, <em>new_stride: int=0</em>, <em>frame_type: pyrealsense2.extension=extension.video_frame</em><span class="sig-paren">)</span> &rarr; pyrealsense2.frame<a class="headerlink" href="#pyrealsense2.frame_source.allocate_video_frame" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allocate a new video frame with given params</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="pyrealsense2.frame_source.frame_ready">
@@ -142,7 +143,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.22.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.30.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

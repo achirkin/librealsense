@@ -29,6 +29,7 @@ pyrealsense2
    
       BufData
       STAEControl
+      STAFactor
       STCensusRadius
       STColorControl
       STColorCorrection
@@ -50,8 +51,10 @@ pyrealsense2
       decimation_filter
       depth_frame
       depth_sensor
+      depth_stereo_sensor
       device
       device_list
+      disparity_frame
       disparity_transform
       distortion
       event_information
@@ -85,6 +88,7 @@ pyrealsense2
       pose
       pose_frame
       pose_sensor
+      pose_stream_profile
       processing_block
       quaternion
       recorder
@@ -102,6 +106,9 @@ pyrealsense2
       threshold_filter
       timestamp_domain
       tm2
+      units_transform
+      updatable
+      update_device
       vector
       vertex
       video_frame

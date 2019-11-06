@@ -16,14 +16,29 @@ pyrealsense2.pointcloud
    .. autosummary::
    
       ~pointcloud.__init__
+      ~pointcloud.as_decimation_filter
+      ~pointcloud.as_disparity_transform
+      ~pointcloud.as_hole_filling_filter
+      ~pointcloud.as_spatial_filter
+      ~pointcloud.as_temporal_filter
+      ~pointcloud.as_threshold_filter
+      ~pointcloud.as_zero_order_invalidation
       ~pointcloud.calculate
+      ~pointcloud.get_info
       ~pointcloud.get_option
       ~pointcloud.get_option_description
       ~pointcloud.get_option_range
       ~pointcloud.get_option_value_description
       ~pointcloud.get_supported_options
       ~pointcloud.invoke
+      ~pointcloud.is_decimation_filter
+      ~pointcloud.is_disparity_transform
+      ~pointcloud.is_hole_filling_filter
       ~pointcloud.is_option_read_only
+      ~pointcloud.is_spatial_filter
+      ~pointcloud.is_temporal_filter
+      ~pointcloud.is_threshold_filter
+      ~pointcloud.is_zero_order_invalidation
       ~pointcloud.map_to
       ~pointcloud.process
       ~pointcloud.set_option

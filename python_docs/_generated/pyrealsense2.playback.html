@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>pyrealsense2.playback &mdash; pyrealsense2 2.22.0 documentation</title>
+    <title>pyrealsense2.playback &mdash; pyrealsense2 2.30.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.22.0',
+        VERSION:     '2.30.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="pyrealsense2 2.22.0 documentation" href="../index.html" /> 
+    <link rel="top" title="pyrealsense2 2.30.0 documentation" href="../index.html" /> 
   </head>
   <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
@@ -35,7 +35,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.22.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.30.0 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -74,6 +74,12 @@
 <td></td>
 </tr>
 <tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">as_tm2</span></code>((self:&nbsp;pyrealsense2.device)&nbsp;-&gt;&nbsp;rs2::tm2)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">as_updatable</span></code>(...)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">as_update_device</span></code>(...)</td>
 <td></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.playback.current_status" title="pyrealsense2.playback.current_status"><code class="xref py py-obj docutils literal"><span class="pre">current_status</span></code></a>(...)</td>
@@ -118,6 +124,12 @@
 <tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">is_tm2</span></code>((self:&nbsp;pyrealsense2.device)&nbsp;-&gt;&nbsp;bool)</td>
 <td></td>
 </tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">is_updatable</span></code>((self:&nbsp;pyrealsense2.device)&nbsp;-&gt;&nbsp;bool)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">is_update_device</span></code>(...)</td>
+<td></td>
+</tr>
 <tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.playback.pause" title="pyrealsense2.playback.pause"><code class="xref py py-obj docutils literal"><span class="pre">pause</span></code></a>((self:&nbsp;pyrealsense2.playback)&nbsp;-&gt;&nbsp;None)</td>
 <td>Pauses the playback.</td>
 </tr>
@@ -128,10 +140,10 @@
 <td>Un-pauses the playback.</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.playback.seek" title="pyrealsense2.playback.seek"><code class="xref py py-obj docutils literal"><span class="pre">seek</span></code></a>((self:&nbsp;pyrealsense2.playback,&nbsp;...)</td>
-<td></td>
+<td>Sets the playback to a specified time point of the played data.</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.playback.set_real_time" title="pyrealsense2.playback.set_real_time"><code class="xref py py-obj docutils literal"><span class="pre">set_real_time</span></code></a>((self:&nbsp;pyrealsense2.playback,&nbsp;...)</td>
-<td></td>
+<td>Set the playback to work in real time or non real time.</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.playback.set_status_changed_callback" title="pyrealsense2.playback.set_status_changed_callback"><code class="xref py py-obj docutils literal"><span class="pre">set_status_changed_callback</span></code></a>(...)</td>
 <td>Register to receive callback from playback device upon its status changes.</td>
@@ -197,13 +209,15 @@
 
 <dl class="method">
 <dt id="pyrealsense2.playback.seek">
-<code class="descname">seek</code><span class="sig-paren">(</span><em>self: pyrealsense2.playback</em>, <em>Sets the playback to a specified time point of the played data.time: datetime.timedelta</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#pyrealsense2.playback.seek" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<code class="descname">seek</code><span class="sig-paren">(</span><em>self: pyrealsense2.playback</em>, <em>time: datetime.timedelta</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#pyrealsense2.playback.seek" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the playback to a specified time point of the played data.</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="pyrealsense2.playback.set_real_time">
-<code class="descname">set_real_time</code><span class="sig-paren">(</span><em>self: pyrealsense2.playback</em>, <em>Set the playback to work in real time or non real time. In real time mode</em>, <em>playback will play the same way the file was recorded. If the application takes too long to handle the callback</em>, <em>frames may be dropped. In non real time mode</em>, <em>playback will wait for each callback to finish handling the data before reading the next frame. In this mode no frames will be dropped</em>, <em>and the application controls the framerate of playback via callback duration.real_time: bool</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#pyrealsense2.playback.set_real_time" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<code class="descname">set_real_time</code><span class="sig-paren">(</span><em>self: pyrealsense2.playback</em>, <em>real_time: bool</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#pyrealsense2.playback.set_real_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the playback to work in real time or non real time. In real time mode, playback will play the same way the file was recorded. If the application takes too long to handle the callback, frames may be dropped. In non real time mode, playback will wait for each callback to finish handling the data before reading the next frame. In this mode no frames will be dropped, and the application controls the framerate of playback via callback duration.</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="pyrealsense2.playback.set_status_changed_callback">
@@ -254,7 +268,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.22.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.30.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

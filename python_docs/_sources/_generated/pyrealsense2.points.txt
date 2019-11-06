@@ -25,6 +25,7 @@ pyrealsense2.points
       ~points.as_video_frame
       ~points.export_to_ply
       ~points.get_data
+      ~points.get_data_size
       ~points.get_frame_metadata
       ~points.get_frame_number
       ~points.get_frame_timestamp_domain

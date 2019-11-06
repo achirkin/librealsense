@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>pyrealsense2.context &mdash; pyrealsense2 2.22.0 documentation</title>
+    <title>pyrealsense2.context &mdash; pyrealsense2 2.30.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.22.0',
+        VERSION:     '2.30.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="pyrealsense2 2.22.0 documentation" href="../index.html" /> 
+    <link rel="top" title="pyrealsense2 2.30.0 documentation" href="../index.html" /> 
   </head>
   <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
@@ -35,7 +35,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.22.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.30.0 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -68,8 +68,8 @@
 <tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.context.get_sensor_parent" title="pyrealsense2.context.get_sensor_parent"><code class="xref py py-obj docutils literal"><span class="pre">get_sensor_parent</span></code></a>(...)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.context.load_device" title="pyrealsense2.context.load_device"><code class="xref py py-obj docutils literal"><span class="pre">load_device</span></code></a></td>
-<td>load_device(self: pyrealsense2.context, Creates a devices from a RealSense file.</td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.context.load_device" title="pyrealsense2.context.load_device"><code class="xref py py-obj docutils literal"><span class="pre">load_device</span></code></a>((self:&nbsp;pyrealsense2.context,&nbsp;...)</td>
+<td>Creates a devices from a RealSense file.</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.context.query_all_sensors" title="pyrealsense2.context.query_all_sensors"><code class="xref py py-obj docutils literal"><span class="pre">query_all_sensors</span></code></a>(...)</td>
 <td>Generate a flat list of all available sensors from all RealSense devices.</td>
@@ -81,6 +81,9 @@
 <td>Register devices changed callback.</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.context.unload_device" title="pyrealsense2.context.unload_device"><code class="xref py py-obj docutils literal"><span class="pre">unload_device</span></code></a>((self:&nbsp;pyrealsense2.context,&nbsp;...)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.context.unload_tracking_module" title="pyrealsense2.context.unload_tracking_module"><code class="xref py py-obj docutils literal"><span class="pre">unload_tracking_module</span></code></a>(...)</td>
 <td></td>
 </tr>
 </tbody>
@@ -108,25 +111,25 @@
 
 <dl class="method">
 <dt id="pyrealsense2.context.get_sensor_parent">
-<code class="descname">get_sensor_parent</code><span class="sig-paren">(</span><em>self: pyrealsense2.context</em>, <em>s: rs2::sensor</em><span class="sig-paren">)</span> &rarr; rs2::device<a class="headerlink" href="#pyrealsense2.context.get_sensor_parent" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_sensor_parent</code><span class="sig-paren">(</span><em>self: pyrealsense2.context</em>, <em>s: pyrealsense2.sensor</em><span class="sig-paren">)</span> &rarr; pyrealsense2.device<a class="headerlink" href="#pyrealsense2.context.get_sensor_parent" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="pyrealsense2.context.load_device">
-<code class="descname">load_device</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrealsense2.context.load_device" title="Permalink to this definition">¶</a></dt>
-<dd><p>load_device(self: pyrealsense2.context, Creates a devices from a RealSense file.
-On successful load, the device will be appended to the context and a devices_changed event triggered.filename: str) -&gt; rs2::playback</p>
+<code class="descname">load_device</code><span class="sig-paren">(</span><em>self: pyrealsense2.context</em>, <em>filename: str</em><span class="sig-paren">)</span> &rarr; pyrealsense2.playback<a class="headerlink" href="#pyrealsense2.context.load_device" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a devices from a RealSense file.
+On successful load, the device will be appended to the context and a devices_changed event triggered.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="pyrealsense2.context.query_all_sensors">
-<code class="descname">query_all_sensors</code><span class="sig-paren">(</span><em>self: pyrealsense2.context</em><span class="sig-paren">)</span> &rarr; List[rs2::sensor]<a class="headerlink" href="#pyrealsense2.context.query_all_sensors" title="Permalink to this definition">¶</a></dt>
+<code class="descname">query_all_sensors</code><span class="sig-paren">(</span><em>self: pyrealsense2.context</em><span class="sig-paren">)</span> &rarr; List[pyrealsense2.sensor]<a class="headerlink" href="#pyrealsense2.context.query_all_sensors" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generate a flat list of all available sensors from all RealSense devices.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="pyrealsense2.context.query_devices">
-<code class="descname">query_devices</code><span class="sig-paren">(</span><em>self: pyrealsense2.context</em><span class="sig-paren">)</span> &rarr; rs2::device_list<a class="headerlink" href="#pyrealsense2.context.query_devices" title="Permalink to this definition">¶</a></dt>
+<code class="descname">query_devices</code><span class="sig-paren">(</span><em>self: pyrealsense2.context</em><span class="sig-paren">)</span> &rarr; pyrealsense2.device_list<a class="headerlink" href="#pyrealsense2.context.query_devices" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a static snapshot of all connected devices at the time of the call.</p>
 </dd></dl>
 
@@ -138,13 +141,18 @@ On successful load, the device will be appended to the context and a devices_cha
 
 <dl class="method">
 <dt id="pyrealsense2.context.set_devices_changed_callback">
-<code class="descname">set_devices_changed_callback</code><span class="sig-paren">(</span><em>self: pyrealsense2.context, callback: Callable[[rs2::event_information], None]</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#pyrealsense2.context.set_devices_changed_callback" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set_devices_changed_callback</code><span class="sig-paren">(</span><em>self: pyrealsense2.context, callback: Callable[[pyrealsense2.event_information], None]</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#pyrealsense2.context.set_devices_changed_callback" title="Permalink to this definition">¶</a></dt>
 <dd><p>Register devices changed callback.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="pyrealsense2.context.unload_device">
 <code class="descname">unload_device</code><span class="sig-paren">(</span><em>self: pyrealsense2.context</em>, <em>filename: str</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#pyrealsense2.context.unload_device" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrealsense2.context.unload_tracking_module">
+<code class="descname">unload_tracking_module</code><span class="sig-paren">(</span><em>self: pyrealsense2.context</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#pyrealsense2.context.unload_tracking_module" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -190,7 +198,7 @@ On successful load, the device will be appended to the context and a devices_cha
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.22.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.30.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

@@ -20,6 +20,8 @@ pyrealsense2.device
       ~device.as_playback
       ~device.as_recorder
       ~device.as_tm2
+      ~device.as_updatable
+      ~device.as_update_device
       ~device.first_depth_sensor
       ~device.first_pose_sensor
       ~device.first_roi_sensor
@@ -29,6 +31,8 @@ pyrealsense2.device
       ~device.is_playback
       ~device.is_recorder
       ~device.is_tm2
+      ~device.is_updatable
+      ~device.is_update_device
       ~device.query_sensors
       ~device.supports
    

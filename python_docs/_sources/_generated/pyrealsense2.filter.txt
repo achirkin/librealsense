@@ -16,13 +16,28 @@ pyrealsense2.filter
    .. autosummary::
    
       ~filter.__init__
+      ~filter.as_decimation_filter
+      ~filter.as_disparity_transform
+      ~filter.as_hole_filling_filter
+      ~filter.as_spatial_filter
+      ~filter.as_temporal_filter
+      ~filter.as_threshold_filter
+      ~filter.as_zero_order_invalidation
+      ~filter.get_info
       ~filter.get_option
       ~filter.get_option_description
       ~filter.get_option_range
       ~filter.get_option_value_description
       ~filter.get_supported_options
       ~filter.invoke
+      ~filter.is_decimation_filter
+      ~filter.is_disparity_transform
+      ~filter.is_hole_filling_filter
       ~filter.is_option_read_only
+      ~filter.is_spatial_filter
+      ~filter.is_temporal_filter
+      ~filter.is_threshold_filter
+      ~filter.is_zero_order_invalidation
       ~filter.process
       ~filter.set_option
       ~filter.start

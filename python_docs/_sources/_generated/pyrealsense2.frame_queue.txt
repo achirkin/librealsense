@@ -18,6 +18,7 @@ pyrealsense2.frame_queue
       ~frame_queue.__init__
       ~frame_queue.capacity
       ~frame_queue.enqueue
+      ~frame_queue.keep_frames
       ~frame_queue.poll_for_frame
       ~frame_queue.try_wait_for_frame
       ~frame_queue.wait_for_frame

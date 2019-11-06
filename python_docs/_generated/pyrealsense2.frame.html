@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>pyrealsense2.frame &mdash; pyrealsense2 2.22.0 documentation</title>
+    <title>pyrealsense2.frame &mdash; pyrealsense2 2.30.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.22.0',
+        VERSION:     '2.30.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="pyrealsense2 2.22.0 documentation" href="../index.html" /> 
+    <link rel="top" title="pyrealsense2 2.30.0 documentation" href="../index.html" /> 
   </head>
   <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
@@ -35,7 +35,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.22.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.30.0 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -94,49 +94,52 @@
 <tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame.get_data" title="pyrealsense2.frame.get_data"><code class="xref py py-obj docutils literal"><span class="pre">get_data</span></code></a>(...)</td>
 <td>Retrieve data from the frame handle.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame.get_frame_metadata" title="pyrealsense2.frame.get_frame_metadata"><code class="xref py py-obj docutils literal"><span class="pre">get_frame_metadata</span></code></a>(...)</td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame.get_data_size" title="pyrealsense2.frame.get_data_size"><code class="xref py py-obj docutils literal"><span class="pre">get_data_size</span></code></a>((self:&nbsp;pyrealsense2.frame)&nbsp;-&gt;&nbsp;int)</td>
+<td>Retrieve data size from frame handle.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame.get_frame_metadata" title="pyrealsense2.frame.get_frame_metadata"><code class="xref py py-obj docutils literal"><span class="pre">get_frame_metadata</span></code></a>(...)</td>
 <td>Retrieve the current value of a single frame_metadata.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame.get_frame_number" title="pyrealsense2.frame.get_frame_number"><code class="xref py py-obj docutils literal"><span class="pre">get_frame_number</span></code></a>(...)</td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame.get_frame_number" title="pyrealsense2.frame.get_frame_number"><code class="xref py py-obj docutils literal"><span class="pre">get_frame_number</span></code></a>(...)</td>
 <td>Retrieve the frame number.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame.get_frame_timestamp_domain" title="pyrealsense2.frame.get_frame_timestamp_domain"><code class="xref py py-obj docutils literal"><span class="pre">get_frame_timestamp_domain</span></code></a>(...)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame.get_frame_timestamp_domain" title="pyrealsense2.frame.get_frame_timestamp_domain"><code class="xref py py-obj docutils literal"><span class="pre">get_frame_timestamp_domain</span></code></a>(...)</td>
 <td>Retrieve the timestamp domain.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame.get_profile" title="pyrealsense2.frame.get_profile"><code class="xref py py-obj docutils literal"><span class="pre">get_profile</span></code></a>(...)</td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame.get_profile" title="pyrealsense2.frame.get_profile"><code class="xref py py-obj docutils literal"><span class="pre">get_profile</span></code></a>(...)</td>
 <td>Retrieve stream profile from frame handle.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame.get_timestamp" title="pyrealsense2.frame.get_timestamp"><code class="xref py py-obj docutils literal"><span class="pre">get_timestamp</span></code></a>(...)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame.get_timestamp" title="pyrealsense2.frame.get_timestamp"><code class="xref py py-obj docutils literal"><span class="pre">get_timestamp</span></code></a>(...)</td>
 <td>Retrieve the time at which the frame was captured</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame.is_depth_frame" title="pyrealsense2.frame.is_depth_frame"><code class="xref py py-obj docutils literal"><span class="pre">is_depth_frame</span></code></a>(...)</td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame.is_depth_frame" title="pyrealsense2.frame.is_depth_frame"><code class="xref py py-obj docutils literal"><span class="pre">is_depth_frame</span></code></a>(...)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame.is_frame" title="pyrealsense2.frame.is_frame"><code class="xref py py-obj docutils literal"><span class="pre">is_frame</span></code></a>((self:&nbsp;pyrealsense2.frame)&nbsp;-&gt;&nbsp;bool)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame.is_frame" title="pyrealsense2.frame.is_frame"><code class="xref py py-obj docutils literal"><span class="pre">is_frame</span></code></a>((self:&nbsp;pyrealsense2.frame)&nbsp;-&gt;&nbsp;bool)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame.is_frameset" title="pyrealsense2.frame.is_frameset"><code class="xref py py-obj docutils literal"><span class="pre">is_frameset</span></code></a>((self:&nbsp;pyrealsense2.frame)&nbsp;-&gt;&nbsp;bool)</td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame.is_frameset" title="pyrealsense2.frame.is_frameset"><code class="xref py py-obj docutils literal"><span class="pre">is_frameset</span></code></a>((self:&nbsp;pyrealsense2.frame)&nbsp;-&gt;&nbsp;bool)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame.is_motion_frame" title="pyrealsense2.frame.is_motion_frame"><code class="xref py py-obj docutils literal"><span class="pre">is_motion_frame</span></code></a>(...)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame.is_motion_frame" title="pyrealsense2.frame.is_motion_frame"><code class="xref py py-obj docutils literal"><span class="pre">is_motion_frame</span></code></a>(...)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame.is_points" title="pyrealsense2.frame.is_points"><code class="xref py py-obj docutils literal"><span class="pre">is_points</span></code></a>((self:&nbsp;pyrealsense2.frame)&nbsp;-&gt;&nbsp;bool)</td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame.is_points" title="pyrealsense2.frame.is_points"><code class="xref py py-obj docutils literal"><span class="pre">is_points</span></code></a>((self:&nbsp;pyrealsense2.frame)&nbsp;-&gt;&nbsp;bool)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame.is_pose_frame" title="pyrealsense2.frame.is_pose_frame"><code class="xref py py-obj docutils literal"><span class="pre">is_pose_frame</span></code></a>((self:&nbsp;pyrealsense2.frame)&nbsp;-&gt;&nbsp;bool)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame.is_pose_frame" title="pyrealsense2.frame.is_pose_frame"><code class="xref py py-obj docutils literal"><span class="pre">is_pose_frame</span></code></a>((self:&nbsp;pyrealsense2.frame)&nbsp;-&gt;&nbsp;bool)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame.is_video_frame" title="pyrealsense2.frame.is_video_frame"><code class="xref py py-obj docutils literal"><span class="pre">is_video_frame</span></code></a>(...)</td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame.is_video_frame" title="pyrealsense2.frame.is_video_frame"><code class="xref py py-obj docutils literal"><span class="pre">is_video_frame</span></code></a>(...)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame.keep" title="pyrealsense2.frame.keep"><code class="xref py py-obj docutils literal"><span class="pre">keep</span></code></a>((self:&nbsp;pyrealsense2.frame)&nbsp;-&gt;&nbsp;None)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame.keep" title="pyrealsense2.frame.keep"><code class="xref py py-obj docutils literal"><span class="pre">keep</span></code></a>((self:&nbsp;pyrealsense2.frame)&nbsp;-&gt;&nbsp;None)</td>
 <td>Keep the frame, otherwise if no refernce to the frame, the frame will be released.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame.supports_frame_metadata" title="pyrealsense2.frame.supports_frame_metadata"><code class="xref py py-obj docutils literal"><span class="pre">supports_frame_metadata</span></code></a>(...)</td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame.supports_frame_metadata" title="pyrealsense2.frame.supports_frame_metadata"><code class="xref py py-obj docutils literal"><span class="pre">supports_frame_metadata</span></code></a>(...)</td>
 <td>Determine if the device allows a specific metadata to be queried.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame.swap" title="pyrealsense2.frame.swap"><code class="xref py py-obj docutils literal"><span class="pre">swap</span></code></a>((self:&nbsp;pyrealsense2.frame,&nbsp;...)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame.swap" title="pyrealsense2.frame.swap"><code class="xref py py-obj docutils literal"><span class="pre">swap</span></code></a>((self:&nbsp;pyrealsense2.frame,&nbsp;...)</td>
 <td>Swap the internal frame handle with the one in parameter</td>
 </tr>
 </tbody>
@@ -225,6 +228,12 @@
 </dd></dl>
 
 <dl class="method">
+<dt id="pyrealsense2.frame.get_data_size">
+<code class="descname">get_data_size</code><span class="sig-paren">(</span><em>self: pyrealsense2.frame</em><span class="sig-paren">)</span> &rarr; int<a class="headerlink" href="#pyrealsense2.frame.get_data_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve data size from frame handle.</p>
+</dd></dl>
+
+<dl class="method">
 <dt id="pyrealsense2.frame.get_frame_metadata">
 <code class="descname">get_frame_metadata</code><span class="sig-paren">(</span><em>self: pyrealsense2.frame</em>, <em>frame_metadata: pyrealsense2.frame_metadata_value</em><span class="sig-paren">)</span> &rarr; int<a class="headerlink" href="#pyrealsense2.frame.get_frame_metadata" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieve the current value of a single frame_metadata.</p>
@@ -244,7 +253,7 @@
 
 <dl class="method">
 <dt id="pyrealsense2.frame.get_profile">
-<code class="descname">get_profile</code><span class="sig-paren">(</span><em>self: pyrealsense2.frame</em><span class="sig-paren">)</span> &rarr; rs2::stream_profile<a class="headerlink" href="#pyrealsense2.frame.get_profile" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_profile</code><span class="sig-paren">(</span><em>self: pyrealsense2.frame</em><span class="sig-paren">)</span> &rarr; pyrealsense2.stream_profile<a class="headerlink" href="#pyrealsense2.frame.get_profile" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieve stream profile from frame handle.</p>
 </dd></dl>
 
@@ -362,7 +371,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.22.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.30.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

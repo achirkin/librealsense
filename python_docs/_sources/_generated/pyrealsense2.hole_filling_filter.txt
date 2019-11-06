@@ -16,13 +16,28 @@ pyrealsense2.hole_filling_filter
    .. autosummary::
    
       ~hole_filling_filter.__init__
+      ~hole_filling_filter.as_decimation_filter
+      ~hole_filling_filter.as_disparity_transform
+      ~hole_filling_filter.as_hole_filling_filter
+      ~hole_filling_filter.as_spatial_filter
+      ~hole_filling_filter.as_temporal_filter
+      ~hole_filling_filter.as_threshold_filter
+      ~hole_filling_filter.as_zero_order_invalidation
+      ~hole_filling_filter.get_info
       ~hole_filling_filter.get_option
       ~hole_filling_filter.get_option_description
       ~hole_filling_filter.get_option_range
       ~hole_filling_filter.get_option_value_description
       ~hole_filling_filter.get_supported_options
       ~hole_filling_filter.invoke
+      ~hole_filling_filter.is_decimation_filter
+      ~hole_filling_filter.is_disparity_transform
+      ~hole_filling_filter.is_hole_filling_filter
       ~hole_filling_filter.is_option_read_only
+      ~hole_filling_filter.is_spatial_filter
+      ~hole_filling_filter.is_temporal_filter
+      ~hole_filling_filter.is_threshold_filter
+      ~hole_filling_filter.is_zero_order_invalidation
       ~hole_filling_filter.process
       ~hole_filling_filter.set_option
       ~hole_filling_filter.start

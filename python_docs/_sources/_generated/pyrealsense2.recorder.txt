@@ -20,6 +20,8 @@ pyrealsense2.recorder
       ~recorder.as_playback
       ~recorder.as_recorder
       ~recorder.as_tm2
+      ~recorder.as_updatable
+      ~recorder.as_update_device
       ~recorder.first_depth_sensor
       ~recorder.first_pose_sensor
       ~recorder.first_roi_sensor
@@ -29,6 +31,8 @@ pyrealsense2.recorder
       ~recorder.is_playback
       ~recorder.is_recorder
       ~recorder.is_tm2
+      ~recorder.is_updatable
+      ~recorder.is_update_device
       ~recorder.pause
       ~recorder.query_sensors
       ~recorder.resume

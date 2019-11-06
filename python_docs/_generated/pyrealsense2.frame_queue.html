@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>pyrealsense2.frame_queue &mdash; pyrealsense2 2.22.0 documentation</title>
+    <title>pyrealsense2.frame_queue &mdash; pyrealsense2 2.30.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.22.0',
+        VERSION:     '2.30.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="pyrealsense2 2.22.0 documentation" href="../index.html" /> 
+    <link rel="top" title="pyrealsense2 2.30.0 documentation" href="../index.html" /> 
   </head>
   <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
@@ -35,7 +35,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.22.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.30.0 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -57,6 +57,7 @@
 <ol class="arabic simple">
 <li>__init__(self: pyrealsense2.frame_queue, arg0: int) -&gt; None</li>
 <li>__init__(self: pyrealsense2.frame_queue) -&gt; None</li>
+<li>__init__(self: pyrealsense2.frame_queue, capacity: int, keep_frames: bool=False) -&gt; None</li>
 </ol>
 </dd></dl>
 
@@ -71,18 +72,21 @@
 <td>Overloaded function.</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame_queue.capacity" title="pyrealsense2.frame_queue.capacity"><code class="xref py py-obj docutils literal"><span class="pre">capacity</span></code></a>((self:&nbsp;pyrealsense2.frame_queue)&nbsp;-&gt;&nbsp;int)</td>
-<td>Return the capacity of the queue</td>
+<td>Return the capacity of the queue.</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame_queue.enqueue" title="pyrealsense2.frame_queue.enqueue"><code class="xref py py-obj docutils literal"><span class="pre">enqueue</span></code></a>((self:&nbsp;pyrealsense2.frame_queue,&nbsp;...)</td>
 <td>Enqueue a new frame into the queue.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame_queue.poll_for_frame" title="pyrealsense2.frame_queue.poll_for_frame"><code class="xref py py-obj docutils literal"><span class="pre">poll_for_frame</span></code></a>(...)</td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame_queue.keep_frames" title="pyrealsense2.frame_queue.keep_frames"><code class="xref py py-obj docutils literal"><span class="pre">keep_frames</span></code></a>(...)</td>
+<td>Return whether or not the queue calls keep on enqueued frames.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame_queue.poll_for_frame" title="pyrealsense2.frame_queue.poll_for_frame"><code class="xref py py-obj docutils literal"><span class="pre">poll_for_frame</span></code></a>(...)</td>
 <td>Poll if a new frame is available and dequeue it if it is</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame_queue.try_wait_for_frame" title="pyrealsense2.frame_queue.try_wait_for_frame"><code class="xref py py-obj docutils literal"><span class="pre">try_wait_for_frame</span></code></a>(...)</td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame_queue.try_wait_for_frame" title="pyrealsense2.frame_queue.try_wait_for_frame"><code class="xref py py-obj docutils literal"><span class="pre">try_wait_for_frame</span></code></a>(...)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame_queue.wait_for_frame" title="pyrealsense2.frame_queue.wait_for_frame"><code class="xref py py-obj docutils literal"><span class="pre">wait_for_frame</span></code></a>(...)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame_queue.wait_for_frame" title="pyrealsense2.frame_queue.wait_for_frame"><code class="xref py py-obj docutils literal"><span class="pre">wait_for_frame</span></code></a>(...)</td>
 <td>Wait until a new frame becomes available in the queue and dequeue it.</td>
 </tr>
 </tbody>
@@ -90,13 +94,19 @@
 <dl class="method">
 <dt id="pyrealsense2.frame_queue.capacity">
 <code class="descname">capacity</code><span class="sig-paren">(</span><em>self: pyrealsense2.frame_queue</em><span class="sig-paren">)</span> &rarr; int<a class="headerlink" href="#pyrealsense2.frame_queue.capacity" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return the capacity of the queue</p>
+<dd><p>Return the capacity of the queue.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="pyrealsense2.frame_queue.enqueue">
 <code class="descname">enqueue</code><span class="sig-paren">(</span><em>self: pyrealsense2.frame_queue</em>, <em>f: pyrealsense2.frame</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#pyrealsense2.frame_queue.enqueue" title="Permalink to this definition">¶</a></dt>
 <dd><p>Enqueue a new frame into the queue.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyrealsense2.frame_queue.keep_frames">
+<code class="descname">keep_frames</code><span class="sig-paren">(</span><em>self: pyrealsense2.frame_queue</em><span class="sig-paren">)</span> &rarr; bool<a class="headerlink" href="#pyrealsense2.frame_queue.keep_frames" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return whether or not the queue calls keep on enqueued frames.</p>
 </dd></dl>
 
 <dl class="method">
@@ -159,7 +169,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.22.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.30.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

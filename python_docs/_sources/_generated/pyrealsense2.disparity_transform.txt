@@ -16,13 +16,28 @@ pyrealsense2.disparity_transform
    .. autosummary::
    
       ~disparity_transform.__init__
+      ~disparity_transform.as_decimation_filter
+      ~disparity_transform.as_disparity_transform
+      ~disparity_transform.as_hole_filling_filter
+      ~disparity_transform.as_spatial_filter
+      ~disparity_transform.as_temporal_filter
+      ~disparity_transform.as_threshold_filter
+      ~disparity_transform.as_zero_order_invalidation
+      ~disparity_transform.get_info
       ~disparity_transform.get_option
       ~disparity_transform.get_option_description
       ~disparity_transform.get_option_range
       ~disparity_transform.get_option_value_description
       ~disparity_transform.get_supported_options
       ~disparity_transform.invoke
+      ~disparity_transform.is_decimation_filter
+      ~disparity_transform.is_disparity_transform
+      ~disparity_transform.is_hole_filling_filter
       ~disparity_transform.is_option_read_only
+      ~disparity_transform.is_spatial_filter
+      ~disparity_transform.is_temporal_filter
+      ~disparity_transform.is_threshold_filter
+      ~disparity_transform.is_zero_order_invalidation
       ~disparity_transform.process
       ~disparity_transform.set_option
       ~disparity_transform.start

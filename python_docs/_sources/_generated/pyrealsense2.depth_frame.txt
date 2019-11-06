@@ -26,6 +26,7 @@ pyrealsense2.depth_frame
       ~depth_frame.get_bits_per_pixel
       ~depth_frame.get_bytes_per_pixel
       ~depth_frame.get_data
+      ~depth_frame.get_data_size
       ~depth_frame.get_distance
       ~depth_frame.get_frame_metadata
       ~depth_frame.get_frame_number
