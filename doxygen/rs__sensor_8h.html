@@ -151,7 +151,14 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7a99ee0671b1344a08ac3c0fdff5876ad0">RS2_FORMAT_Y10BPACK</a>, 
 <a class="el" href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7a4b5edfca54e485a9e25299ab249fb3bc">RS2_FORMAT_DISTANCE</a>, 
 <a class="el" href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7a04ecec4dbd0e34203d35e8051df8733d">RS2_FORMAT_MJPEG</a>, 
-<a class="el" href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7a3b3eef6c57034e8b9472c9166290afd0">RS2_FORMAT_COUNT</a>
+<a class="el" href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7ad643269552c9e45562dfe247ff25ad49">RS2_FORMAT_Y8I</a>, 
+<br />
+&#160;&#160;<a class="el" href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7a4cbd7289ce36932a91265cff21d65456">RS2_FORMAT_Y12I</a>, 
+<a class="el" href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7ae4b410bb6b60d5965769cf973a82af74">RS2_FORMAT_INZI</a>, 
+<a class="el" href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7afd57ccb8f3f79d0792c5c08b1fbcd695">RS2_FORMAT_INVI</a>, 
+<a class="el" href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7a06ddbff70540f012a16b7514e17f7a43">RS2_FORMAT_W10</a>, 
+<br />
+&#160;&#160;<a class="el" href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7a3b3eef6c57034e8b9472c9166290afd0">RS2_FORMAT_COUNT</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ae04b7887ce35d16dbd9d2d295d23aac7"><td class="mdescLeft">&#160;</td><td class="mdescRight">A stream's format identifies how binary data is encoded within a frame.  <a href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7">More...</a><br /></td></tr>
@@ -453,6 +460,16 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="ae04b7887ce35d16dbd9d2d295d23aac7a4b5edfca54e485a9e25299ab249fb3bc"></a>RS2_FORMAT_DISTANCE&#160;</td><td class="fielddoc"><p>32-bit float-point depth distance value. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ae04b7887ce35d16dbd9d2d295d23aac7a04ecec4dbd0e34203d35e8051df8733d"></a>RS2_FORMAT_MJPEG&#160;</td><td class="fielddoc"><p>Bitstream encoding for video in which an image of each frame is encoded as JPEG-DIB </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae04b7887ce35d16dbd9d2d295d23aac7ad643269552c9e45562dfe247ff25ad49"></a>RS2_FORMAT_Y8I&#160;</td><td class="fielddoc"><p>8-bit per pixel interleaved. 8-bit left, 8-bit right. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae04b7887ce35d16dbd9d2d295d23aac7a4cbd7289ce36932a91265cff21d65456"></a>RS2_FORMAT_Y12I&#160;</td><td class="fielddoc"><p>12-bit per pixel interleaved. 12-bit left, 12-bit right. Each pixel is stored in a 24-bit word in little-endian order. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae04b7887ce35d16dbd9d2d295d23aac7ae4b410bb6b60d5965769cf973a82af74"></a>RS2_FORMAT_INZI&#160;</td><td class="fielddoc"><p>multi-planar Depth 16bit + IR 10bit. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae04b7887ce35d16dbd9d2d295d23aac7afd57ccb8f3f79d0792c5c08b1fbcd695"></a>RS2_FORMAT_INVI&#160;</td><td class="fielddoc"><p>8-bit IR stream. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae04b7887ce35d16dbd9d2d295d23aac7a06ddbff70540f012a16b7514e17f7a43"></a>RS2_FORMAT_W10&#160;</td><td class="fielddoc"><p>Grey-scale image as a bit-packed array. 4 pixel data stream taking 5 bytes </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ae04b7887ce35d16dbd9d2d295d23aac7a3b3eef6c57034e8b9472c9166290afd0"></a>RS2_FORMAT_COUNT&#160;</td><td class="fielddoc"><p>Number of enumeration values. Not a valid input: intended to be used in for-loops. </p>
 </td></tr>

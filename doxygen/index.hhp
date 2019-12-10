@@ -151,6 +151,10 @@ classrs2_1_1align.html
 classrs2_1_1align-members.html
 classrs2_1_1asynchronous__syncer.html
 classrs2_1_1asynchronous__syncer-members.html
+classrs2_1_1auto__calibrated__device.html
+classrs2_1_1auto__calibrated__device-members.html
+classrs2_1_1calibrated__device.html
+classrs2_1_1calibrated__device-members.html
 classrs2_1_1colorizer.html
 classrs2_1_1colorizer-members.html
 classrs2_1_1config.html
@@ -281,6 +285,8 @@ classrs2_1_1update__device.html
 classrs2_1_1update__device-members.html
 classrs2_1_1update__progress__callback.html
 classrs2_1_1update__progress__callback-members.html
+structrs2_1_1vec3d.html
+structrs2_1_1vec3d-members.html
 structrs2_1_1vertex.html
 structrs2_1_1vertex-members.html
 classrs2_1_1video__frame.html
@@ -324,6 +330,7 @@ pages.html
 namespaces.html
 namespacemembers.html
 namespacemembers_func.html
+namespacemembers_type.html
 annotated.html
 classes.html
 hierarchy.html
@@ -414,6 +421,8 @@ structrs2__playback__status__changed__callback.png
 structrs2__update__progress__callback.png
 classrs2_1_1align.png
 classrs2_1_1asynchronous__syncer.png
+classrs2_1_1auto__calibrated__device.png
+classrs2_1_1calibrated__device.png
 classrs2_1_1colorizer.png
 classrs2_1_1context.png
 classrs2_1_1debug__protocol.png

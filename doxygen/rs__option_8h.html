@@ -148,7 +148,10 @@ Enumerations</h2></td></tr>
 <a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a0e7347b70091d7fbf2c87c34e72e9025">RS2_OPTION_ENABLE_DYNAMIC_CALIBRATION</a>, 
 <a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a6fb422f8c33bd8c4001734845c97e067">RS2_OPTION_DEPTH_OFFSET</a>, 
 <br />
-&#160;&#160;<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a4158983f553ef28b078dd7716ce73419">RS2_OPTION_COUNT</a>
+&#160;&#160;<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2afefe17b3f147f2aa43ab49c2cefccc39">RS2_OPTION_LED_POWER</a>, 
+<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a603da0cff9de00a2233031fd68d0ba4a">RS2_OPTION_ZERO_ORDER_ENABLED</a>, 
+<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2ac7b0b7463a11096f6d3898f66ff91884">RS2_OPTION_ENABLE_MAP_PRESERVATION</a>, 
+<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a4158983f553ef28b078dd7716ce73419">RS2_OPTION_COUNT</a>
 <br />
  }</td></tr>
 <tr class="memdesc:a8b9c011f705cfab20c7eaaa7a26040e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines general configuration controls. These can generally be mapped to camera UVC controls, and can be set / queried at any time unless stated otherwise.  <a href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2">More...</a><br /></td></tr>
@@ -312,7 +315,7 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2ae20c43b822f4bc236acbe13cc5e8b1ae"></a>RS2_OPTION_VISUAL_PRESET&#160;</td><td class="fielddoc"><p>Provide access to several recommend sets of option presets for the depth camera </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a493899c00ad1b2742d388fc6cbfb0a61"></a>RS2_OPTION_LASER_POWER&#160;</td><td class="fielddoc"><p>Power of the F200 / SR300 projector, with 0 meaning projector off </p>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a493899c00ad1b2742d388fc6cbfb0a61"></a>RS2_OPTION_LASER_POWER&#160;</td><td class="fielddoc"><p>Power of the laser emitter, with 0 meaning projector off </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2ab428eb4e2c06574f4b43aa532bfbfe94"></a>RS2_OPTION_ACCURACY&#160;</td><td class="fielddoc"><p>Set the number of patterns projected per frame. The higher the accuracy value the more patterns projected. Increasing the number of patterns help to achieve better accuracy. Note that this control is affecting the Depth FPS </p>
 </td></tr>
@@ -322,7 +325,7 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a69d9df0bcc2abe6cb9801fe77a114d6b"></a>RS2_OPTION_CONFIDENCE_THRESHOLD&#160;</td><td class="fielddoc"><p>The confidence level threshold used by the Depth algorithm pipe to set whether a pixel will get a valid range or will be marked with invalid range </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a928b41a50ef52daeb7022a7f1a598b49"></a>RS2_OPTION_EMITTER_ENABLED&#160;</td><td class="fielddoc"><p>Laser Emitter enabled </p>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a928b41a50ef52daeb7022a7f1a598b49"></a>RS2_OPTION_EMITTER_ENABLED&#160;</td><td class="fielddoc"><p>Emitter select: 0 – disable all emitters. 1 – enable laser. 2 – enable auto laser. 3 – enable LED. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a3576239e61d44f58446383c37401d76b"></a>RS2_OPTION_FRAMES_QUEUE_SIZE&#160;</td><td class="fielddoc"><p>Number of frames the user is allowed to keep per stream. Trying to hold-on to more frames will cause frame-drops. </p>
 </td></tr>
@@ -405,6 +408,12 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a0e7347b70091d7fbf2c87c34e72e9025"></a>RS2_OPTION_ENABLE_DYNAMIC_CALIBRATION&#160;</td><td class="fielddoc"><p>Enable dynamic calibration </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a6fb422f8c33bd8c4001734845c97e067"></a>RS2_OPTION_DEPTH_OFFSET&#160;</td><td class="fielddoc"><p>Offset from sensor to depth origin in millimetrers </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2afefe17b3f147f2aa43ab49c2cefccc39"></a>RS2_OPTION_LED_POWER&#160;</td><td class="fielddoc"><p>Power of the LED (light emitting diode), with 0 meaning LED off </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a603da0cff9de00a2233031fd68d0ba4a"></a>RS2_OPTION_ZERO_ORDER_ENABLED&#160;</td><td class="fielddoc"><p>Toggle Zero-Order mode </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2ac7b0b7463a11096f6d3898f66ff91884"></a>RS2_OPTION_ENABLE_MAP_PRESERVATION&#160;</td><td class="fielddoc"><p>Preserve previous map when starting </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a4158983f553ef28b078dd7716ce73419"></a>RS2_OPTION_COUNT&#160;</td><td class="fielddoc"><p>Number of enumeration values. Not a valid input: intended to be used in for-loops. </p>
 </td></tr>
