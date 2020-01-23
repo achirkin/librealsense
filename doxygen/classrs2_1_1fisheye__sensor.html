@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Intel® RealSense™ Cross Platform API: rs2::pose_sensor Class Reference</title>
+<title>Intel® RealSense™ Cross Platform API: rs2::fisheye_sensor Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -39,48 +39,36 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacers2.html">rs2</a></li><li class="navelem"><a class="el" href="classrs2_1_1pose__sensor.html">pose_sensor</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacers2.html">rs2</a></li><li class="navelem"><a class="el" href="classrs2_1_1fisheye__sensor.html">fisheye_sensor</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="classrs2_1_1pose__sensor-members.html">List of all members</a>  </div>
+<a href="classrs2_1_1fisheye__sensor-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">rs2::pose_sensor Class Reference</div>  </div>
+<div class="title">rs2::fisheye_sensor Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="rs__sensor_8hpp_source.html">rs_sensor.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for rs2::pose_sensor:</div>
+Inheritance diagram for rs2::fisheye_sensor:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="classrs2_1_1pose__sensor.png" usemap="#rs2::pose_5Fsensor_map" alt=""/>
-  <map id="rs2::pose_5Fsensor_map" name="rs2::pose_5Fsensor_map">
-<area href="classrs2_1_1sensor.html" alt="rs2::sensor" shape="rect" coords="0,56,108,80"/>
-<area href="classrs2_1_1options.html" alt="rs2::options" shape="rect" coords="0,0,108,24"/>
+  <img src="classrs2_1_1fisheye__sensor.png" usemap="#rs2::fisheye_5Fsensor_map" alt=""/>
+  <map id="rs2::fisheye_5Fsensor_map" name="rs2::fisheye_5Fsensor_map">
+<area href="classrs2_1_1sensor.html" alt="rs2::sensor" shape="rect" coords="0,56,122,80"/>
+<area href="classrs2_1_1options.html" alt="rs2::options" shape="rect" coords="0,0,122,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a826cc069fa2b3a664a221884b08a3a29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1pose__sensor.html#a826cc069fa2b3a664a221884b08a3a29">pose_sensor</a> (<a class="el" href="classrs2_1_1sensor.html">sensor</a> s)</td></tr>
-<tr class="separator:a826cc069fa2b3a664a221884b08a3a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68728a7f1a9a7c0f19bada4fcb3fef2c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1pose__sensor.html#a68728a7f1a9a7c0f19bada4fcb3fef2c">import_localization_map</a> (const std::vector&lt; uint8_t &gt; &amp;lmap_buf) const</td></tr>
-<tr class="separator:a68728a7f1a9a7c0f19bada4fcb3fef2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32f2423a9a3c63097cfee8c640c77893"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1pose__sensor.html#a32f2423a9a3c63097cfee8c640c77893">export_localization_map</a> () const</td></tr>
-<tr class="separator:a32f2423a9a3c63097cfee8c640c77893"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab45c66a0b5b99d23b443b3099d7d5c8d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1pose__sensor.html#ab45c66a0b5b99d23b443b3099d7d5c8d">set_static_node</a> (const std::string &amp;guid, const <a class="el" href="structrs2__vector.html">rs2_vector</a> &amp;pos, const <a class="el" href="structrs2__quaternion.html">rs2_quaternion</a> &amp;orient) const</td></tr>
-<tr class="separator:ab45c66a0b5b99d23b443b3099d7d5c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cb99da13efaa0636294527328bfcbdc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1pose__sensor.html#a6cb99da13efaa0636294527328bfcbdc">get_static_node</a> (const std::string &amp;guid, <a class="el" href="structrs2__vector.html">rs2_vector</a> &amp;pos, <a class="el" href="structrs2__quaternion.html">rs2_quaternion</a> &amp;orient) const</td></tr>
-<tr class="separator:a6cb99da13efaa0636294527328bfcbdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed0f39801fa2adc8edbccf34d950fdb5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1pose__sensor.html#aed0f39801fa2adc8edbccf34d950fdb5">remove_static_node</a> (const std::string &amp;guid) const</td></tr>
-<tr class="separator:aed0f39801fa2adc8edbccf34d950fdb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f5b6808826bb59c5d31d24650b3037e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1pose__sensor.html#a9f5b6808826bb59c5d31d24650b3037e">operator bool</a> () const</td></tr>
-<tr class="separator:a9f5b6808826bb59c5d31d24650b3037e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cc71b4e817de0e30aaa4c318ca8db58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1pose__sensor.html#a7cc71b4e817de0e30aaa4c318ca8db58">pose_sensor</a> (std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> &gt; dev)</td></tr>
-<tr class="separator:a7cc71b4e817de0e30aaa4c318ca8db58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0493c7ac2095b50268e55d4ae47d16a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1fisheye__sensor.html#af0493c7ac2095b50268e55d4ae47d16a">fisheye_sensor</a> (<a class="el" href="classrs2_1_1sensor.html">sensor</a> s)</td></tr>
+<tr class="separator:af0493c7ac2095b50268e55d4ae47d16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a411104130fe12f5bc57c007a893f401d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1fisheye__sensor.html#a411104130fe12f5bc57c007a893f401d">operator bool</a> () const</td></tr>
+<tr class="separator:a411104130fe12f5bc57c007a893f401d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classrs2_1_1sensor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classrs2_1_1sensor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classrs2_1_1sensor.html">rs2::sensor</a></td></tr>
 <tr class="memitem:af2532498f9ce7df9bef3bc98f9527bff inherit pub_methods_classrs2_1_1sensor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1sensor.html#af2532498f9ce7df9bef3bc98f9527bff">open</a> (const <a class="el" href="classrs2_1_1stream__profile.html">stream_profile</a> &amp;profile) const</td></tr>
 <tr class="separator:af2532498f9ce7df9bef3bc98f9527bff inherit pub_methods_classrs2_1_1sensor"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,8 +163,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a1d4c78d0aab5d0c85553743e54e414f6 inherit pro_attribs_classrs2_1_1sensor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a826cc069fa2b3a664a221884b08a3a29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a826cc069fa2b3a664a221884b08a3a29">&#9670;&nbsp;</a></span>pose_sensor() <span class="overload">[1/2]</span></h2>
+<a id="af0493c7ac2095b50268e55d4ae47d16a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0493c7ac2095b50268e55d4ae47d16a">&#9670;&nbsp;</a></span>fisheye_sensor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -185,7 +173,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">rs2::pose_sensor::pose_sensor </td>
+          <td class="memname">rs2::fisheye_sensor::fisheye_sensor </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classrs2_1_1sensor.html">sensor</a>&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
@@ -201,35 +189,9 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a7cc71b4e817de0e30aaa4c318ca8db58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cc71b4e817de0e30aaa4c318ca8db58">&#9670;&nbsp;</a></span>pose_sensor() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">rs2::pose_sensor::pose_sensor </td>
-          <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> &gt;&#160;</td>
-          <td class="paramname"><em>dev</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a32f2423a9a3c63097cfee8c640c77893"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32f2423a9a3c63097cfee8c640c77893">&#9670;&nbsp;</a></span>export_localization_map()</h2>
+<a id="a411104130fe12f5bc57c007a893f401d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a411104130fe12f5bc57c007a893f401d">&#9670;&nbsp;</a></span>operator bool()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -238,7 +200,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;uint8_t&gt; rs2::pose_sensor::export_localization_map </td>
+          <td class="memname">rs2::fisheye_sensor::operator bool </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -250,199 +212,6 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get relocalization map that is currently on device, created and updated during most recent tracking session. Can be called before or after <a class="el" href="classrs2_1_1sensor.html#a9680dd4fff95e14150c4bae324f1d805">stop()</a>. </p><dl class="section return"><dt>Returns</dt><dd>map data as a binary blob </dd></dl>
-
-</div>
-</div>
-<a id="a6cb99da13efaa0636294527328bfcbdc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6cb99da13efaa0636294527328bfcbdc">&#9670;&nbsp;</a></span>get_static_node()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool rs2::pose_sensor::get_static_node </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>guid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structrs2__vector.html">rs2_vector</a> &amp;&#160;</td>
-          <td class="paramname"><em>pos</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structrs2__quaternion.html">rs2_quaternion</a> &amp;&#160;</td>
-          <td class="paramname"><em>orient</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Gets the current pose of a static node that was created in the current map or in an imported map. Static nodes of imported maps are available after relocalizing the imported map. The static node's pose is returned relative to the current origin of coordinates of device poses. Thus, poses of static nodes of an imported map are consistent with current device poses after relocalization. This function fails if the current tracker confidence is below 3 (high confidence). </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">guid</td><td>unique name of the static node (limited to 127 chars). </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">pos</td><td>position of the static node in the 3D space. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">orient_quat</td><td>orientation of the static node in the 3D space, represented by a unit quaternion. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if success. </dd></dl>
-
-</div>
-</div>
-<a id="a68728a7f1a9a7c0f19bada4fcb3fef2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68728a7f1a9a7c0f19bada4fcb3fef2c">&#9670;&nbsp;</a></span>import_localization_map()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool rs2::pose_sensor::import_localization_map </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; uint8_t &gt; &amp;&#160;</td>
-          <td class="paramname"><em>lmap_buf</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Load relocalization map onto device. Only one relocalization map can be imported at a time; any previously existing map will be overwritten. The imported map exists simultaneously with the map created during the most recent tracking session after <a class="el" href="classrs2_1_1sensor.html#ad6de719ac45ed36e1c6213c5f4408e41">start()</a>, and they are merged after the imported map is relocalized. This operation must be done before <a class="el" href="classrs2_1_1sensor.html#ad6de719ac45ed36e1c6213c5f4408e41">start()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">lmap_buf</td><td>map data as a binary blob </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if success </dd></dl>
-
-</div>
-</div>
-<a id="a9f5b6808826bb59c5d31d24650b3037e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f5b6808826bb59c5d31d24650b3037e">&#9670;&nbsp;</a></span>operator bool()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">rs2::pose_sensor::operator bool </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aed0f39801fa2adc8edbccf34d950fdb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed0f39801fa2adc8edbccf34d950fdb5">&#9670;&nbsp;</a></span>remove_static_node()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool rs2::pose_sensor::remove_static_node </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>guid</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Removes a static node from the current map. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">guid</td><td>unique name of the static node (limited to 127 chars). </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ab45c66a0b5b99d23b443b3099d7d5c8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab45c66a0b5b99d23b443b3099d7d5c8d">&#9670;&nbsp;</a></span>set_static_node()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool rs2::pose_sensor::set_static_node </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>guid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structrs2__vector.html">rs2_vector</a> &amp;&#160;</td>
-          <td class="paramname"><em>pos</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structrs2__quaternion.html">rs2_quaternion</a> &amp;&#160;</td>
-          <td class="paramname"><em>orient</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Creates a named virtual landmark in the current map, known as static node. The static node's pose is provided relative to the origin of current coordinate system of device poses. This function fails if the current tracker confidence is below 3 (high confidence). </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">guid</td><td>unique name of the static node (limited to 127 chars). If a static node with the same name already exists in the current map or the imported map, the static node is overwritten. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td>position of the static node in the 3D space. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">orient_quat</td><td>orientation of the static node in the 3D space, represented by a unit quaternion. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if success. </dd></dl>
 
 </div>
 </div>

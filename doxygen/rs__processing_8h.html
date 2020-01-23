@@ -116,6 +116,8 @@ Functions</h2></td></tr>
 <tr class="separator:a71dd1b7fdaf20d3eb2e6fb1383dfd1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b1dd995ae9e98fa817c2b66d9c1bb2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__types_8h.html#af50408eba1d9935d29eb72553ae53dd0">rs2_processing_block</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__processing_8h.html#a5b1dd995ae9e98fa817c2b66d9c1bb2e">rs2_create_zero_order_invalidation_block</a> (<a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:a5b1dd995ae9e98fa817c2b66d9c1bb2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2a413b273e6134503701e4fa51b3793"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__types_8h.html#af50408eba1d9935d29eb72553ae53dd0">rs2_processing_block</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__processing_8h.html#ae2a413b273e6134503701e4fa51b3793">rs2_create_huffman_depth_decompress_block</a> (<a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:ae2a413b273e6134503701e4fa51b3793"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc38084016f77c1c38a0e58136fbc1d1"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__processing_8h.html#adc38084016f77c1c38a0e58136fbc1d1">rs2_get_processing_block_info</a> (const <a class="el" href="rs__types_8h.html#af50408eba1d9935d29eb72553ae53dd0">rs2_processing_block</a> *block, <a class="el" href="rs__sensor_8h.html#aa607d93c1bac40af3ec1c9b0345f59af">rs2_camera_info</a> info, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:adc38084016f77c1c38a0e58136fbc1d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0a9ca8821c4d5ca7d18e4bb4852cfad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__processing_8h.html#ab0a9ca8821c4d5ca7d18e4bb4852cfad">rs2_supports_processing_block_info</a> (const <a class="el" href="rs__types_8h.html#af50408eba1d9935d29eb72553ae53dd0">rs2_processing_block</a> *block, <a class="el" href="rs__sensor_8h.html#aa607d93c1bac40af3ec1c9b0345f59af">rs2_camera_info</a> info, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
@@ -301,6 +303,31 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ae2a413b273e6134503701e4fa51b3793"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2a413b273e6134503701e4fa51b3793">&#9670;&nbsp;</a></span>rs2_create_huffman_depth_decompress_block()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rs__types_8h.html#af50408eba1d9935d29eb72553ae53dd0">rs2_processing_block</a>* rs2_create_huffman_depth_decompress_block </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates Depth frame decompression module. Decoded frames compressed and transmitted with Z16H variable-lenght Huffman code to standartized Z16 Depth data format. Using the compression allows to reduce the Depth frames bandwidth by more than 50 percent </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Huffman-code decompression processing block </dd></dl>
 
 </div>
 </div>

@@ -225,6 +225,9 @@ $(function() {
 <li>rs2_create_hole_filling_filter_block()
 : <a class="el" href="rs__processing_8h.html#a1833db1f893d41eaca77c1aa3b21103e">rs_processing.h</a>
 </li>
+<li>rs2_create_huffman_depth_decompress_block()
+: <a class="el" href="rs__processing_8h.html#ae2a413b273e6134503701e4fa51b3793">rs_processing.h</a>
+</li>
 <li>rs2_create_mock_context()
 : <a class="el" href="rs__internal_8h.html#a2ce903ea64ce3264160f940060c79d8b">rs_internal.h</a>
 </li>
@@ -465,6 +468,9 @@ $(function() {
 <li>RS2_EXTENSION_AUTO_CALIBRATED_DEVICE
 : <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa581e70fc044ddb3460192f4530aa4f23">rs_types.h</a>
 </li>
+<li>RS2_EXTENSION_COLOR_SENSOR
+: <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aac0f4d66c7b1e17f153b6b9ab6674bff8">rs_types.h</a>
+</li>
 <li>RS2_EXTENSION_COMPOSITE_FRAME
 : <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aaabccbcbed9d72eeb1468710351a0545b">rs_types.h</a>
 </li>
@@ -480,6 +486,9 @@ $(function() {
 <li>RS2_EXTENSION_DEPTH_FRAME
 : <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aab88a72d08a46a6897b70d64f66b45d13">rs_types.h</a>
 </li>
+<li>RS2_EXTENSION_DEPTH_HUFFMAN_DECODER
+: <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa4672df499968802bc36b525f36fec49b">rs_types.h</a>
+</li>
 <li>RS2_EXTENSION_DEPTH_SENSOR
 : <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa48d5825568b26b7ad01a5ed109c803e4">rs_types.h</a>
 </li>
@@ -491,6 +500,9 @@ $(function() {
 </li>
 <li>RS2_EXTENSION_DISPARITY_FRAME
 : <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa240a7146bbec8043a6b530b4ddb54063">rs_types.h</a>
+</li>
+<li>RS2_EXTENSION_FISHEYE_SENSOR
+: <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa205b63e00419c716233fe72026aa899f">rs_types.h</a>
 </li>
 <li>RS2_EXTENSION_GLOBAL_TIMER
 : <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aad2814254defb10cb44b1c189e3eac211">rs_types.h</a>
@@ -512,6 +524,9 @@ $(function() {
 </li>
 <li>RS2_EXTENSION_MOTION_PROFILE
 : <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa135eaf8c130b298d1c1a4f91fc5a122b">rs_types.h</a>
+</li>
+<li>RS2_EXTENSION_MOTION_SENSOR
+: <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aaeef4e27f41b821bd00422c9a74cdb94c">rs_types.h</a>
 </li>
 <li>RS2_EXTENSION_OPTIONS
 : <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aad0b471682a80b618915cd94ca1811f0d">rs_types.h</a>
@@ -693,6 +708,9 @@ $(function() {
 <li>RS2_FORMAT_Z16
 : <a class="el" href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7af0b4265515bc4e6d520bf0ab8d43d89f">rs_sensor.h</a>
 </li>
+<li>RS2_FORMAT_Z16H
+: <a class="el" href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7adcc4370f480b23880e2df556cef6a06b">rs_sensor.h</a>
+</li>
 <li>rs2_frame
 : <a class="el" href="rs__types_8h.html#af280a50e5484323c1b20b76eda3d370d">rs_types.h</a>
 </li>
@@ -782,6 +800,9 @@ $(function() {
 </li>
 <li>RS2_FRAME_METADATA_POWER_LINE_FREQUENCY
 : <a class="el" href="rs__frame_8h.html#a91f19a01f5bf2abadc30959a8d3109c9a60319e3bd3602e8c1bc7590e7ec2342e">rs_frame.h</a>
+</li>
+<li>RS2_FRAME_METADATA_RAW_FRAME_SIZE
+: <a class="el" href="rs__frame_8h.html#a91f19a01f5bf2abadc30959a8d3109c9aa0148ca32ad876992ef3006d6f21f0e1">rs_frame.h</a>
 </li>
 <li>RS2_FRAME_METADATA_SATURATION
 : <a class="el" href="rs__frame_8h.html#a91f19a01f5bf2abadc30959a8d3109c9a726c0ff06a520f29842211033f085dce">rs_frame.h</a>
@@ -1096,7 +1117,7 @@ $(function() {
 : <a class="el" href="rs__processing__gl_8h.html#aca7b40eb6f12ae3824924d349eb0dea9abfa0d906c9a23f3f8eb68c1fa30482d2">rs_processing_gl.h</a>
 </li>
 <li>rs2_gl_matrix_type
-: <a class="el" href="rs__processing__gl_8h.html#aca7b40eb6f12ae3824924d349eb0dea9">rs_processing_gl.h</a>
+: <a class="el" href="rs__processing__gl_8h.html#a22e7547931a4fb4ec30bb280cf33061c">rs_processing_gl.h</a>
 </li>
 <li>rs2_gl_matrix_type_to_string()
 : <a class="el" href="rs__processing__gl_8h.html#ad67b0b60cefca384299580845503b7c4">rs_processing_gl.h</a>
@@ -1222,7 +1243,7 @@ $(function() {
 : <a class="el" href="rs__types_8h.html#abe503b59ddae6d20af2cc662f0d8a928aa8b4605d9bd31e236028c8ef6cef954e">rs_types.h</a>
 </li>
 <li>rs2_matchers
-: <a class="el" href="rs__types_8h.html#abe503b59ddae6d20af2cc662f0d8a928">rs_types.h</a>
+: <a class="el" href="rs__types_8h.html#a5666813acec0a8698eb250db9451c30d">rs_types.h</a>
 </li>
 <li>rs2_metadata_type
 : <a class="el" href="rs__types_8h.html#af22d2853bf06c8db88605b34c2af4a9f">rs_types.h</a>
@@ -1240,7 +1261,7 @@ $(function() {
 : <a class="el" href="rs__types_8h.html#a6a9a55deefe7ca210b16be8e39747c65">rs_types.h</a>
 </li>
 <li>rs2_notification_category
-: <a class="el" href="rs__types_8h.html#a8bbc5b809add835a9cbd394903e2682b">rs_types.h</a>
+: <a class="el" href="rs__types_8h.html#a5b8efd94f1165be36acea964bf3bdd8d">rs_types.h</a>
 </li>
 <li>RS2_NOTIFICATION_CATEGORY_COUNT
 : <a class="el" href="rs__types_8h.html#a5b8efd94f1165be36acea964bf3bdd8dacc2bacb8ab037c935cfe8673dd6ffe4f">rs_types.h</a>
@@ -1567,7 +1588,7 @@ $(function() {
 : <a class="el" href="rs__record__playback_8h.html#a675f9a10db23a55222504519d174cff7">rs_record_playback.h</a>
 </li>
 <li>rs2_playback_status
-: <a class="el" href="rs__record__playback_8h.html#a8aa1120310fee39574a7f2d30a34d17f">rs_record_playback.h</a>
+: <a class="el" href="rs__record__playback_8h.html#a55a1260b479155bb9a958a0203323d30">rs_record_playback.h</a>
 </li>
 <li>rs2_playback_status_changed_callback
 : <a class="el" href="rs__types_8h.html#aceeb89d5eace1d8844c69284913992a1">rs_types.h</a>
@@ -1669,7 +1690,7 @@ $(function() {
 : <a class="el" href="rs__record__playback_8h.html#a831978993968a7d84b353bff2bf1cde3">rs_record_playback.h</a>
 </li>
 <li>rs2_recording_mode
-: <a class="el" href="rs__internal_8h.html#a624a9bcbb564f5679540529a8dbfff89">rs_internal.h</a>
+: <a class="el" href="rs__internal_8h.html#a19d6f2d111334dd9d1aa3446030d61d0">rs_internal.h</a>
 </li>
 <li>RS2_RECORDING_MODE_BEST_QUALITY
 : <a class="el" href="rs__internal_8h.html#a624a9bcbb564f5679540529a8dbfff89a0b4272ef5f04f4e50e248130a3e39fe5">rs_internal.h</a>
@@ -1688,6 +1709,9 @@ $(function() {
 </li>
 <li>rs2_release_frame()
 : <a class="el" href="rs__frame_8h.html#a1bdbdd207cda9d5dd015229bd0a7dc16">rs_frame.h</a>
+</li>
+<li>rs2_remove_static_node()
+: <a class="el" href="rs__sensor_8h.html#ad6419d18c7be84d01da7ad1efa960867">rs_sensor.h</a>
 </li>
 <li>rs2_reset_to_factory_calibration()
 : <a class="el" href="rs__device_8h.html#a327af0fd1c6427d0dbe065271379b57f">rs_device.h</a>
@@ -2005,7 +2029,7 @@ $(function() {
 : <a class="el" href="rs__types_8h.html#a8c102778c8a60c0db2c75d2bfe4ae94b">rs_types.h</a>
 </li>
 <li>rs2_timestamp_domain
-: <a class="el" href="rs__frame_8h.html#a41c714ee8ae4cd2af19df47861a0e2ef">rs_frame.h</a>
+: <a class="el" href="rs__frame_8h.html#a55750afe3461ea7748fbb2ef6fb19e8a">rs_frame.h</a>
 </li>
 <li>RS2_TIMESTAMP_DOMAIN_COUNT
 : <a class="el" href="rs__frame_8h.html#a55750afe3461ea7748fbb2ef6fb19e8aa72268ec1f84f2f9bd83cc1fab559c5da">rs_frame.h</a>

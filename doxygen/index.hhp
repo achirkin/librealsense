@@ -155,6 +155,8 @@ classrs2_1_1auto__calibrated__device.html
 classrs2_1_1auto__calibrated__device-members.html
 classrs2_1_1calibrated__device.html
 classrs2_1_1calibrated__device-members.html
+classrs2_1_1color__sensor.html
+classrs2_1_1color__sensor-members.html
 classrs2_1_1colorizer.html
 classrs2_1_1colorizer-members.html
 classrs2_1_1config.html
@@ -167,6 +169,8 @@ classrs2_1_1decimation__filter.html
 classrs2_1_1decimation__filter-members.html
 classrs2_1_1depth__frame.html
 classrs2_1_1depth__frame-members.html
+classrs2_1_1depth__huffman__decoder.html
+classrs2_1_1depth__huffman__decoder-members.html
 classrs2_1_1depth__sensor.html
 classrs2_1_1depth__sensor-members.html
 classrs2_1_1depth__stereo__sensor.html
@@ -193,6 +197,8 @@ classrs2_1_1filter.html
 classrs2_1_1filter-members.html
 classrs2_1_1filter__interface.html
 classrs2_1_1filter__interface-members.html
+classrs2_1_1fisheye__sensor.html
+classrs2_1_1fisheye__sensor-members.html
 classrs2_1_1frame.html
 classrs2_1_1frame-members.html
 classrs2_1_1frame__callback.html
@@ -213,6 +219,8 @@ classrs2_1_1mock__context.html
 classrs2_1_1mock__context-members.html
 classrs2_1_1motion__frame.html
 classrs2_1_1motion__frame-members.html
+classrs2_1_1motion__sensor.html
+classrs2_1_1motion__sensor-members.html
 classrs2_1_1motion__stream__profile.html
 classrs2_1_1motion__stream__profile-members.html
 classrs2_1_1notification.html
@@ -423,11 +431,13 @@ classrs2_1_1align.png
 classrs2_1_1asynchronous__syncer.png
 classrs2_1_1auto__calibrated__device.png
 classrs2_1_1calibrated__device.png
+classrs2_1_1color__sensor.png
 classrs2_1_1colorizer.png
 classrs2_1_1context.png
 classrs2_1_1debug__protocol.png
 classrs2_1_1decimation__filter.png
 classrs2_1_1depth__frame.png
+classrs2_1_1depth__huffman__decoder.png
 classrs2_1_1depth__sensor.png
 classrs2_1_1depth__stereo__sensor.png
 classrs2_1_1device.png
@@ -437,6 +447,7 @@ classrs2_1_1disparity__transform.png
 classrs2_1_1error.png
 classrs2_1_1filter.png
 classrs2_1_1filter__interface.png
+classrs2_1_1fisheye__sensor.png
 classrs2_1_1frame.png
 classrs2_1_1frame__callback.png
 classrs2_1_1frame__processor__callback.png
@@ -445,6 +456,7 @@ classrs2_1_1frameset_1_1iterator.png
 classrs2_1_1hole__filling__filter.png
 classrs2_1_1mock__context.png
 classrs2_1_1motion__frame.png
+classrs2_1_1motion__sensor.png
 classrs2_1_1motion__stream__profile.png
 classrs2_1_1notifications__callback.png
 classrs2_1_1options.png

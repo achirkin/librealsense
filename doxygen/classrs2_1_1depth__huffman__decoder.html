@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Intel® RealSense™ Cross Platform API: rs2::filter Class Reference</title>
+<title>Intel® RealSense™ Cross Platform API: rs2::depth_huffman_decoder Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -39,72 +39,59 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacers2.html">rs2</a></li><li class="navelem"><a class="el" href="classrs2_1_1filter.html">filter</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacers2.html">rs2</a></li><li class="navelem"><a class="el" href="classrs2_1_1depth__huffman__decoder.html">depth_huffman_decoder</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="classrs2_1_1filter-members.html">List of all members</a>  </div>
+<a href="#friends">Friends</a> &#124;
+<a href="classrs2_1_1depth__huffman__decoder-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">rs2::filter Class Reference</div>  </div>
+<div class="title">rs2::depth_huffman_decoder Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="rs__processing_8hpp_source.html">rs_processing.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for rs2::filter:</div>
+Inheritance diagram for rs2::depth_huffman_decoder:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="classrs2_1_1filter.png" usemap="#rs2::filter_map" alt=""/>
-  <map id="rs2::filter_map" name="rs2::filter_map">
+  <img src="classrs2_1_1depth__huffman__decoder.png" usemap="#rs2::depth_5Fhuffman_5Fdecoder_map" alt=""/>
+  <map id="rs2::depth_5Fhuffman_5Fdecoder_map" name="rs2::depth_5Fhuffman_5Fdecoder_map">
+<area href="classrs2_1_1filter.html" alt="rs2::filter" shape="rect" coords="91,112,264,136"/>
 <area href="classrs2_1_1processing__block.html" alt="rs2::processing_block" shape="rect" coords="0,56,173,80"/>
 <area href="classrs2_1_1filter__interface.html" alt="rs2::filter_interface" shape="rect" coords="183,56,356,80"/>
 <area href="classrs2_1_1options.html" alt="rs2::options" shape="rect" coords="0,0,173,24"/>
-<area href="classrs2_1_1align.html" alt="rs2::align" shape="rect" coords="274,168,447,192"/>
-<area href="classrs2_1_1colorizer.html" alt="rs2::colorizer" shape="rect" coords="274,224,447,248"/>
-<area href="classrs2_1_1decimation__filter.html" alt="rs2::decimation_filter" shape="rect" coords="274,280,447,304"/>
-<area href="classrs2_1_1depth__huffman__decoder.html" alt="rs2::depth_huffman_decoder" shape="rect" coords="274,336,447,360"/>
-<area href="classrs2_1_1disparity__transform.html" alt="rs2::disparity_transform" shape="rect" coords="274,392,447,416"/>
-<area href="classrs2_1_1gl_1_1camera__renderer.html" alt="rs2::gl::camera_renderer" shape="rect" coords="274,448,447,472"/>
-<area href="classrs2_1_1gl_1_1pointcloud__renderer.html" alt="rs2::gl::pointcloud_renderer" shape="rect" coords="274,504,447,528"/>
-<area href="classrs2_1_1gl_1_1uploader.html" alt="rs2::gl::uploader" shape="rect" coords="274,560,447,584"/>
-<area href="classrs2_1_1hole__filling__filter.html" alt="rs2::hole_filling_filter" shape="rect" coords="274,616,447,640"/>
-<area href="classrs2_1_1pointcloud.html" alt="rs2::pointcloud" shape="rect" coords="274,672,447,696"/>
-<area href="classrs2_1_1rates__printer.html" alt="rs2::rates_printer" shape="rect" coords="274,728,447,752"/>
-<area href="classrs2_1_1save__single__frameset.html" alt="rs2::save_single_frameset" shape="rect" coords="274,784,447,808"/>
-<area href="classrs2_1_1save__to__ply.html" alt="rs2::save_to_ply" shape="rect" coords="274,840,447,864"/>
-<area href="classrs2_1_1spatial__filter.html" alt="rs2::spatial_filter" shape="rect" coords="274,896,447,920"/>
-<area href="classrs2_1_1temporal__filter.html" alt="rs2::temporal_filter" shape="rect" coords="274,952,447,976"/>
-<area href="classrs2_1_1threshold__filter.html" alt="rs2::threshold_filter" shape="rect" coords="274,1008,447,1032"/>
-<area href="classrs2_1_1units__transform.html" alt="rs2::units_transform" shape="rect" coords="274,1064,447,1088"/>
-<area href="classrs2_1_1yuy__decoder.html" alt="rs2::yuy_decoder" shape="rect" coords="274,1120,447,1144"/>
-<area href="classrs2_1_1zero__order__invalidation.html" alt="rs2::zero_order_invalidation" shape="rect" coords="274,1176,447,1200"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a32847849bf94786fda03ba94acb52437"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrs2_1_1frame.html">rs2::frame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1filter.html#a32847849bf94786fda03ba94acb52437">process</a> (<a class="el" href="classrs2_1_1frame.html">rs2::frame</a> <a class="el" href="classrs2_1_1frame.html">frame</a>) const override</td></tr>
-<tr class="separator:a32847849bf94786fda03ba94acb52437"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dc866a45b1aaca7d16b929ee7e3bd26"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1filter.html#a0dc866a45b1aaca7d16b929ee7e3bd26">filter</a> (std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#af50408eba1d9935d29eb72553ae53dd0">rs2_processing_block</a> &gt; block, int queue_size=1)</td></tr>
-<tr class="separator:a0dc866a45b1aaca7d16b929ee7e3bd26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18d347571590a582bf2ef9a558c03f78"><td class="memTemplParams" colspan="2">template&lt;class S &gt; </td></tr>
-<tr class="memitem:a18d347571590a582bf2ef9a558c03f78"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classrs2_1_1filter.html#a18d347571590a582bf2ef9a558c03f78">filter</a> (S processing_function, int queue_size=1)</td></tr>
-<tr class="separator:a18d347571590a582bf2ef9a558c03f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad557988db3aa32de158aae6f52d21afe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrs2_1_1frame__queue.html">frame_queue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1filter.html#ad557988db3aa32de158aae6f52d21afe">get_queue</a> ()</td></tr>
-<tr class="separator:ad557988db3aa32de158aae6f52d21afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad32442a0ab77035da703db0926ea7f7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__types_8h.html#af50408eba1d9935d29eb72553ae53dd0">rs2_processing_block</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1filter.html#ad32442a0ab77035da703db0926ea7f7f">get</a> () const</td></tr>
-<tr class="separator:ad32442a0ab77035da703db0926ea7f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72e88e4b5871f1b4fedce515b9a210e5"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a72e88e4b5871f1b4fedce515b9a210e5"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classrs2_1_1filter.html#a72e88e4b5871f1b4fedce515b9a210e5">is</a> () const</td></tr>
-<tr class="separator:a72e88e4b5871f1b4fedce515b9a210e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1e4682c6796dd421217b283680fcced"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:aa1e4682c6796dd421217b283680fcced"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classrs2_1_1filter.html#aa1e4682c6796dd421217b283680fcced">as</a> () const</td></tr>
-<tr class="separator:aa1e4682c6796dd421217b283680fcced"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afae74db0eadf6026f033e89fab78dc98"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1filter.html#afae74db0eadf6026f033e89fab78dc98">operator bool</a> () const</td></tr>
-<tr class="separator:afae74db0eadf6026f033e89fab78dc98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab81da617d52afde694075ccc478b83bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1depth__huffman__decoder.html#ab81da617d52afde694075ccc478b83bb">depth_huffman_decoder</a> ()</td></tr>
+<tr class="separator:ab81da617d52afde694075ccc478b83bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6c9d42e1487b2f6757af2f2c5dfc9b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1depth__huffman__decoder.html#ab6c9d42e1487b2f6757af2f2c5dfc9b1">depth_huffman_decoder</a> (<a class="el" href="classrs2_1_1filter.html">filter</a> f)</td></tr>
+<tr class="separator:ab6c9d42e1487b2f6757af2f2c5dfc9b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classrs2_1_1filter"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classrs2_1_1filter')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classrs2_1_1filter.html">rs2::filter</a></td></tr>
+<tr class="memitem:a32847849bf94786fda03ba94acb52437 inherit pub_methods_classrs2_1_1filter"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrs2_1_1frame.html">rs2::frame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1filter.html#a32847849bf94786fda03ba94acb52437">process</a> (<a class="el" href="classrs2_1_1frame.html">rs2::frame</a> <a class="el" href="classrs2_1_1frame.html">frame</a>) const override</td></tr>
+<tr class="separator:a32847849bf94786fda03ba94acb52437 inherit pub_methods_classrs2_1_1filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dc866a45b1aaca7d16b929ee7e3bd26 inherit pub_methods_classrs2_1_1filter"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1filter.html#a0dc866a45b1aaca7d16b929ee7e3bd26">filter</a> (std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#af50408eba1d9935d29eb72553ae53dd0">rs2_processing_block</a> &gt; block, int queue_size=1)</td></tr>
+<tr class="separator:a0dc866a45b1aaca7d16b929ee7e3bd26 inherit pub_methods_classrs2_1_1filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18d347571590a582bf2ef9a558c03f78 inherit pub_methods_classrs2_1_1filter"><td class="memTemplParams" colspan="2">template&lt;class S &gt; </td></tr>
+<tr class="memitem:a18d347571590a582bf2ef9a558c03f78 inherit pub_methods_classrs2_1_1filter"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classrs2_1_1filter.html#a18d347571590a582bf2ef9a558c03f78">filter</a> (S processing_function, int queue_size=1)</td></tr>
+<tr class="separator:a18d347571590a582bf2ef9a558c03f78 inherit pub_methods_classrs2_1_1filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad557988db3aa32de158aae6f52d21afe inherit pub_methods_classrs2_1_1filter"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrs2_1_1frame__queue.html">frame_queue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1filter.html#ad557988db3aa32de158aae6f52d21afe">get_queue</a> ()</td></tr>
+<tr class="separator:ad557988db3aa32de158aae6f52d21afe inherit pub_methods_classrs2_1_1filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad32442a0ab77035da703db0926ea7f7f inherit pub_methods_classrs2_1_1filter"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__types_8h.html#af50408eba1d9935d29eb72553ae53dd0">rs2_processing_block</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1filter.html#ad32442a0ab77035da703db0926ea7f7f">get</a> () const</td></tr>
+<tr class="separator:ad32442a0ab77035da703db0926ea7f7f inherit pub_methods_classrs2_1_1filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72e88e4b5871f1b4fedce515b9a210e5 inherit pub_methods_classrs2_1_1filter"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a72e88e4b5871f1b4fedce515b9a210e5 inherit pub_methods_classrs2_1_1filter"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classrs2_1_1filter.html#a72e88e4b5871f1b4fedce515b9a210e5">is</a> () const</td></tr>
+<tr class="separator:a72e88e4b5871f1b4fedce515b9a210e5 inherit pub_methods_classrs2_1_1filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1e4682c6796dd421217b283680fcced inherit pub_methods_classrs2_1_1filter"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:aa1e4682c6796dd421217b283680fcced inherit pub_methods_classrs2_1_1filter"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classrs2_1_1filter.html#aa1e4682c6796dd421217b283680fcced">as</a> () const</td></tr>
+<tr class="separator:aa1e4682c6796dd421217b283680fcced inherit pub_methods_classrs2_1_1filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afae74db0eadf6026f033e89fab78dc98 inherit pub_methods_classrs2_1_1filter"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1filter.html#afae74db0eadf6026f033e89fab78dc98">operator bool</a> () const</td></tr>
+<tr class="separator:afae74db0eadf6026f033e89fab78dc98 inherit pub_methods_classrs2_1_1filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classrs2_1_1processing__block"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classrs2_1_1processing__block')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classrs2_1_1processing__block.html">rs2::processing_block</a></td></tr>
 <tr class="memitem:ad46fee6e9a17585fb240a312c3f81412 inherit pub_methods_classrs2_1_1processing__block"><td class="memTemplParams" colspan="2">template&lt;class S &gt; </td></tr>
 <tr class="memitem:ad46fee6e9a17585fb240a312c3f81412 inherit pub_methods_classrs2_1_1processing__block"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classrs2_1_1processing__block.html#ad46fee6e9a17585fb240a312c3f81412">start</a> (S on_frame)</td></tr>
@@ -158,13 +145,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac143c7bdd22be3f68c7deeeb4b46c2a3 inherit pub_methods_classrs2_1_1filter__interface"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1filter__interface.html#ac143c7bdd22be3f68c7deeeb4b46c2a3">~filter_interface</a> ()=default</td></tr>
 <tr class="separator:ac143c7bdd22be3f68c7deeeb4b46c2a3 inherit pub_methods_classrs2_1_1filter__interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:af61129961ce1e1c49251e0e11932f21f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrs2_1_1frame__queue.html">frame_queue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1filter.html#af61129961ce1e1c49251e0e11932f21f">_queue</a></td></tr>
-<tr class="separator:af61129961ce1e1c49251e0e11932f21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classrs2_1_1processing__block"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classrs2_1_1processing__block')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classrs2_1_1processing__block.html">rs2::processing_block</a></td></tr>
-<tr class="memitem:ab6219a539fd6481e2da7472a590d8d9b inherit pro_attribs_classrs2_1_1processing__block"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#af50408eba1d9935d29eb72553ae53dd0">rs2_processing_block</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1processing__block.html#ab6219a539fd6481e2da7472a590d8d9b">_block</a></td></tr>
-<tr class="separator:ab6219a539fd6481e2da7472a590d8d9b inherit pro_attribs_classrs2_1_1processing__block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:ac78d499d6bdacfe4cc1f67b4ce865513"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1depth__huffman__decoder.html#ac78d499d6bdacfe4cc1f67b4ce865513">context</a></td></tr>
+<tr class="separator:ac78d499d6bdacfe4cc1f67b4ce865513"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -177,12 +161,16 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2d211991c6b29ad19e6750acc27920c1 inherit pro_methods_classrs2_1_1options"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a2d211991c6b29ad19e6750acc27920c1 inherit pro_methods_classrs2_1_1options"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classrs2_1_1options.html">options</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classrs2_1_1options.html#a2d211991c6b29ad19e6750acc27920c1">operator=</a> (const T &amp;dev)</td></tr>
 <tr class="separator:a2d211991c6b29ad19e6750acc27920c1 inherit pro_methods_classrs2_1_1options"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classrs2_1_1filter"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classrs2_1_1filter')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classrs2_1_1filter.html">rs2::filter</a></td></tr>
+<tr class="memitem:af61129961ce1e1c49251e0e11932f21f inherit pro_attribs_classrs2_1_1filter"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrs2_1_1frame__queue.html">frame_queue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1filter.html#af61129961ce1e1c49251e0e11932f21f">_queue</a></td></tr>
+<tr class="separator:af61129961ce1e1c49251e0e11932f21f inherit pro_attribs_classrs2_1_1filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classrs2_1_1processing__block"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classrs2_1_1processing__block')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classrs2_1_1processing__block.html">rs2::processing_block</a></td></tr>
+<tr class="memitem:ab6219a539fd6481e2da7472a590d8d9b inherit pro_attribs_classrs2_1_1processing__block"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#af50408eba1d9935d29eb72553ae53dd0">rs2_processing_block</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1processing__block.html#ab6219a539fd6481e2da7472a590d8d9b">_block</a></td></tr>
+<tr class="separator:ab6219a539fd6481e2da7472a590d8d9b inherit pro_attribs_classrs2_1_1processing__block"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Define the filter workflow, inherit this class to generate your own filter. Refer to the viewer class in examples.hpp for a more detailed example. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a0dc866a45b1aaca7d16b929ee7e3bd26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0dc866a45b1aaca7d16b929ee7e3bd26">&#9670;&nbsp;</a></span>filter() <span class="overload">[1/2]</span></h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ab81da617d52afde694075ccc478b83bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab81da617d52afde694075ccc478b83bb">&#9670;&nbsp;</a></span>depth_huffman_decoder() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -191,101 +179,10 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">rs2::filter::filter </td>
-          <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#af50408eba1d9935d29eb72553ae53dd0">rs2_processing_block</a> &gt;&#160;</td>
-          <td class="paramname"><em>block</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>queue_size</em> = <code>1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>constructor with already created low level processing block assigned.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>- low level rs2_processing_block created before. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a18d347571590a582bf2ef9a558c03f78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18d347571590a582bf2ef9a558c03f78">&#9670;&nbsp;</a></span>filter() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class S &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">rs2::filter::filter </td>
-          <td>(</td>
-          <td class="paramtype">S&#160;</td>
-          <td class="paramname"><em>processing_function</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>queue_size</em> = <code>1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>constructor with callback function on_frame in <a class="el" href="structrs2__frame__processor__callback.html">rs2_frame_processor_callback</a> structure assigned.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">processing_function</td><td>- function pointer of on_frame function in <a class="el" href="structrs2__frame__processor__callback.html">rs2_frame_processor_callback</a> structure, which will be called back by invoke function . </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa1e4682c6796dd421217b283680fcced"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1e4682c6796dd421217b283680fcced">&#9670;&nbsp;</a></span>as()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">T rs2::filter::as </td>
+          <td class="memname">rs2::depth_huffman_decoder::depth_huffman_decoder </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -294,36 +191,12 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Create decoder for Huffman-code compressed Depth frames </p>
 
 </div>
 </div>
-<a id="ad32442a0ab77035da703db0926ea7f7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad32442a0ab77035da703db0926ea7f7f">&#9670;&nbsp;</a></span>get()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="rs__types_8h.html#af50408eba1d9935d29eb72553ae53dd0">rs2_processing_block</a>* rs2::filter::get </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad557988db3aa32de158aae6f52d21afe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad557988db3aa32de158aae6f52d21afe">&#9670;&nbsp;</a></span>get_queue()</h2>
+<a id="ab6c9d42e1487b2f6757af2f2c5dfc9b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6c9d42e1487b2f6757af2f2c5dfc9b1">&#9670;&nbsp;</a></span>depth_huffman_decoder() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -332,9 +205,10 @@ template&lt;class T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classrs2_1_1frame__queue.html">frame_queue</a> rs2::filter::get_queue </td>
+          <td class="memname">rs2::depth_huffman_decoder::depth_huffman_decoder </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classrs2_1_1filter.html">filter</a>&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -347,35 +221,9 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="a72e88e4b5871f1b4fedce515b9a210e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72e88e4b5871f1b4fedce515b9a210e5">&#9670;&nbsp;</a></span>is()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool rs2::filter::is </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afae74db0eadf6026f033e89fab78dc98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afae74db0eadf6026f033e89fab78dc98">&#9670;&nbsp;</a></span>operator bool()</h2>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="ac78d499d6bdacfe4cc1f67b4ce865513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac78d499d6bdacfe4cc1f67b4ce865513">&#9670;&nbsp;</a></span>context</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -384,73 +232,12 @@ template&lt;class T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">rs2::filter::operator bool </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="memname">friend class <a class="el" href="classrs2_1_1context.html">context</a></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a32847849bf94786fda03ba94acb52437"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32847849bf94786fda03ba94acb52437">&#9670;&nbsp;</a></span>process()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classrs2_1_1frame.html">rs2::frame</a> rs2::filter::process </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classrs2_1_1frame.html">rs2::frame</a>&#160;</td>
-          <td class="paramname"><em>frame</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Ask processing block to process the frame and poll the processed frame from internal queue</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">on_frame</td><td>frame to be processed. return processed frame </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="classrs2_1_1filter__interface.html#a03590a13f522bce4db7561c4d5b5d128">rs2::filter_interface</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="af61129961ce1e1c49251e0e11932f21f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af61129961ce1e1c49251e0e11932f21f">&#9670;&nbsp;</a></span>_queue</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classrs2_1_1frame__queue.html">frame_queue</a> rs2::filter::_queue</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
