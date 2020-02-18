@@ -9,10 +9,14 @@ pyrealsense2
    
    .. autosummary::
    
+      adjust_2D_point_to_boundary
+      is_pixel_in_line
       log_to_console
       log_to_file
+      next_pixel_in_line
       rs2_deproject_pixel_to_point
       rs2_fov
+      rs2_project_color_pixel_to_depth_pixel
       rs2_project_point_to_pixel
       rs2_transform_point_to_point
    
@@ -42,7 +46,9 @@ pyrealsense2
       STSloColorThresholdsControl
       STSloPenaltyControl
       align
+      auto_calibrated_device
       camera_info
+      color_sensor
       colorizer
       composite_frame
       config
@@ -50,6 +56,7 @@ pyrealsense2
       debug_protocol
       decimation_filter
       depth_frame
+      depth_huffman_decoder
       depth_sensor
       depth_stereo_sensor
       device
@@ -62,6 +69,7 @@ pyrealsense2
       extrinsics
       filter
       filter_interface
+      fisheye_sensor
       format
       frame
       frame_metadata_value
@@ -72,6 +80,7 @@ pyrealsense2
       log_severity
       motion_device_intrinsic
       motion_frame
+      motion_sensor
       motion_stream_profile
       notification
       notification_category
@@ -96,6 +105,7 @@ pyrealsense2
       roi_sensor
       rs400_advanced_mode
       save_single_frameset
+      save_to_ply
       sensor
       spatial_filter
       stream

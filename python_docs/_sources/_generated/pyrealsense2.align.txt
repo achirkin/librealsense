@@ -17,6 +17,7 @@ pyrealsense2.align
    
       ~align.__init__
       ~align.as_decimation_filter
+      ~align.as_depth_huffman_decoder
       ~align.as_disparity_transform
       ~align.as_hole_filling_filter
       ~align.as_spatial_filter
@@ -31,6 +32,7 @@ pyrealsense2.align
       ~align.get_supported_options
       ~align.invoke
       ~align.is_decimation_filter
+      ~align.is_depth_huffman_decoder
       ~align.is_disparity_transform
       ~align.is_hole_filling_filter
       ~align.is_option_read_only

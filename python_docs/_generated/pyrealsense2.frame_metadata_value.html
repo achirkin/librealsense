@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>pyrealsense2.frame_metadata_value &mdash; pyrealsense2 2.30.0 documentation</title>
+    <title>pyrealsense2.frame_metadata_value &mdash; pyrealsense2 2.32.1 documentation</title>
     
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.30.0',
+        VERSION:     '2.32.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="pyrealsense2 2.30.0 documentation" href="../index.html" /> 
+    <link rel="top" title="pyrealsense2 2.32.1 documentation" href="../index.html" /> 
   </head>
   <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
@@ -35,7 +35,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.30.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.32.1 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -116,10 +116,16 @@
 <tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame_metadata_value.frame_counter" title="pyrealsense2.frame_metadata_value.frame_counter"><code class="xref py py-obj docutils literal"><span class="pre">frame_counter</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame_metadata_value.frame_laser_power" title="pyrealsense2.frame_metadata_value.frame_laser_power"><code class="xref py py-obj docutils literal"><span class="pre">frame_laser_power</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame_metadata_value.frame_emitter_mode" title="pyrealsense2.frame_metadata_value.frame_emitter_mode"><code class="xref py py-obj docutils literal"><span class="pre">frame_emitter_mode</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame_metadata_value.frame_laser_power_mode" title="pyrealsense2.frame_metadata_value.frame_laser_power_mode"><code class="xref py py-obj docutils literal"><span class="pre">frame_laser_power_mode</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame_metadata_value.frame_laser_power" title="pyrealsense2.frame_metadata_value.frame_laser_power"><code class="xref py py-obj docutils literal"><span class="pre">frame_laser_power</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame_metadata_value.frame_laser_power_mode" title="pyrealsense2.frame_metadata_value.frame_laser_power_mode"><code class="xref py py-obj docutils literal"><span class="pre">frame_laser_power_mode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame_metadata_value.frame_led_power" title="pyrealsense2.frame_metadata_value.frame_led_power"><code class="xref py py-obj docutils literal"><span class="pre">frame_led_power</span></code></a></td>
 <td></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame_metadata_value.frame_timestamp" title="pyrealsense2.frame_metadata_value.frame_timestamp"><code class="xref py py-obj docutils literal"><span class="pre">frame_timestamp</span></code></a></td>
@@ -143,22 +149,25 @@
 <tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame_metadata_value.power_line_frequency" title="pyrealsense2.frame_metadata_value.power_line_frequency"><code class="xref py py-obj docutils literal"><span class="pre">power_line_frequency</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame_metadata_value.saturation" title="pyrealsense2.frame_metadata_value.saturation"><code class="xref py py-obj docutils literal"><span class="pre">saturation</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame_metadata_value.raw_frame_size" title="pyrealsense2.frame_metadata_value.raw_frame_size"><code class="xref py py-obj docutils literal"><span class="pre">raw_frame_size</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame_metadata_value.sensor_timestamp" title="pyrealsense2.frame_metadata_value.sensor_timestamp"><code class="xref py py-obj docutils literal"><span class="pre">sensor_timestamp</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame_metadata_value.saturation" title="pyrealsense2.frame_metadata_value.saturation"><code class="xref py py-obj docutils literal"><span class="pre">saturation</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame_metadata_value.sharpness" title="pyrealsense2.frame_metadata_value.sharpness"><code class="xref py py-obj docutils literal"><span class="pre">sharpness</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame_metadata_value.sensor_timestamp" title="pyrealsense2.frame_metadata_value.sensor_timestamp"><code class="xref py py-obj docutils literal"><span class="pre">sensor_timestamp</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame_metadata_value.temperature" title="pyrealsense2.frame_metadata_value.temperature"><code class="xref py py-obj docutils literal"><span class="pre">temperature</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame_metadata_value.sharpness" title="pyrealsense2.frame_metadata_value.sharpness"><code class="xref py py-obj docutils literal"><span class="pre">sharpness</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame_metadata_value.time_of_arrival" title="pyrealsense2.frame_metadata_value.time_of_arrival"><code class="xref py py-obj docutils literal"><span class="pre">time_of_arrival</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame_metadata_value.temperature" title="pyrealsense2.frame_metadata_value.temperature"><code class="xref py py-obj docutils literal"><span class="pre">temperature</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame_metadata_value.white_balance" title="pyrealsense2.frame_metadata_value.white_balance"><code class="xref py py-obj docutils literal"><span class="pre">white_balance</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.frame_metadata_value.time_of_arrival" title="pyrealsense2.frame_metadata_value.time_of_arrival"><code class="xref py py-obj docutils literal"><span class="pre">time_of_arrival</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.frame_metadata_value.white_balance" title="pyrealsense2.frame_metadata_value.white_balance"><code class="xref py py-obj docutils literal"><span class="pre">white_balance</span></code></a></td>
 <td></td>
 </tr>
 </tbody>
@@ -234,6 +243,11 @@
 <dd></dd></dl>
 
 <dl class="attribute">
+<dt id="pyrealsense2.frame_metadata_value.frame_emitter_mode">
+<code class="descname">frame_emitter_mode</code><em class="property"> = frame_metadata_value.frame_emitter_mode</em><a class="headerlink" href="#pyrealsense2.frame_metadata_value.frame_emitter_mode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
 <dt id="pyrealsense2.frame_metadata_value.frame_laser_power">
 <code class="descname">frame_laser_power</code><em class="property"> = frame_metadata_value.frame_laser_power</em><a class="headerlink" href="#pyrealsense2.frame_metadata_value.frame_laser_power" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -241,6 +255,11 @@
 <dl class="attribute">
 <dt id="pyrealsense2.frame_metadata_value.frame_laser_power_mode">
 <code class="descname">frame_laser_power_mode</code><em class="property"> = frame_metadata_value.frame_laser_power_mode</em><a class="headerlink" href="#pyrealsense2.frame_metadata_value.frame_laser_power_mode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyrealsense2.frame_metadata_value.frame_led_power">
+<code class="descname">frame_led_power</code><em class="property"> = frame_metadata_value.frame_led_power</em><a class="headerlink" href="#pyrealsense2.frame_metadata_value.frame_led_power" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
@@ -276,6 +295,11 @@
 <dl class="attribute">
 <dt id="pyrealsense2.frame_metadata_value.power_line_frequency">
 <code class="descname">power_line_frequency</code><em class="property"> = frame_metadata_value.power_line_frequency</em><a class="headerlink" href="#pyrealsense2.frame_metadata_value.power_line_frequency" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyrealsense2.frame_metadata_value.raw_frame_size">
+<code class="descname">raw_frame_size</code><em class="property"> = frame_metadata_value.raw_frame_size</em><a class="headerlink" href="#pyrealsense2.frame_metadata_value.raw_frame_size" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
@@ -351,7 +375,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.30.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.32.1 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

@@ -26,14 +26,18 @@ pyrealsense2.extension
    .. autosummary::
    
       ~extension.advanced_mode
+      ~extension.auto_calibrated_device
+      ~extension.color_sensor
       ~extension.composite_frame
       ~extension.debug
       ~extension.decimation_filter
       ~extension.depth_frame
+      ~extension.depth_huffman_decoder
       ~extension.depth_sensor
       ~extension.depth_stereo_sensor
       ~extension.disparity_filter
       ~extension.disparity_frame
+      ~extension.fisheye_sensor
       ~extension.global_timer
       ~extension.hole_filling_filter
       ~extension.info
@@ -41,6 +45,7 @@ pyrealsense2.extension
       ~extension.motion
       ~extension.motion_frame
       ~extension.motion_profile
+      ~extension.motion_sensor
       ~extension.options
       ~extension.playback
       ~extension.points

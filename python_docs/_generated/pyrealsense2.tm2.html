@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>pyrealsense2.tm2 &mdash; pyrealsense2 2.30.0 documentation</title>
+    <title>pyrealsense2.tm2 &mdash; pyrealsense2 2.32.1 documentation</title>
     
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.30.0',
+        VERSION:     '2.32.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="pyrealsense2 2.30.0 documentation" href="../index.html" /> 
+    <link rel="top" title="pyrealsense2 2.32.1 documentation" href="../index.html" /> 
   </head>
   <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
@@ -35,7 +35,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.30.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.32.1 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -49,7 +49,11 @@
 <dl class="class">
 <dt id="pyrealsense2.tm2">
 <em class="property">class </em><code class="descclassname">pyrealsense2.</code><code class="descname">tm2</code><a class="headerlink" href="#pyrealsense2.tm2" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="method">
+<dd><p>The tm2 class is an interface for T2XX devices, such as T265.
+For T265, it provides RS2_STREAM_FISHEYE(2), RS2_STREAM_GYRO, RS2_STREAM_ACCEL, and RS2_STREAM_POSE streams, and contains the following sensors:
+-pose_sensor: map and relocalization functions.
+-wheel_odometer: input for odometry data.</p>
+<dl class="method">
 <dt id="pyrealsense2.tm2.__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>self: pyrealsense2.tm2</em>, <em>device: pyrealsense2.device</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#pyrealsense2.tm2.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -64,37 +68,43 @@
 <tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.tm2.__init__" title="pyrealsense2.tm2.__init__"><code class="xref py py-obj docutils literal"><span class="pre">__init__</span></code></a>((self:&nbsp;pyrealsense2.tm2,&nbsp;...)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">as_debug_protocol</span></code>(...)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">as_auto_calibrated_device</span></code>(...)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">as_playback</span></code>(...)</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">as_debug_protocol</span></code>(...)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">as_recorder</span></code>(...)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">as_playback</span></code>(...)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">as_tm2</span></code>((self:&nbsp;pyrealsense2.device)&nbsp;-&gt;&nbsp;rs2::tm2)</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">as_recorder</span></code>(...)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">as_updatable</span></code>(...)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">as_tm2</span></code>((self:&nbsp;pyrealsense2.device)&nbsp;-&gt;&nbsp;rs2::tm2)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">as_update_device</span></code>(...)</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">as_updatable</span></code>(...)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.tm2.connect_controller" title="pyrealsense2.tm2.connect_controller"><code class="xref py py-obj docutils literal"><span class="pre">connect_controller</span></code></a>((self:&nbsp;pyrealsense2.tm2,&nbsp;...)</td>
-<td>Connects to a given tm2 controller</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">as_update_device</span></code>(...)</td>
+<td></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.tm2.disable_loopback" title="pyrealsense2.tm2.disable_loopback"><code class="xref py py-obj docutils literal"><span class="pre">disable_loopback</span></code></a>(...)</td>
 <td>Restores the given device into normal operation mode</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.tm2.disconnect_controller" title="pyrealsense2.tm2.disconnect_controller"><code class="xref py py-obj docutils literal"><span class="pre">disconnect_controller</span></code></a>(...)</td>
-<td>Disconnects a given tm2 controller</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.tm2.enable_loopback" title="pyrealsense2.tm2.enable_loopback"><code class="xref py py-obj docutils literal"><span class="pre">enable_loopback</span></code></a>((self:&nbsp;pyrealsense2.tm2,&nbsp;...)</td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.tm2.enable_loopback" title="pyrealsense2.tm2.enable_loopback"><code class="xref py py-obj docutils literal"><span class="pre">enable_loopback</span></code></a>((self:&nbsp;pyrealsense2.tm2,&nbsp;...)</td>
 <td>Enter the given device into loopback operation mode that uses the given file as input for raw data</td>
 </tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">first_color_sensor</span></code>(...)</td>
+<td></td>
+</tr>
 <tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">first_depth_sensor</span></code>(...)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">first_fisheye_sensor</span></code>(...)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">first_motion_sensor</span></code>(...)</td>
 <td></td>
 </tr>
 <tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">first_pose_sensor</span></code>(...)</td>
@@ -109,46 +119,49 @@
 <tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">hardware_reset</span></code>(...)</td>
 <td>Send hardware reset request to the device</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">is_debug_protocol</span></code>(...)</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">is_auto_calibrated_device</span></code>(...)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.tm2.is_loopback_enabled" title="pyrealsense2.tm2.is_loopback_enabled"><code class="xref py py-obj docutils literal"><span class="pre">is_loopback_enabled</span></code></a>(...)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">is_debug_protocol</span></code>(...)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.tm2.is_loopback_enabled" title="pyrealsense2.tm2.is_loopback_enabled"><code class="xref py py-obj docutils literal"><span class="pre">is_loopback_enabled</span></code></a>(...)</td>
 <td>Checks if the device is in loopback mode or not</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">is_playback</span></code>((self:&nbsp;pyrealsense2.device)&nbsp;-&gt;&nbsp;bool)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">is_playback</span></code>((self:&nbsp;pyrealsense2.device)&nbsp;-&gt;&nbsp;bool)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">is_recorder</span></code>((self:&nbsp;pyrealsense2.device)&nbsp;-&gt;&nbsp;bool)</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">is_recorder</span></code>((self:&nbsp;pyrealsense2.device)&nbsp;-&gt;&nbsp;bool)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">is_tm2</span></code>((self:&nbsp;pyrealsense2.device)&nbsp;-&gt;&nbsp;bool)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">is_tm2</span></code>((self:&nbsp;pyrealsense2.device)&nbsp;-&gt;&nbsp;bool)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">is_updatable</span></code>((self:&nbsp;pyrealsense2.device)&nbsp;-&gt;&nbsp;bool)</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">is_updatable</span></code>((self:&nbsp;pyrealsense2.device)&nbsp;-&gt;&nbsp;bool)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">is_update_device</span></code>(...)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">is_update_device</span></code>(...)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">query_sensors</span></code>(...)</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">query_sensors</span></code>(...)</td>
 <td>Returns the list of adjacent devices, sharing the same physical parent composite device.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.tm2.reset_to_factory_calibration" title="pyrealsense2.tm2.reset_to_factory_calibration"><code class="xref py py-obj docutils literal"><span class="pre">reset_to_factory_calibration</span></code></a>(...)</td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.tm2.reset_to_factory_calibration" title="pyrealsense2.tm2.reset_to_factory_calibration"><code class="xref py py-obj docutils literal"><span class="pre">reset_to_factory_calibration</span></code></a>(...)</td>
 <td>Reset to factory calibration</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.tm2.set_extrinsics" title="pyrealsense2.tm2.set_extrinsics"><code class="xref py py-obj docutils literal"><span class="pre">set_extrinsics</span></code></a>((self:&nbsp;pyrealsense2.tm2,&nbsp;...)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.tm2.set_extrinsics" title="pyrealsense2.tm2.set_extrinsics"><code class="xref py py-obj docutils literal"><span class="pre">set_extrinsics</span></code></a>((self:&nbsp;pyrealsense2.tm2,&nbsp;...)</td>
 <td>Set camera extrinsics</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.tm2.set_intrinsics" title="pyrealsense2.tm2.set_intrinsics"><code class="xref py py-obj docutils literal"><span class="pre">set_intrinsics</span></code></a>((self:&nbsp;pyrealsense2.tm2,&nbsp;...)</td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.tm2.set_intrinsics" title="pyrealsense2.tm2.set_intrinsics"><code class="xref py py-obj docutils literal"><span class="pre">set_intrinsics</span></code></a>((self:&nbsp;pyrealsense2.tm2,&nbsp;...)</td>
 <td>Set camera intrinsics</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.tm2.set_motion_device_intrinsics" title="pyrealsense2.tm2.set_motion_device_intrinsics"><code class="xref py py-obj docutils literal"><span class="pre">set_motion_device_intrinsics</span></code></a>(...)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.tm2.set_motion_device_intrinsics" title="pyrealsense2.tm2.set_motion_device_intrinsics"><code class="xref py py-obj docutils literal"><span class="pre">set_motion_device_intrinsics</span></code></a>(...)</td>
 <td>Set motion device intrinsics</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">supports</span></code>((self:&nbsp;pyrealsense2.device,&nbsp;...)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">supports</span></code>((self:&nbsp;pyrealsense2.device,&nbsp;...)</td>
 <td>Check if specific camera info is supported.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.tm2.write_calibration" title="pyrealsense2.tm2.write_calibration"><code class="xref py py-obj docutils literal"><span class="pre">write_calibration</span></code></a>(...)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.tm2.write_calibration" title="pyrealsense2.tm2.write_calibration"><code class="xref py py-obj docutils literal"><span class="pre">write_calibration</span></code></a>(...)</td>
 <td>Write calibration to device&#8217;s EEPROM</td>
 </tr>
 </tbody>
@@ -166,21 +179,9 @@
 </tbody>
 </table>
 <dl class="method">
-<dt id="pyrealsense2.tm2.connect_controller">
-<code class="descname">connect_controller</code><span class="sig-paren">(</span><em>self: pyrealsense2.tm2, mac_address: List[int[6]]</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#pyrealsense2.tm2.connect_controller" title="Permalink to this definition">¶</a></dt>
-<dd><p>Connects to a given tm2 controller</p>
-</dd></dl>
-
-<dl class="method">
 <dt id="pyrealsense2.tm2.disable_loopback">
 <code class="descname">disable_loopback</code><span class="sig-paren">(</span><em>self: pyrealsense2.tm2</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#pyrealsense2.tm2.disable_loopback" title="Permalink to this definition">¶</a></dt>
 <dd><p>Restores the given device into normal operation mode</p>
-</dd></dl>
-
-<dl class="method">
-<dt id="pyrealsense2.tm2.disconnect_controller">
-<code class="descname">disconnect_controller</code><span class="sig-paren">(</span><em>self: pyrealsense2.tm2</em>, <em>id: int</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#pyrealsense2.tm2.disconnect_controller" title="Permalink to this definition">¶</a></dt>
-<dd><p>Disconnects a given tm2 controller</p>
 </dd></dl>
 
 <dl class="method">
@@ -268,7 +269,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.30.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.32.1 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

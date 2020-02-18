@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>pyrealsense2.pose_sensor &mdash; pyrealsense2 2.30.0 documentation</title>
+    <title>pyrealsense2.pose_sensor &mdash; pyrealsense2 2.32.1 documentation</title>
     
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.30.0',
+        VERSION:     '2.32.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="pyrealsense2 2.30.0 documentation" href="../index.html" /> 
+    <link rel="top" title="pyrealsense2 2.32.1 documentation" href="../index.html" /> 
   </head>
   <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
@@ -35,7 +35,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.30.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.32.1 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -64,55 +64,73 @@
 <tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.pose_sensor.__init__" title="pyrealsense2.pose_sensor.__init__"><code class="xref py py-obj docutils literal"><span class="pre">__init__</span></code></a>((self:&nbsp;pyrealsense2.pose_sensor,&nbsp;...)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">as_depth_sensor</span></code>(...)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">as_color_sensor</span></code>(...)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">as_pose_sensor</span></code>(...)</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">as_depth_sensor</span></code>(...)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">as_roi_sensor</span></code>(...)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">as_fisheye_sensor</span></code>(...)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">as_wheel_odometer</span></code>(...)</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">as_motion_sensor</span></code>(...)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">close</span></code>((self:&nbsp;pyrealsense2.sensor)&nbsp;-&gt;&nbsp;None)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">as_pose_sensor</span></code>(...)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">as_roi_sensor</span></code>(...)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">as_wheel_odometer</span></code>(...)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">close</span></code>((self:&nbsp;pyrealsense2.sensor)&nbsp;-&gt;&nbsp;None)</td>
 <td>Close sensor for exclusive access.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.pose_sensor.export_localization_map" title="pyrealsense2.pose_sensor.export_localization_map"><code class="xref py py-obj docutils literal"><span class="pre">export_localization_map</span></code></a>(...)</td>
-<td>Extract SLAM localization map from device and store on host.</td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.pose_sensor.export_localization_map" title="pyrealsense2.pose_sensor.export_localization_map"><code class="xref py py-obj docutils literal"><span class="pre">export_localization_map</span></code></a>(...)</td>
+<td>Get relocalization map that is currently on device, created and updated during most recent tracking session.</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">get_info</span></code>((self:&nbsp;pyrealsense2.sensor,&nbsp;...)</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">get_info</span></code>((self:&nbsp;pyrealsense2.sensor,&nbsp;...)</td>
 <td>Retrieve camera specific information, like versions of various internal components.</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">get_option</span></code>((self:&nbsp;pyrealsense2.options,&nbsp;...)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">get_option</span></code>((self:&nbsp;pyrealsense2.options,&nbsp;...)</td>
 <td>Read option value from the device.</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">get_option_description</span></code>(...)</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">get_option_description</span></code>(...)</td>
 <td>Get option description.</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">get_option_range</span></code>(...)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">get_option_range</span></code>(...)</td>
 <td>Retrieve the available range of values of a supported option</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">get_option_value_description</span></code>(...)</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">get_option_value_description</span></code>(...)</td>
 <td>Get option value description (In case a specific option value holds special meaning)</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">get_recommended_filters</span></code>(...)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">get_recommended_filters</span></code>(...)</td>
 <td>Return the recommended list of filters by the sensor.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.pose_sensor.get_static_node" title="pyrealsense2.pose_sensor.get_static_node"><code class="xref py py-obj docutils literal"><span class="pre">get_static_node</span></code></a>(...)</td>
-<td>Retrieve a named reference frame anchored to a specific 3D pose.</td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.pose_sensor.get_static_node" title="pyrealsense2.pose_sensor.get_static_node"><code class="xref py py-obj docutils literal"><span class="pre">get_static_node</span></code></a>(...)</td>
+<td>Gets the current pose of a static node that was created in the current map or in an imported map.</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">get_stream_profiles</span></code>(...)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">get_stream_profiles</span></code>(...)</td>
 <td>Retrieves the list of stream profiles supported by the sensor.</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">get_supported_options</span></code>(...)</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">get_supported_options</span></code>(...)</td>
 <td>Retrieve list of supported options</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.pose_sensor.import_localization_map" title="pyrealsense2.pose_sensor.import_localization_map"><code class="xref py py-obj docutils literal"><span class="pre">import_localization_map</span></code></a>(...)</td>
-<td>Load SLAM localization map from host to device.</td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.pose_sensor.import_localization_map" title="pyrealsense2.pose_sensor.import_localization_map"><code class="xref py py-obj docutils literal"><span class="pre">import_localization_map</span></code></a>(...)</td>
+<td>Load relocalization map onto device.</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">is_color_sensor</span></code>(...)</td>
+<td></td>
 </tr>
 <tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">is_depth_sensor</span></code>(...)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">is_fisheye_sensor</span></code>(...)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">is_motion_sensor</span></code>(...)</td>
 <td></td>
 </tr>
 <tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">is_option_read_only</span></code>(...)</td>
@@ -130,22 +148,25 @@
 <tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">open</span></code>(*args,&nbsp;**kwargs)</td>
 <td>Overloaded function.</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">set_notifications_callback</span></code>(...)</td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.pose_sensor.remove_static_node" title="pyrealsense2.pose_sensor.remove_static_node"><code class="xref py py-obj docutils literal"><span class="pre">remove_static_node</span></code></a></td>
+<td>remove_static_node(self: pyrealsense2.pose_sensor, Removes a named virtual landmark in the current map, known as static node.</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">set_notifications_callback</span></code>(...)</td>
 <td>Register Notifications callback</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">set_option</span></code>((self:&nbsp;pyrealsense2.options,&nbsp;...)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">set_option</span></code>((self:&nbsp;pyrealsense2.options,&nbsp;...)</td>
 <td>Write new value to device option</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.pose_sensor.set_static_node" title="pyrealsense2.pose_sensor.set_static_node"><code class="xref py py-obj docutils literal"><span class="pre">set_static_node</span></code></a>(...)</td>
-<td>Create a named reference frame anchored to a specific 3D pose.</td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.pose_sensor.set_static_node" title="pyrealsense2.pose_sensor.set_static_node"><code class="xref py py-obj docutils literal"><span class="pre">set_static_node</span></code></a>(...)</td>
+<td>Creates a named virtual landmark in the current map, known as static node.</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">start</span></code>(*args,&nbsp;**kwargs)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">start</span></code>(*args,&nbsp;**kwargs)</td>
 <td>Overloaded function.</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">stop</span></code>((self:&nbsp;pyrealsense2.sensor)&nbsp;-&gt;&nbsp;None)</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">stop</span></code>((self:&nbsp;pyrealsense2.sensor)&nbsp;-&gt;&nbsp;None)</td>
 <td>Stop streaming.</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">supports</span></code>(*args,&nbsp;**kwargs)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">supports</span></code>(*args,&nbsp;**kwargs)</td>
 <td>Overloaded function.</td>
 </tr>
 </tbody>
@@ -165,25 +186,41 @@
 <dl class="method">
 <dt id="pyrealsense2.pose_sensor.export_localization_map">
 <code class="descname">export_localization_map</code><span class="sig-paren">(</span><em>self: pyrealsense2.pose_sensor</em><span class="sig-paren">)</span> &rarr; List[int]<a class="headerlink" href="#pyrealsense2.pose_sensor.export_localization_map" title="Permalink to this definition">¶</a></dt>
-<dd><p>Extract SLAM localization map from device and store on host.</p>
+<dd><p>Get relocalization map that is currently on device, created and updated during most recent tracking session.
+Can be called before or after stop().</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="pyrealsense2.pose_sensor.get_static_node">
-<code class="descname">get_static_node</code><span class="sig-paren">(</span><em>self: pyrealsense2.pose_sensor</em>, <em>arg0: str</em>, <em>arg1: pyrealsense2.vector</em>, <em>arg2: pyrealsense2.quaternion</em><span class="sig-paren">)</span> &rarr; bool<a class="headerlink" href="#pyrealsense2.pose_sensor.get_static_node" title="Permalink to this definition">¶</a></dt>
-<dd><p>Retrieve a named reference frame anchored to a specific 3D pose.</p>
+<code class="descname">get_static_node</code><span class="sig-paren">(</span><em>self: pyrealsense2.pose_sensor</em>, <em>guid: str</em><span class="sig-paren">)</span> &rarr; Tuple[bool, pyrealsense2.vector, pyrealsense2.quaternion]<a class="headerlink" href="#pyrealsense2.pose_sensor.get_static_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the current pose of a static node that was created in the current map or in an imported map.
+Static nodes of imported maps are available after relocalizing the imported map.
+The static node&#8217;s pose is returned relative to the current origin of coordinates of device poses.
+Thus, poses of static nodes of an imported map are consistent with current device poses after relocalization.
+This function fails if the current tracker confidence is below 3 (high confidence).</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="pyrealsense2.pose_sensor.import_localization_map">
 <code class="descname">import_localization_map</code><span class="sig-paren">(</span><em>self: pyrealsense2.pose_sensor, lmap_buf: List[int]</em><span class="sig-paren">)</span> &rarr; bool<a class="headerlink" href="#pyrealsense2.pose_sensor.import_localization_map" title="Permalink to this definition">¶</a></dt>
-<dd><p>Load SLAM localization map from host to device.</p>
+<dd><p>Load relocalization map onto device. Only one relocalization map can be imported at a time; any previously existing map will be overwritten.
+The imported map exists simultaneously with the map created during the most recent tracking session after start(),and they are merged after the imported map is relocalized.
+This operation must be done before start().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyrealsense2.pose_sensor.remove_static_node">
+<code class="descname">remove_static_node</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrealsense2.pose_sensor.remove_static_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>remove_static_node(self: pyrealsense2.pose_sensor, Removes a named virtual landmark in the current map, known as static node.
+guid: str) -&gt; bool</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="pyrealsense2.pose_sensor.set_static_node">
-<code class="descname">set_static_node</code><span class="sig-paren">(</span><em>self: pyrealsense2.pose_sensor</em>, <em>arg0: str</em>, <em>arg1: pyrealsense2.vector</em>, <em>arg2: pyrealsense2.quaternion</em><span class="sig-paren">)</span> &rarr; bool<a class="headerlink" href="#pyrealsense2.pose_sensor.set_static_node" title="Permalink to this definition">¶</a></dt>
-<dd><p>Create a named reference frame anchored to a specific 3D pose.</p>
+<code class="descname">set_static_node</code><span class="sig-paren">(</span><em>self: pyrealsense2.pose_sensor</em>, <em>guid: str</em>, <em>pos: pyrealsense2.vector</em>, <em>orient: pyrealsense2.quaternion</em><span class="sig-paren">)</span> &rarr; bool<a class="headerlink" href="#pyrealsense2.pose_sensor.set_static_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a named virtual landmark in the current map, known as static node.
+The static node&#8217;s pose is provided relative to the origin of current coordinate system of device poses.
+This function fails if the current tracker confidence is below 3 (high confidence).</p>
 </dd></dl>
 
 </dd></dl>
@@ -229,7 +266,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.30.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.32.1 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

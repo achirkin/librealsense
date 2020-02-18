@@ -17,6 +17,7 @@ pyrealsense2.threshold_filter
    
       ~threshold_filter.__init__
       ~threshold_filter.as_decimation_filter
+      ~threshold_filter.as_depth_huffman_decoder
       ~threshold_filter.as_disparity_transform
       ~threshold_filter.as_hole_filling_filter
       ~threshold_filter.as_spatial_filter
@@ -31,6 +32,7 @@ pyrealsense2.threshold_filter
       ~threshold_filter.get_supported_options
       ~threshold_filter.invoke
       ~threshold_filter.is_decimation_filter
+      ~threshold_filter.is_depth_huffman_decoder
       ~threshold_filter.is_disparity_transform
       ~threshold_filter.is_hole_filling_filter
       ~threshold_filter.is_option_read_only

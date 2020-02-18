@@ -17,6 +17,7 @@ pyrealsense2.disparity_transform
    
       ~disparity_transform.__init__
       ~disparity_transform.as_decimation_filter
+      ~disparity_transform.as_depth_huffman_decoder
       ~disparity_transform.as_disparity_transform
       ~disparity_transform.as_hole_filling_filter
       ~disparity_transform.as_spatial_filter
@@ -31,6 +32,7 @@ pyrealsense2.disparity_transform
       ~disparity_transform.get_supported_options
       ~disparity_transform.invoke
       ~disparity_transform.is_decimation_filter
+      ~disparity_transform.is_depth_huffman_decoder
       ~disparity_transform.is_disparity_transform
       ~disparity_transform.is_hole_filling_filter
       ~disparity_transform.is_option_read_only

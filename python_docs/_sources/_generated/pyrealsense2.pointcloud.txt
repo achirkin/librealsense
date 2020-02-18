@@ -17,6 +17,7 @@ pyrealsense2.pointcloud
    
       ~pointcloud.__init__
       ~pointcloud.as_decimation_filter
+      ~pointcloud.as_depth_huffman_decoder
       ~pointcloud.as_disparity_transform
       ~pointcloud.as_hole_filling_filter
       ~pointcloud.as_spatial_filter
@@ -32,6 +33,7 @@ pyrealsense2.pointcloud
       ~pointcloud.get_supported_options
       ~pointcloud.invoke
       ~pointcloud.is_decimation_filter
+      ~pointcloud.is_depth_huffman_decoder
       ~pointcloud.is_disparity_transform
       ~pointcloud.is_hole_filling_filter
       ~pointcloud.is_option_read_only

@@ -17,6 +17,7 @@ pyrealsense2.spatial_filter
    
       ~spatial_filter.__init__
       ~spatial_filter.as_decimation_filter
+      ~spatial_filter.as_depth_huffman_decoder
       ~spatial_filter.as_disparity_transform
       ~spatial_filter.as_hole_filling_filter
       ~spatial_filter.as_spatial_filter
@@ -31,6 +32,7 @@ pyrealsense2.spatial_filter
       ~spatial_filter.get_supported_options
       ~spatial_filter.invoke
       ~spatial_filter.is_decimation_filter
+      ~spatial_filter.is_depth_huffman_decoder
       ~spatial_filter.is_disparity_transform
       ~spatial_filter.is_hole_filling_filter
       ~spatial_filter.is_option_read_only

@@ -16,7 +16,10 @@ pyrealsense2.sensor
    .. autosummary::
    
       ~sensor.__init__
+      ~sensor.as_color_sensor
       ~sensor.as_depth_sensor
+      ~sensor.as_fisheye_sensor
+      ~sensor.as_motion_sensor
       ~sensor.as_pose_sensor
       ~sensor.as_roi_sensor
       ~sensor.as_wheel_odometer
@@ -29,7 +32,10 @@ pyrealsense2.sensor
       ~sensor.get_recommended_filters
       ~sensor.get_stream_profiles
       ~sensor.get_supported_options
+      ~sensor.is_color_sensor
       ~sensor.is_depth_sensor
+      ~sensor.is_fisheye_sensor
+      ~sensor.is_motion_sensor
       ~sensor.is_option_read_only
       ~sensor.is_pose_sensor
       ~sensor.is_roi_sensor

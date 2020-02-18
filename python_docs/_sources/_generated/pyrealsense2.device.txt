@@ -16,17 +16,22 @@ pyrealsense2.device
    .. autosummary::
    
       ~device.__init__
+      ~device.as_auto_calibrated_device
       ~device.as_debug_protocol
       ~device.as_playback
       ~device.as_recorder
       ~device.as_tm2
       ~device.as_updatable
       ~device.as_update_device
+      ~device.first_color_sensor
       ~device.first_depth_sensor
+      ~device.first_fisheye_sensor
+      ~device.first_motion_sensor
       ~device.first_pose_sensor
       ~device.first_roi_sensor
       ~device.get_info
       ~device.hardware_reset
+      ~device.is_auto_calibrated_device
       ~device.is_debug_protocol
       ~device.is_playback
       ~device.is_recorder

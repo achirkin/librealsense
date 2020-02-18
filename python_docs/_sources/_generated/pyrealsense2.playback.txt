@@ -16,6 +16,7 @@ pyrealsense2.playback
    .. autosummary::
    
       ~playback.__init__
+      ~playback.as_auto_calibrated_device
       ~playback.as_debug_protocol
       ~playback.as_playback
       ~playback.as_recorder
@@ -24,13 +25,17 @@ pyrealsense2.playback
       ~playback.as_update_device
       ~playback.current_status
       ~playback.file_name
+      ~playback.first_color_sensor
       ~playback.first_depth_sensor
+      ~playback.first_fisheye_sensor
+      ~playback.first_motion_sensor
       ~playback.first_pose_sensor
       ~playback.first_roi_sensor
       ~playback.get_duration
       ~playback.get_info
       ~playback.get_position
       ~playback.hardware_reset
+      ~playback.is_auto_calibrated_device
       ~playback.is_debug_protocol
       ~playback.is_playback
       ~playback.is_real_time

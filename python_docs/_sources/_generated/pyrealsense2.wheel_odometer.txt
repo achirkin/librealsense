@@ -16,7 +16,10 @@ pyrealsense2.wheel_odometer
    .. autosummary::
    
       ~wheel_odometer.__init__
+      ~wheel_odometer.as_color_sensor
       ~wheel_odometer.as_depth_sensor
+      ~wheel_odometer.as_fisheye_sensor
+      ~wheel_odometer.as_motion_sensor
       ~wheel_odometer.as_pose_sensor
       ~wheel_odometer.as_roi_sensor
       ~wheel_odometer.as_wheel_odometer
@@ -29,7 +32,10 @@ pyrealsense2.wheel_odometer
       ~wheel_odometer.get_recommended_filters
       ~wheel_odometer.get_stream_profiles
       ~wheel_odometer.get_supported_options
+      ~wheel_odometer.is_color_sensor
       ~wheel_odometer.is_depth_sensor
+      ~wheel_odometer.is_fisheye_sensor
+      ~wheel_odometer.is_motion_sensor
       ~wheel_odometer.is_option_read_only
       ~wheel_odometer.is_pose_sensor
       ~wheel_odometer.is_roi_sensor

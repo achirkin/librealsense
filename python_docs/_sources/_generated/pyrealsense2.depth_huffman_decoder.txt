@@ -1,0 +1,52 @@
+pyrealsense2.depth_huffman_decoder
+==================================
+
+.. currentmodule:: pyrealsense2
+
+.. autoclass:: depth_huffman_decoder
+   :members:
+   :undoc-members:
+
+   
+   .. automethod:: __init__
+   
+   
+   .. rubric:: Methods
+   
+   .. autosummary::
+   
+      ~depth_huffman_decoder.__init__
+      ~depth_huffman_decoder.as_decimation_filter
+      ~depth_huffman_decoder.as_depth_huffman_decoder
+      ~depth_huffman_decoder.as_disparity_transform
+      ~depth_huffman_decoder.as_hole_filling_filter
+      ~depth_huffman_decoder.as_spatial_filter
+      ~depth_huffman_decoder.as_temporal_filter
+      ~depth_huffman_decoder.as_threshold_filter
+      ~depth_huffman_decoder.as_zero_order_invalidation
+      ~depth_huffman_decoder.get_info
+      ~depth_huffman_decoder.get_option
+      ~depth_huffman_decoder.get_option_description
+      ~depth_huffman_decoder.get_option_range
+      ~depth_huffman_decoder.get_option_value_description
+      ~depth_huffman_decoder.get_supported_options
+      ~depth_huffman_decoder.invoke
+      ~depth_huffman_decoder.is_decimation_filter
+      ~depth_huffman_decoder.is_depth_huffman_decoder
+      ~depth_huffman_decoder.is_disparity_transform
+      ~depth_huffman_decoder.is_hole_filling_filter
+      ~depth_huffman_decoder.is_option_read_only
+      ~depth_huffman_decoder.is_spatial_filter
+      ~depth_huffman_decoder.is_temporal_filter
+      ~depth_huffman_decoder.is_threshold_filter
+      ~depth_huffman_decoder.is_zero_order_invalidation
+      ~depth_huffman_decoder.process
+      ~depth_huffman_decoder.set_option
+      ~depth_huffman_decoder.start
+      ~depth_huffman_decoder.supports
+   
+   
+   
+   
+   
+   

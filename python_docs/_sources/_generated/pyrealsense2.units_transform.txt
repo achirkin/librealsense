@@ -17,6 +17,7 @@ pyrealsense2.units_transform
    
       ~units_transform.__init__
       ~units_transform.as_decimation_filter
+      ~units_transform.as_depth_huffman_decoder
       ~units_transform.as_disparity_transform
       ~units_transform.as_hole_filling_filter
       ~units_transform.as_spatial_filter
@@ -31,6 +32,7 @@ pyrealsense2.units_transform
       ~units_transform.get_supported_options
       ~units_transform.invoke
       ~units_transform.is_decimation_filter
+      ~units_transform.is_depth_huffman_decoder
       ~units_transform.is_disparity_transform
       ~units_transform.is_hole_filling_filter
       ~units_transform.is_option_read_only

@@ -39,8 +39,10 @@ pyrealsense2.frame_metadata_value
       ~frame_metadata_value.exposure_roi_right
       ~frame_metadata_value.exposure_roi_top
       ~frame_metadata_value.frame_counter
+      ~frame_metadata_value.frame_emitter_mode
       ~frame_metadata_value.frame_laser_power
       ~frame_metadata_value.frame_laser_power_mode
+      ~frame_metadata_value.frame_led_power
       ~frame_metadata_value.frame_timestamp
       ~frame_metadata_value.gain_level
       ~frame_metadata_value.gamma
@@ -48,6 +50,7 @@ pyrealsense2.frame_metadata_value
       ~frame_metadata_value.low_light_compensation
       ~frame_metadata_value.manual_white_balance
       ~frame_metadata_value.power_line_frequency
+      ~frame_metadata_value.raw_frame_size
       ~frame_metadata_value.saturation
       ~frame_metadata_value.sensor_timestamp
       ~frame_metadata_value.sharpness

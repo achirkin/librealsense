@@ -17,6 +17,7 @@ pyrealsense2.yuy_decoder
    
       ~yuy_decoder.__init__
       ~yuy_decoder.as_decimation_filter
+      ~yuy_decoder.as_depth_huffman_decoder
       ~yuy_decoder.as_disparity_transform
       ~yuy_decoder.as_hole_filling_filter
       ~yuy_decoder.as_spatial_filter
@@ -31,6 +32,7 @@ pyrealsense2.yuy_decoder
       ~yuy_decoder.get_supported_options
       ~yuy_decoder.invoke
       ~yuy_decoder.is_decimation_filter
+      ~yuy_decoder.is_depth_huffman_decoder
       ~yuy_decoder.is_disparity_transform
       ~yuy_decoder.is_hole_filling_filter
       ~yuy_decoder.is_option_read_only

@@ -17,6 +17,7 @@ pyrealsense2.temporal_filter
    
       ~temporal_filter.__init__
       ~temporal_filter.as_decimation_filter
+      ~temporal_filter.as_depth_huffman_decoder
       ~temporal_filter.as_disparity_transform
       ~temporal_filter.as_hole_filling_filter
       ~temporal_filter.as_spatial_filter
@@ -31,6 +32,7 @@ pyrealsense2.temporal_filter
       ~temporal_filter.get_supported_options
       ~temporal_filter.invoke
       ~temporal_filter.is_decimation_filter
+      ~temporal_filter.is_depth_huffman_decoder
       ~temporal_filter.is_disparity_transform
       ~temporal_filter.is_hole_filling_filter
       ~temporal_filter.is_option_read_only

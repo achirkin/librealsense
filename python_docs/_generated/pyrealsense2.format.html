@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>pyrealsense2.format &mdash; pyrealsense2 2.30.0 documentation</title>
+    <title>pyrealsense2.format &mdash; pyrealsense2 2.32.1 documentation</title>
     
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.30.0',
+        VERSION:     '2.32.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="pyrealsense2 2.30.0 documentation" href="../index.html" /> 
+    <link rel="top" title="pyrealsense2 2.32.1 documentation" href="../index.html" /> 
   </head>
   <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
@@ -35,7 +35,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.30.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.32.1 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -95,6 +95,12 @@
 <tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.format.gpio_raw" title="pyrealsense2.format.gpio_raw"><code class="xref py py-obj docutils literal"><span class="pre">gpio_raw</span></code></a></td>
 <td></td>
 </tr>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.format.invi" title="pyrealsense2.format.invi"><code class="xref py py-obj docutils literal"><span class="pre">invi</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.format.inzi" title="pyrealsense2.format.inzi"><code class="xref py py-obj docutils literal"><span class="pre">inzi</span></code></a></td>
+<td></td>
+</tr>
 <tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.format.mjpeg" title="pyrealsense2.format.mjpeg"><code class="xref py py-obj docutils literal"><span class="pre">mjpeg</span></code></a></td>
 <td></td>
 </tr>
@@ -125,10 +131,16 @@
 <tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.format.uyvy" title="pyrealsense2.format.uyvy"><code class="xref py py-obj docutils literal"><span class="pre">uyvy</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.format.xyz32f" title="pyrealsense2.format.xyz32f"><code class="xref py py-obj docutils literal"><span class="pre">xyz32f</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.format.w10" title="pyrealsense2.format.w10"><code class="xref py py-obj docutils literal"><span class="pre">w10</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.format.y10bpack" title="pyrealsense2.format.y10bpack"><code class="xref py py-obj docutils literal"><span class="pre">y10bpack</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.format.xyz32f" title="pyrealsense2.format.xyz32f"><code class="xref py py-obj docutils literal"><span class="pre">xyz32f</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.format.y10bpack" title="pyrealsense2.format.y10bpack"><code class="xref py py-obj docutils literal"><span class="pre">y10bpack</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.format.y12i" title="pyrealsense2.format.y12i"><code class="xref py py-obj docutils literal"><span class="pre">y12i</span></code></a></td>
 <td></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.format.y16" title="pyrealsense2.format.y16"><code class="xref py py-obj docutils literal"><span class="pre">y16</span></code></a></td>
@@ -137,10 +149,16 @@
 <tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.format.y8" title="pyrealsense2.format.y8"><code class="xref py py-obj docutils literal"><span class="pre">y8</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.format.yuyv" title="pyrealsense2.format.yuyv"><code class="xref py py-obj docutils literal"><span class="pre">yuyv</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.format.y8i" title="pyrealsense2.format.y8i"><code class="xref py py-obj docutils literal"><span class="pre">y8i</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.format.z16" title="pyrealsense2.format.z16"><code class="xref py py-obj docutils literal"><span class="pre">z16</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.format.yuyv" title="pyrealsense2.format.yuyv"><code class="xref py py-obj docutils literal"><span class="pre">yuyv</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.format.z16" title="pyrealsense2.format.z16"><code class="xref py py-obj docutils literal"><span class="pre">z16</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.format.z16h" title="pyrealsense2.format.z16h"><code class="xref py py-obj docutils literal"><span class="pre">z16h</span></code></a></td>
 <td></td>
 </tr>
 </tbody>
@@ -178,6 +196,16 @@
 <dl class="attribute">
 <dt id="pyrealsense2.format.gpio_raw">
 <code class="descname">gpio_raw</code><em class="property"> = format.gpio_raw</em><a class="headerlink" href="#pyrealsense2.format.gpio_raw" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyrealsense2.format.invi">
+<code class="descname">invi</code><em class="property"> = format.invi</em><a class="headerlink" href="#pyrealsense2.format.invi" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyrealsense2.format.inzi">
+<code class="descname">inzi</code><em class="property"> = format.inzi</em><a class="headerlink" href="#pyrealsense2.format.inzi" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
@@ -231,6 +259,11 @@
 <dd></dd></dl>
 
 <dl class="attribute">
+<dt id="pyrealsense2.format.w10">
+<code class="descname">w10</code><em class="property"> = format.w10</em><a class="headerlink" href="#pyrealsense2.format.w10" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
 <dt id="pyrealsense2.format.xyz32f">
 <code class="descname">xyz32f</code><em class="property"> = format.xyz32f</em><a class="headerlink" href="#pyrealsense2.format.xyz32f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -238,6 +271,11 @@
 <dl class="attribute">
 <dt id="pyrealsense2.format.y10bpack">
 <code class="descname">y10bpack</code><em class="property"> = format.y10bpack</em><a class="headerlink" href="#pyrealsense2.format.y10bpack" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyrealsense2.format.y12i">
+<code class="descname">y12i</code><em class="property"> = format.y12i</em><a class="headerlink" href="#pyrealsense2.format.y12i" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
@@ -251,6 +289,11 @@
 <dd></dd></dl>
 
 <dl class="attribute">
+<dt id="pyrealsense2.format.y8i">
+<code class="descname">y8i</code><em class="property"> = format.y8i</em><a class="headerlink" href="#pyrealsense2.format.y8i" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
 <dt id="pyrealsense2.format.yuyv">
 <code class="descname">yuyv</code><em class="property"> = format.yuyv</em><a class="headerlink" href="#pyrealsense2.format.yuyv" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -258,6 +301,11 @@
 <dl class="attribute">
 <dt id="pyrealsense2.format.z16">
 <code class="descname">z16</code><em class="property"> = format.z16</em><a class="headerlink" href="#pyrealsense2.format.z16" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyrealsense2.format.z16h">
+<code class="descname">z16h</code><em class="property"> = format.z16h</em><a class="headerlink" href="#pyrealsense2.format.z16h" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -303,7 +351,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.30.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.32.1 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

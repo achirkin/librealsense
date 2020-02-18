@@ -32,6 +32,8 @@ pyrealsense2.format
       ~format.disparity32
       ~format.distance
       ~format.gpio_raw
+      ~format.invi
+      ~format.inzi
       ~format.mjpeg
       ~format.motion_raw
       ~format.motion_xyz32f
@@ -42,11 +44,15 @@ pyrealsense2.format
       ~format.rgba8
       ~format.six_dof
       ~format.uyvy
+      ~format.w10
       ~format.xyz32f
       ~format.y10bpack
+      ~format.y12i
       ~format.y16
       ~format.y8
+      ~format.y8i
       ~format.yuyv
       ~format.z16
+      ~format.z16h
    
    

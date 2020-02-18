@@ -17,6 +17,7 @@ pyrealsense2.colorizer
    
       ~colorizer.__init__
       ~colorizer.as_decimation_filter
+      ~colorizer.as_depth_huffman_decoder
       ~colorizer.as_disparity_transform
       ~colorizer.as_hole_filling_filter
       ~colorizer.as_spatial_filter
@@ -32,6 +33,7 @@ pyrealsense2.colorizer
       ~colorizer.get_supported_options
       ~colorizer.invoke
       ~colorizer.is_decimation_filter
+      ~colorizer.is_depth_huffman_decoder
       ~colorizer.is_disparity_transform
       ~colorizer.is_hole_filling_filter
       ~colorizer.is_option_read_only

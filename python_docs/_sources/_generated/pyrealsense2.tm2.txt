@@ -16,21 +16,24 @@ pyrealsense2.tm2
    .. autosummary::
    
       ~tm2.__init__
+      ~tm2.as_auto_calibrated_device
       ~tm2.as_debug_protocol
       ~tm2.as_playback
       ~tm2.as_recorder
       ~tm2.as_tm2
       ~tm2.as_updatable
       ~tm2.as_update_device
-      ~tm2.connect_controller
       ~tm2.disable_loopback
-      ~tm2.disconnect_controller
       ~tm2.enable_loopback
+      ~tm2.first_color_sensor
       ~tm2.first_depth_sensor
+      ~tm2.first_fisheye_sensor
+      ~tm2.first_motion_sensor
       ~tm2.first_pose_sensor
       ~tm2.first_roi_sensor
       ~tm2.get_info
       ~tm2.hardware_reset
+      ~tm2.is_auto_calibrated_device
       ~tm2.is_debug_protocol
       ~tm2.is_loopback_enabled
       ~tm2.is_playback

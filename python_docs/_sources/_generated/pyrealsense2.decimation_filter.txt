@@ -17,6 +17,7 @@ pyrealsense2.decimation_filter
    
       ~decimation_filter.__init__
       ~decimation_filter.as_decimation_filter
+      ~decimation_filter.as_depth_huffman_decoder
       ~decimation_filter.as_disparity_transform
       ~decimation_filter.as_hole_filling_filter
       ~decimation_filter.as_spatial_filter
@@ -31,6 +32,7 @@ pyrealsense2.decimation_filter
       ~decimation_filter.get_supported_options
       ~decimation_filter.invoke
       ~decimation_filter.is_decimation_filter
+      ~decimation_filter.is_depth_huffman_decoder
       ~decimation_filter.is_disparity_transform
       ~decimation_filter.is_hole_filling_filter
       ~decimation_filter.is_option_read_only

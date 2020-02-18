@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>pyrealsense2.sensor &mdash; pyrealsense2 2.30.0 documentation</title>
+    <title>pyrealsense2.sensor &mdash; pyrealsense2 2.32.1 documentation</title>
     
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.30.0',
+        VERSION:     '2.32.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="pyrealsense2 2.30.0 documentation" href="../index.html" /> 
+    <link rel="top" title="pyrealsense2 2.32.1 documentation" href="../index.html" /> 
   </head>
   <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
@@ -35,7 +35,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.30.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.32.1 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -64,46 +64,64 @@
 <tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.sensor.__init__" title="pyrealsense2.sensor.__init__"><code class="xref py py-obj docutils literal"><span class="pre">__init__</span></code></a>((self:&nbsp;pyrealsense2.sensor)&nbsp;-&gt;&nbsp;None)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.sensor.as_depth_sensor" title="pyrealsense2.sensor.as_depth_sensor"><code class="xref py py-obj docutils literal"><span class="pre">as_depth_sensor</span></code></a>(...)</td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.sensor.as_color_sensor" title="pyrealsense2.sensor.as_color_sensor"><code class="xref py py-obj docutils literal"><span class="pre">as_color_sensor</span></code></a>(...)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.sensor.as_pose_sensor" title="pyrealsense2.sensor.as_pose_sensor"><code class="xref py py-obj docutils literal"><span class="pre">as_pose_sensor</span></code></a>(...)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.sensor.as_depth_sensor" title="pyrealsense2.sensor.as_depth_sensor"><code class="xref py py-obj docutils literal"><span class="pre">as_depth_sensor</span></code></a>(...)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.sensor.as_roi_sensor" title="pyrealsense2.sensor.as_roi_sensor"><code class="xref py py-obj docutils literal"><span class="pre">as_roi_sensor</span></code></a>(...)</td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.sensor.as_fisheye_sensor" title="pyrealsense2.sensor.as_fisheye_sensor"><code class="xref py py-obj docutils literal"><span class="pre">as_fisheye_sensor</span></code></a>(...)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.sensor.as_wheel_odometer" title="pyrealsense2.sensor.as_wheel_odometer"><code class="xref py py-obj docutils literal"><span class="pre">as_wheel_odometer</span></code></a>(...)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.sensor.as_motion_sensor" title="pyrealsense2.sensor.as_motion_sensor"><code class="xref py py-obj docutils literal"><span class="pre">as_motion_sensor</span></code></a>(...)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.sensor.close" title="pyrealsense2.sensor.close"><code class="xref py py-obj docutils literal"><span class="pre">close</span></code></a>((self:&nbsp;pyrealsense2.sensor)&nbsp;-&gt;&nbsp;None)</td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.sensor.as_pose_sensor" title="pyrealsense2.sensor.as_pose_sensor"><code class="xref py py-obj docutils literal"><span class="pre">as_pose_sensor</span></code></a>(...)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.sensor.as_roi_sensor" title="pyrealsense2.sensor.as_roi_sensor"><code class="xref py py-obj docutils literal"><span class="pre">as_roi_sensor</span></code></a>(...)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.sensor.as_wheel_odometer" title="pyrealsense2.sensor.as_wheel_odometer"><code class="xref py py-obj docutils literal"><span class="pre">as_wheel_odometer</span></code></a>(...)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.sensor.close" title="pyrealsense2.sensor.close"><code class="xref py py-obj docutils literal"><span class="pre">close</span></code></a>((self:&nbsp;pyrealsense2.sensor)&nbsp;-&gt;&nbsp;None)</td>
 <td>Close sensor for exclusive access.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.sensor.get_info" title="pyrealsense2.sensor.get_info"><code class="xref py py-obj docutils literal"><span class="pre">get_info</span></code></a>((self:&nbsp;pyrealsense2.sensor,&nbsp;...)</td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.sensor.get_info" title="pyrealsense2.sensor.get_info"><code class="xref py py-obj docutils literal"><span class="pre">get_info</span></code></a>((self:&nbsp;pyrealsense2.sensor,&nbsp;...)</td>
 <td>Retrieve camera specific information, like versions of various internal components.</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">get_option</span></code>((self:&nbsp;pyrealsense2.options,&nbsp;...)</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">get_option</span></code>((self:&nbsp;pyrealsense2.options,&nbsp;...)</td>
 <td>Read option value from the device.</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">get_option_description</span></code>(...)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">get_option_description</span></code>(...)</td>
 <td>Get option description.</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">get_option_range</span></code>(...)</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">get_option_range</span></code>(...)</td>
 <td>Retrieve the available range of values of a supported option</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">get_option_value_description</span></code>(...)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">get_option_value_description</span></code>(...)</td>
 <td>Get option value description (In case a specific option value holds special meaning)</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.sensor.get_recommended_filters" title="pyrealsense2.sensor.get_recommended_filters"><code class="xref py py-obj docutils literal"><span class="pre">get_recommended_filters</span></code></a>(...)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.sensor.get_recommended_filters" title="pyrealsense2.sensor.get_recommended_filters"><code class="xref py py-obj docutils literal"><span class="pre">get_recommended_filters</span></code></a>(...)</td>
 <td>Return the recommended list of filters by the sensor.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.sensor.get_stream_profiles" title="pyrealsense2.sensor.get_stream_profiles"><code class="xref py py-obj docutils literal"><span class="pre">get_stream_profiles</span></code></a>(...)</td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.sensor.get_stream_profiles" title="pyrealsense2.sensor.get_stream_profiles"><code class="xref py py-obj docutils literal"><span class="pre">get_stream_profiles</span></code></a>(...)</td>
 <td>Retrieves the list of stream profiles supported by the sensor.</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">get_supported_options</span></code>(...)</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">get_supported_options</span></code>(...)</td>
 <td>Retrieve list of supported options</td>
 </tr>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.sensor.is_color_sensor" title="pyrealsense2.sensor.is_color_sensor"><code class="xref py py-obj docutils literal"><span class="pre">is_color_sensor</span></code></a>(...)</td>
+<td></td>
+</tr>
 <tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.sensor.is_depth_sensor" title="pyrealsense2.sensor.is_depth_sensor"><code class="xref py py-obj docutils literal"><span class="pre">is_depth_sensor</span></code></a>(...)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.sensor.is_fisheye_sensor" title="pyrealsense2.sensor.is_fisheye_sensor"><code class="xref py py-obj docutils literal"><span class="pre">is_fisheye_sensor</span></code></a>(...)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.sensor.is_motion_sensor" title="pyrealsense2.sensor.is_motion_sensor"><code class="xref py py-obj docutils literal"><span class="pre">is_motion_sensor</span></code></a>(...)</td>
 <td></td>
 </tr>
 <tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">is_option_read_only</span></code>(...)</td>
@@ -151,8 +169,23 @@
 </tbody>
 </table>
 <dl class="method">
+<dt id="pyrealsense2.sensor.as_color_sensor">
+<code class="descname">as_color_sensor</code><span class="sig-paren">(</span><em>self: pyrealsense2.sensor</em><span class="sig-paren">)</span> &rarr; rs2::color_sensor<a class="headerlink" href="#pyrealsense2.sensor.as_color_sensor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
 <dt id="pyrealsense2.sensor.as_depth_sensor">
 <code class="descname">as_depth_sensor</code><span class="sig-paren">(</span><em>self: pyrealsense2.sensor</em><span class="sig-paren">)</span> &rarr; rs2::depth_sensor<a class="headerlink" href="#pyrealsense2.sensor.as_depth_sensor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrealsense2.sensor.as_fisheye_sensor">
+<code class="descname">as_fisheye_sensor</code><span class="sig-paren">(</span><em>self: pyrealsense2.sensor</em><span class="sig-paren">)</span> &rarr; rs2::fisheye_sensor<a class="headerlink" href="#pyrealsense2.sensor.as_fisheye_sensor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrealsense2.sensor.as_motion_sensor">
+<code class="descname">as_motion_sensor</code><span class="sig-paren">(</span><em>self: pyrealsense2.sensor</em><span class="sig-paren">)</span> &rarr; rs2::motion_sensor<a class="headerlink" href="#pyrealsense2.sensor.as_motion_sensor" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -195,8 +228,23 @@
 </dd></dl>
 
 <dl class="method">
+<dt id="pyrealsense2.sensor.is_color_sensor">
+<code class="descname">is_color_sensor</code><span class="sig-paren">(</span><em>self: pyrealsense2.sensor</em><span class="sig-paren">)</span> &rarr; bool<a class="headerlink" href="#pyrealsense2.sensor.is_color_sensor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
 <dt id="pyrealsense2.sensor.is_depth_sensor">
 <code class="descname">is_depth_sensor</code><span class="sig-paren">(</span><em>self: pyrealsense2.sensor</em><span class="sig-paren">)</span> &rarr; bool<a class="headerlink" href="#pyrealsense2.sensor.is_depth_sensor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrealsense2.sensor.is_fisheye_sensor">
+<code class="descname">is_fisheye_sensor</code><span class="sig-paren">(</span><em>self: pyrealsense2.sensor</em><span class="sig-paren">)</span> &rarr; bool<a class="headerlink" href="#pyrealsense2.sensor.is_fisheye_sensor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyrealsense2.sensor.is_motion_sensor">
+<code class="descname">is_motion_sensor</code><span class="sig-paren">(</span><em>self: pyrealsense2.sensor</em><span class="sig-paren">)</span> &rarr; bool<a class="headerlink" href="#pyrealsense2.sensor.is_motion_sensor" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -321,7 +369,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.30.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.32.1 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

@@ -16,7 +16,10 @@ pyrealsense2.depth_sensor
    .. autosummary::
    
       ~depth_sensor.__init__
+      ~depth_sensor.as_color_sensor
       ~depth_sensor.as_depth_sensor
+      ~depth_sensor.as_fisheye_sensor
+      ~depth_sensor.as_motion_sensor
       ~depth_sensor.as_pose_sensor
       ~depth_sensor.as_roi_sensor
       ~depth_sensor.as_wheel_odometer
@@ -30,7 +33,10 @@ pyrealsense2.depth_sensor
       ~depth_sensor.get_recommended_filters
       ~depth_sensor.get_stream_profiles
       ~depth_sensor.get_supported_options
+      ~depth_sensor.is_color_sensor
       ~depth_sensor.is_depth_sensor
+      ~depth_sensor.is_fisheye_sensor
+      ~depth_sensor.is_motion_sensor
       ~depth_sensor.is_option_read_only
       ~depth_sensor.is_pose_sensor
       ~depth_sensor.is_roi_sensor

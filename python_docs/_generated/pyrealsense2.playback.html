@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>pyrealsense2.playback &mdash; pyrealsense2 2.30.0 documentation</title>
+    <title>pyrealsense2.playback &mdash; pyrealsense2 2.32.1 documentation</title>
     
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.30.0',
+        VERSION:     '2.32.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="pyrealsense2 2.30.0 documentation" href="../index.html" /> 
+    <link rel="top" title="pyrealsense2 2.32.1 documentation" href="../index.html" /> 
   </head>
   <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
@@ -35,7 +35,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.30.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.32.1 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -64,31 +64,43 @@
 <tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.playback.__init__" title="pyrealsense2.playback.__init__"><code class="xref py py-obj docutils literal"><span class="pre">__init__</span></code></a>((self:&nbsp;pyrealsense2.playback,&nbsp;...)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">as_debug_protocol</span></code>(...)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">as_auto_calibrated_device</span></code>(...)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">as_playback</span></code>(...)</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">as_debug_protocol</span></code>(...)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">as_recorder</span></code>(...)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">as_playback</span></code>(...)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">as_tm2</span></code>((self:&nbsp;pyrealsense2.device)&nbsp;-&gt;&nbsp;rs2::tm2)</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">as_recorder</span></code>(...)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">as_updatable</span></code>(...)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">as_tm2</span></code>((self:&nbsp;pyrealsense2.device)&nbsp;-&gt;&nbsp;rs2::tm2)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">as_update_device</span></code>(...)</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">as_updatable</span></code>(...)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.playback.current_status" title="pyrealsense2.playback.current_status"><code class="xref py py-obj docutils literal"><span class="pre">current_status</span></code></a>(...)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">as_update_device</span></code>(...)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.playback.current_status" title="pyrealsense2.playback.current_status"><code class="xref py py-obj docutils literal"><span class="pre">current_status</span></code></a>(...)</td>
 <td>Returns the current state of the playback device</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.playback.file_name" title="pyrealsense2.playback.file_name"><code class="xref py py-obj docutils literal"><span class="pre">file_name</span></code></a>((self:&nbsp;pyrealsense2.playback)&nbsp;-&gt;&nbsp;str)</td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.playback.file_name" title="pyrealsense2.playback.file_name"><code class="xref py py-obj docutils literal"><span class="pre">file_name</span></code></a>((self:&nbsp;pyrealsense2.playback)&nbsp;-&gt;&nbsp;str)</td>
 <td>The name of the playback file.</td>
 </tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">first_color_sensor</span></code>(...)</td>
+<td></td>
+</tr>
 <tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">first_depth_sensor</span></code>(...)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">first_fisheye_sensor</span></code>(...)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">first_motion_sensor</span></code>(...)</td>
 <td></td>
 </tr>
 <tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">first_pose_sensor</span></code>(...)</td>
@@ -109,46 +121,49 @@
 <tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">hardware_reset</span></code>(...)</td>
 <td>Send hardware reset request to the device</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">is_debug_protocol</span></code>(...)</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">is_auto_calibrated_device</span></code>(...)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">is_playback</span></code>((self:&nbsp;pyrealsense2.device)&nbsp;-&gt;&nbsp;bool)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">is_debug_protocol</span></code>(...)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.playback.is_real_time" title="pyrealsense2.playback.is_real_time"><code class="xref py py-obj docutils literal"><span class="pre">is_real_time</span></code></a>(...)</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">is_playback</span></code>((self:&nbsp;pyrealsense2.device)&nbsp;-&gt;&nbsp;bool)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.playback.is_real_time" title="pyrealsense2.playback.is_real_time"><code class="xref py py-obj docutils literal"><span class="pre">is_real_time</span></code></a>(...)</td>
 <td>Indicates if playback is in real time mode or non real time.</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">is_recorder</span></code>((self:&nbsp;pyrealsense2.device)&nbsp;-&gt;&nbsp;bool)</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">is_recorder</span></code>((self:&nbsp;pyrealsense2.device)&nbsp;-&gt;&nbsp;bool)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">is_tm2</span></code>((self:&nbsp;pyrealsense2.device)&nbsp;-&gt;&nbsp;bool)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">is_tm2</span></code>((self:&nbsp;pyrealsense2.device)&nbsp;-&gt;&nbsp;bool)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">is_updatable</span></code>((self:&nbsp;pyrealsense2.device)&nbsp;-&gt;&nbsp;bool)</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">is_updatable</span></code>((self:&nbsp;pyrealsense2.device)&nbsp;-&gt;&nbsp;bool)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">is_update_device</span></code>(...)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">is_update_device</span></code>(...)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.playback.pause" title="pyrealsense2.playback.pause"><code class="xref py py-obj docutils literal"><span class="pre">pause</span></code></a>((self:&nbsp;pyrealsense2.playback)&nbsp;-&gt;&nbsp;None)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.playback.pause" title="pyrealsense2.playback.pause"><code class="xref py py-obj docutils literal"><span class="pre">pause</span></code></a>((self:&nbsp;pyrealsense2.playback)&nbsp;-&gt;&nbsp;None)</td>
 <td>Pauses the playback.</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">query_sensors</span></code>(...)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">query_sensors</span></code>(...)</td>
 <td>Returns the list of adjacent devices, sharing the same physical parent composite device.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.playback.resume" title="pyrealsense2.playback.resume"><code class="xref py py-obj docutils literal"><span class="pre">resume</span></code></a>((self:&nbsp;pyrealsense2.playback)&nbsp;-&gt;&nbsp;None)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.playback.resume" title="pyrealsense2.playback.resume"><code class="xref py py-obj docutils literal"><span class="pre">resume</span></code></a>((self:&nbsp;pyrealsense2.playback)&nbsp;-&gt;&nbsp;None)</td>
 <td>Un-pauses the playback.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.playback.seek" title="pyrealsense2.playback.seek"><code class="xref py py-obj docutils literal"><span class="pre">seek</span></code></a>((self:&nbsp;pyrealsense2.playback,&nbsp;...)</td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.playback.seek" title="pyrealsense2.playback.seek"><code class="xref py py-obj docutils literal"><span class="pre">seek</span></code></a>((self:&nbsp;pyrealsense2.playback,&nbsp;...)</td>
 <td>Sets the playback to a specified time point of the played data.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.playback.set_real_time" title="pyrealsense2.playback.set_real_time"><code class="xref py py-obj docutils literal"><span class="pre">set_real_time</span></code></a>((self:&nbsp;pyrealsense2.playback,&nbsp;...)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.playback.set_real_time" title="pyrealsense2.playback.set_real_time"><code class="xref py py-obj docutils literal"><span class="pre">set_real_time</span></code></a>((self:&nbsp;pyrealsense2.playback,&nbsp;...)</td>
 <td>Set the playback to work in real time or non real time.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.playback.set_status_changed_callback" title="pyrealsense2.playback.set_status_changed_callback"><code class="xref py py-obj docutils literal"><span class="pre">set_status_changed_callback</span></code></a>(...)</td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.playback.set_status_changed_callback" title="pyrealsense2.playback.set_status_changed_callback"><code class="xref py py-obj docutils literal"><span class="pre">set_status_changed_callback</span></code></a>(...)</td>
 <td>Register to receive callback from playback device upon its status changes.</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">supports</span></code>((self:&nbsp;pyrealsense2.device,&nbsp;...)</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">supports</span></code>((self:&nbsp;pyrealsense2.device,&nbsp;...)</td>
 <td>Check if specific camera info is supported.</td>
 </tr>
 </tbody>
@@ -268,7 +283,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.30.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.32.1 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
