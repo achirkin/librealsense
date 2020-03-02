@@ -118,10 +118,6 @@ Functions</h2></td></tr>
 <tr class="separator:a9774e8c9a7d3f6b77ae349a9c443e5f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea2c70b48184c70bcaef21d542a5ee95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__advanced__mode_8h.html#aea2c70b48184c70bcaef21d542a5ee95">rs2_get_amp_factor</a> (<a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *dev, <a class="el" href="struct_s_t_a_factor.html">STAFactor</a> *group, int mode, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:aea2c70b48184c70bcaef21d542a5ee95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2a9cf695704530f2ad3b4b8b2a1eb1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__advanced__mode_8h.html#af2a9cf695704530f2ad3b4b8b2a1eb1a">rs2_load_json</a> (<a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *dev, const void *json_content, unsigned content_size, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
-<tr class="separator:af2a9cf695704530f2ad3b4b8b2a1eb1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39e27e7134093a89567ff4f95fb62e5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__types_8h.html#ab811c9b19a9d7c4608062eb12a6e3f2e">rs2_raw_data_buffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__advanced__mode_8h.html#a39e27e7134093a89567ff4f95fb62e5e">rs2_serialize_json</a> (<a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *dev, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
-<tr class="separator:a39e27e7134093a89567ff4f95fb62e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ab23e59bdc881bc471ce9cbd78f2775d9"></a>
@@ -676,74 +672,6 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">int *&#160;</td>
           <td class="paramname"><em>enabled</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
-          <td class="paramname"><em>error</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af2a9cf695704530f2ad3b4b8b2a1eb1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2a9cf695704530f2ad3b4b8b2a1eb1a">&#9670;&nbsp;</a></span>rs2_load_json()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void rs2_load_json </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *&#160;</td>
-          <td class="paramname"><em>dev</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>json_content</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>content_size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
-          <td class="paramname"><em>error</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a39e27e7134093a89567ff4f95fb62e5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39e27e7134093a89567ff4f95fb62e5e">&#9670;&nbsp;</a></span>rs2_serialize_json()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="rs__types_8h.html#ab811c9b19a9d7c4608062eb12a6e3f2e">rs2_raw_data_buffer</a>* rs2_serialize_json </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *&#160;</td>
-          <td class="paramname"><em>dev</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

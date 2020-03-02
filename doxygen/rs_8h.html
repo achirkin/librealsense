@@ -68,7 +68,7 @@ $(function() {
 Macros</h2></td></tr>
 <tr class="memitem:aecb2ba09284ea5b6f988d92e80e0d6da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#aecb2ba09284ea5b6f988d92e80e0d6da">RS2_API_MAJOR_VERSION</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:aecb2ba09284ea5b6f988d92e80e0d6da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcbfa1254105b8287ea2843d2861c703"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#abcbfa1254105b8287ea2843d2861c703">RS2_API_MINOR_VERSION</a>&#160;&#160;&#160;32</td></tr>
+<tr class="memitem:abcbfa1254105b8287ea2843d2861c703"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#abcbfa1254105b8287ea2843d2861c703">RS2_API_MINOR_VERSION</a>&#160;&#160;&#160;33</td></tr>
 <tr class="separator:abcbfa1254105b8287ea2843d2861c703"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55aad3fa5a01ef70c8986918bd204aa3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#a55aad3fa5a01ef70c8986918bd204aa3">RS2_API_PATCH_VERSION</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a55aad3fa5a01ef70c8986918bd204aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -97,6 +97,18 @@ Functions</h2></td></tr>
 <tr class="separator:a0f8c12f8ec6c68822fed21dc4ab09540"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a249c95a85f6933f81e503c192aa737a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#a249c95a85f6933f81e503c192aa737a1">rs2_log_to_file</a> (<a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4">rs2_log_severity</a> min_severity, const char *file_path, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:a249c95a85f6933f81e503c192aa737a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e72228f2c04c175047bb2838fd8e653"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#a5e72228f2c04c175047bb2838fd8e653">rs2_log_to_callback_cpp</a> (<a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4">rs2_log_severity</a> min_severity, <a class="el" href="structrs2__log__callback.html">rs2_log_callback</a> *callback, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a5e72228f2c04c175047bb2838fd8e653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60902977244ec06ee3ed415501745111"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#a60902977244ec06ee3ed415501745111">rs2_log_to_callback</a> (<a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4">rs2_log_severity</a> min_severity, <a class="el" href="rs__types_8h.html#af2e6b8b0d242b6dce5ad3ea959153a11">rs2_log_callback_ptr</a> callback, void *arg, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a60902977244ec06ee3ed415501745111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23509b15772662bcd469bc63ba68d78a"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#a23509b15772662bcd469bc63ba68d78a">rs2_get_log_message_line_number</a> (<a class="el" href="rs__types_8h.html#a42a075a6510b680b4f572ef0e6a47d02">rs2_log_message</a> const *msg, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a23509b15772662bcd469bc63ba68d78a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f6e62905642d9a9d295288ce53ec083"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#a8f6e62905642d9a9d295288ce53ec083">rs2_get_log_message_filename</a> (<a class="el" href="rs__types_8h.html#a42a075a6510b680b4f572ef0e6a47d02">rs2_log_message</a> const *msg, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a8f6e62905642d9a9d295288ce53ec083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25f1a41d556e152cb085b2667a4500ae"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#a25f1a41d556e152cb085b2667a4500ae">rs2_get_raw_log_message</a> (<a class="el" href="rs__types_8h.html#a42a075a6510b680b4f572ef0e6a47d02">rs2_log_message</a> const *msg, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a25f1a41d556e152cb085b2667a4500ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a074215bfe45c1989d0afffe7c1a21805"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#a074215bfe45c1989d0afffe7c1a21805">rs2_get_full_log_message</a> (<a class="el" href="rs__types_8h.html#a42a075a6510b680b4f572ef0e6a47d02">rs2_log_message</a> const *msg, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a074215bfe45c1989d0afffe7c1a21805"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0e009effc9cc5e661ad0b5b92c8d6d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#af0e009effc9cc5e661ad0b5b92c8d6d2">rs2_log</a> (<a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4">rs2_log_severity</a> severity, const char *message, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:af0e009effc9cc5e661ad0b5b92c8d6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8554d105237ad2d5d18f9f855937c0cc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#a8554d105237ad2d5d18f9f855937c0cc">rs2_depth_frame_get_distance</a> (const <a class="el" href="rs__types_8h.html#af280a50e5484323c1b20b76eda3d370d">rs2_frame</a> *frame_ref, int x, int y, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
@@ -142,7 +154,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define RS2_API_MINOR_VERSION&#160;&#160;&#160;32</td>
+          <td class="memname">#define RS2_API_MINOR_VERSION&#160;&#160;&#160;33</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -325,6 +337,90 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a074215bfe45c1989d0afffe7c1a21805"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a074215bfe45c1989d0afffe7c1a21805">&#9670;&nbsp;</a></span>rs2_get_full_log_message()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* rs2_get_full_log_message </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a42a075a6510b680b4f572ef0e6a47d02">rs2_log_message</a> const *&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f6e62905642d9a9d295288ce53ec083"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f6e62905642d9a9d295288ce53ec083">&#9670;&nbsp;</a></span>rs2_get_log_message_filename()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* rs2_get_log_message_filename </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a42a075a6510b680b4f572ef0e6a47d02">rs2_log_message</a> const *&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a23509b15772662bcd469bc63ba68d78a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23509b15772662bcd469bc63ba68d78a">&#9670;&nbsp;</a></span>rs2_get_log_message_line_number()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned rs2_get_log_message_line_number </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a42a075a6510b680b4f572ef0e6a47d02">rs2_log_message</a> const *&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a0c01013907d7f47d2a85712e7ca34a7f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0c01013907d7f47d2a85712e7ca34a7f">&#9670;&nbsp;</a></span>rs2_get_raw_data()</h2>
 
@@ -397,6 +493,34 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a25f1a41d556e152cb085b2667a4500ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25f1a41d556e152cb085b2667a4500ae">&#9670;&nbsp;</a></span>rs2_get_raw_log_message()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* rs2_get_raw_log_message </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a42a075a6510b680b4f572ef0e6a47d02">rs2_log_message</a> const *&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a86f1fbe8d2c0b6e543ac9fb7d6de2c23"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a86f1fbe8d2c0b6e543ac9fb7d6de2c23">&#9670;&nbsp;</a></span>rs2_get_time()</h2>
 
@@ -461,6 +585,80 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a60902977244ec06ee3ed415501745111"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60902977244ec06ee3ed415501745111">&#9670;&nbsp;</a></span>rs2_log_to_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rs2_log_to_callback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4">rs2_log_severity</a>&#160;</td>
+          <td class="paramname"><em>min_severity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#af2e6b8b0d242b6dce5ad3ea959153a11">rs2_log_callback_ptr</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e72228f2c04c175047bb2838fd8e653"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e72228f2c04c175047bb2838fd8e653">&#9670;&nbsp;</a></span>rs2_log_to_callback_cpp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rs2_log_to_callback_cpp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4">rs2_log_severity</a>&#160;</td>
+          <td class="paramname"><em>min_severity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structrs2__log__callback.html">rs2_log_callback</a> *&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

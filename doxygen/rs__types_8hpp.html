@@ -47,6 +47,7 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">rs_types.hpp File Reference</div>  </div>
@@ -104,6 +105,11 @@ Macros</h2></td></tr>
 <tr class="memitem:a39a2e2b40c03eb38672be931b2e9ad59"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__types_8hpp.html#a39a2e2b40c03eb38672be931b2e9ad59">RS2_ERROR_CLASS</a>(name,  base)</td></tr>
 <tr class="separator:a39a2e2b40c03eb38672be931b2e9ad59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a05c936ef347c4fae9aed5dbb87fab4d8"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__types_8hpp.html#a05c936ef347c4fae9aed5dbb87fab4d8">log_callback_function_ptr</a>) (<a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4">rs2_log_severity</a> severity, <a class="el" href="rs__types_8h.html#a42a075a6510b680b4f572ef0e6a47d02">rs2_log_message</a> const *msg)</td></tr>
+<tr class="separator:a05c936ef347c4fae9aed5dbb87fab4d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:add89325c6b078fc97e072958f0f228f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacers2.html#add89325c6b078fc97e072958f0f228f5">rs2::RS2_ERROR_CLASS</a> (recoverable_error, error)</td></tr>
@@ -153,8 +159,23 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">class </span>name : <span class="keyword">public</span> base\</div><div class="line">    {\</div><div class="line">    public:\</div><div class="line">        explicit name(<a class="code" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a>* e) noexcept : base(e) {}\</div><div class="line">    }</div><div class="ttc" id="rs__types_8h_html_ab2e9b1e9fd4b0cb3ed42f33f0c9dec03"><div class="ttname"><a href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a></div><div class="ttdeci">struct rs2_error rs2_error</div><div class="ttdef"><b>Definition:</b> rs_types.h:215</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">class </span>name : <span class="keyword">public</span> base\</div><div class="line">    {\</div><div class="line">    public:\</div><div class="line">        explicit name(<a class="code" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a>* e) noexcept : base(e) {}\</div><div class="line">    }</div><div class="ttc" id="rs__types_8h_html_ab2e9b1e9fd4b0cb3ed42f33f0c9dec03"><div class="ttname"><a href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a></div><div class="ttdeci">struct rs2_error rs2_error</div><div class="ttdef"><b>Definition:</b> rs_types.h:217</div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a05c936ef347c4fae9aed5dbb87fab4d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05c936ef347c4fae9aed5dbb87fab4d8">&#9670;&nbsp;</a></span>log_callback_function_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void( * log_callback_function_ptr) (<a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4">rs2_log_severity</a> severity, <a class="el" href="rs__types_8h.html#a42a075a6510b680b4f572ef0e6a47d02">rs2_log_message</a> const *msg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>

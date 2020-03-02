@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>pyrealsense2.option &mdash; pyrealsense2 2.32.1 documentation</title>
+    <title>pyrealsense2.option &mdash; pyrealsense2 2.33.1 documentation</title>
     
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '2.32.1',
+        VERSION:     '2.33.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="pyrealsense2 2.32.1 documentation" href="../index.html" /> 
+    <link rel="top" title="pyrealsense2 2.33.1 documentation" href="../index.html" /> 
   </head>
   <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
@@ -35,7 +35,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.32.1 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.33.1 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -77,19 +77,25 @@
 <tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.option.accuracy" title="pyrealsense2.option.accuracy"><code class="xref py py-obj docutils literal"><span class="pre">accuracy</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.option.apd_temperature" title="pyrealsense2.option.apd_temperature"><code class="xref py py-obj docutils literal"><span class="pre">apd_temperature</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.option.ambient_light" title="pyrealsense2.option.ambient_light"><code class="xref py py-obj docutils literal"><span class="pre">ambient_light</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.option.asic_temperature" title="pyrealsense2.option.asic_temperature"><code class="xref py py-obj docutils literal"><span class="pre">asic_temperature</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.option.apd_temperature" title="pyrealsense2.option.apd_temperature"><code class="xref py py-obj docutils literal"><span class="pre">apd_temperature</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.option.auto_exposure_converge_step" title="pyrealsense2.option.auto_exposure_converge_step"><code class="xref py py-obj docutils literal"><span class="pre">auto_exposure_converge_step</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.option.asic_temperature" title="pyrealsense2.option.asic_temperature"><code class="xref py py-obj docutils literal"><span class="pre">asic_temperature</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.option.auto_exposure_mode" title="pyrealsense2.option.auto_exposure_mode"><code class="xref py py-obj docutils literal"><span class="pre">auto_exposure_mode</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.option.auto_exposure_converge_step" title="pyrealsense2.option.auto_exposure_converge_step"><code class="xref py py-obj docutils literal"><span class="pre">auto_exposure_converge_step</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.option.auto_exposure_priority" title="pyrealsense2.option.auto_exposure_priority"><code class="xref py py-obj docutils literal"><span class="pre">auto_exposure_priority</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.option.auto_exposure_mode" title="pyrealsense2.option.auto_exposure_mode"><code class="xref py py-obj docutils literal"><span class="pre">auto_exposure_mode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.option.auto_exposure_priority" title="pyrealsense2.option.auto_exposure_priority"><code class="xref py py-obj docutils literal"><span class="pre">auto_exposure_priority</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.option.avalanche_photo_diode" title="pyrealsense2.option.avalanche_photo_diode"><code class="xref py py-obj docutils literal"><span class="pre">avalanche_photo_diode</span></code></a></td>
 <td></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.option.backlight_compensation" title="pyrealsense2.option.backlight_compensation"><code class="xref py py-obj docutils literal"><span class="pre">backlight_compensation</span></code></a></td>
@@ -164,28 +170,34 @@
 <tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.option.frames_queue_size" title="pyrealsense2.option.frames_queue_size"><code class="xref py py-obj docutils literal"><span class="pre">frames_queue_size</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.option.gain" title="pyrealsense2.option.gain"><code class="xref py py-obj docutils literal"><span class="pre">gain</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.option.freefall_detection_enabled" title="pyrealsense2.option.freefall_detection_enabled"><code class="xref py py-obj docutils literal"><span class="pre">freefall_detection_enabled</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.option.gamma" title="pyrealsense2.option.gamma"><code class="xref py py-obj docutils literal"><span class="pre">gamma</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.option.gain" title="pyrealsense2.option.gain"><code class="xref py py-obj docutils literal"><span class="pre">gain</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.option.global_time_enabled" title="pyrealsense2.option.global_time_enabled"><code class="xref py py-obj docutils literal"><span class="pre">global_time_enabled</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.option.gamma" title="pyrealsense2.option.gamma"><code class="xref py py-obj docutils literal"><span class="pre">gamma</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.option.hardware_preset" title="pyrealsense2.option.hardware_preset"><code class="xref py py-obj docutils literal"><span class="pre">hardware_preset</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.option.global_time_enabled" title="pyrealsense2.option.global_time_enabled"><code class="xref py py-obj docutils literal"><span class="pre">global_time_enabled</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.option.histogram_equalization_enabled" title="pyrealsense2.option.histogram_equalization_enabled"><code class="xref py py-obj docutils literal"><span class="pre">histogram_equalization_enabled</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.option.hardware_preset" title="pyrealsense2.option.hardware_preset"><code class="xref py py-obj docutils literal"><span class="pre">hardware_preset</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.option.holes_fill" title="pyrealsense2.option.holes_fill"><code class="xref py py-obj docutils literal"><span class="pre">holes_fill</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.option.histogram_equalization_enabled" title="pyrealsense2.option.histogram_equalization_enabled"><code class="xref py py-obj docutils literal"><span class="pre">histogram_equalization_enabled</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.option.hue" title="pyrealsense2.option.hue"><code class="xref py py-obj docutils literal"><span class="pre">hue</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.option.holes_fill" title="pyrealsense2.option.holes_fill"><code class="xref py py-obj docutils literal"><span class="pre">holes_fill</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.option.inter_cam_sync_mode" title="pyrealsense2.option.inter_cam_sync_mode"><code class="xref py py-obj docutils literal"><span class="pre">inter_cam_sync_mode</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.option.hue" title="pyrealsense2.option.hue"><code class="xref py py-obj docutils literal"><span class="pre">hue</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.option.inter_cam_sync_mode" title="pyrealsense2.option.inter_cam_sync_mode"><code class="xref py py-obj docutils literal"><span class="pre">inter_cam_sync_mode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.option.invalidation_bypass" title="pyrealsense2.option.invalidation_bypass"><code class="xref py py-obj docutils literal"><span class="pre">invalidation_bypass</span></code></a></td>
 <td></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.option.laser_power" title="pyrealsense2.option.laser_power"><code class="xref py py-obj docutils literal"><span class="pre">laser_power</span></code></a></td>
@@ -215,16 +227,28 @@
 <tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.option.motion_range" title="pyrealsense2.option.motion_range"><code class="xref py py-obj docutils literal"><span class="pre">motion_range</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.option.output_trigger_enabled" title="pyrealsense2.option.output_trigger_enabled"><code class="xref py py-obj docutils literal"><span class="pre">output_trigger_enabled</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.option.noise_filtering" title="pyrealsense2.option.noise_filtering"><code class="xref py py-obj docutils literal"><span class="pre">noise_filtering</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.option.output_trigger_enabled" title="pyrealsense2.option.output_trigger_enabled"><code class="xref py py-obj docutils literal"><span class="pre">output_trigger_enabled</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.option.post_processing_sharpening" title="pyrealsense2.option.post_processing_sharpening"><code class="xref py py-obj docutils literal"><span class="pre">post_processing_sharpening</span></code></a></td>
 <td></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.option.power_line_frequency" title="pyrealsense2.option.power_line_frequency"><code class="xref py py-obj docutils literal"><span class="pre">power_line_frequency</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.option.projector_temperature" title="pyrealsense2.option.projector_temperature"><code class="xref py py-obj docutils literal"><span class="pre">projector_temperature</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.option.pre_processing_sharpening" title="pyrealsense2.option.pre_processing_sharpening"><code class="xref py py-obj docutils literal"><span class="pre">pre_processing_sharpening</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.option.saturation" title="pyrealsense2.option.saturation"><code class="xref py py-obj docutils literal"><span class="pre">saturation</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.option.projector_temperature" title="pyrealsense2.option.projector_temperature"><code class="xref py py-obj docutils literal"><span class="pre">projector_temperature</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.option.saturation" title="pyrealsense2.option.saturation"><code class="xref py py-obj docutils literal"><span class="pre">saturation</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#pyrealsense2.option.sensor_mode" title="pyrealsense2.option.sensor_mode"><code class="xref py py-obj docutils literal"><span class="pre">sensor_mode</span></code></a></td>
 <td></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#pyrealsense2.option.sharpness" title="pyrealsense2.option.sharpness"><code class="xref py py-obj docutils literal"><span class="pre">sharpness</span></code></a></td>
@@ -271,6 +295,11 @@
 <dd></dd></dl>
 
 <dl class="attribute">
+<dt id="pyrealsense2.option.ambient_light">
+<code class="descname">ambient_light</code><em class="property"> = option.ambient_light</em><a class="headerlink" href="#pyrealsense2.option.ambient_light" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
 <dt id="pyrealsense2.option.apd_temperature">
 <code class="descname">apd_temperature</code><em class="property"> = option.apd_temperature</em><a class="headerlink" href="#pyrealsense2.option.apd_temperature" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -293,6 +322,11 @@
 <dl class="attribute">
 <dt id="pyrealsense2.option.auto_exposure_priority">
 <code class="descname">auto_exposure_priority</code><em class="property"> = option.auto_exposure_priority</em><a class="headerlink" href="#pyrealsense2.option.auto_exposure_priority" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyrealsense2.option.avalanche_photo_diode">
+<code class="descname">avalanche_photo_diode</code><em class="property"> = option.avalanche_photo_diode</em><a class="headerlink" href="#pyrealsense2.option.avalanche_photo_diode" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
@@ -416,6 +450,11 @@
 <dd></dd></dl>
 
 <dl class="attribute">
+<dt id="pyrealsense2.option.freefall_detection_enabled">
+<code class="descname">freefall_detection_enabled</code><em class="property"> = option.freefall_detection_enabled</em><a class="headerlink" href="#pyrealsense2.option.freefall_detection_enabled" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
 <dt id="pyrealsense2.option.gain">
 <code class="descname">gain</code><em class="property"> = option.gain</em><a class="headerlink" href="#pyrealsense2.option.gain" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -453,6 +492,11 @@
 <dl class="attribute">
 <dt id="pyrealsense2.option.inter_cam_sync_mode">
 <code class="descname">inter_cam_sync_mode</code><em class="property"> = option.inter_cam_sync_mode</em><a class="headerlink" href="#pyrealsense2.option.inter_cam_sync_mode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyrealsense2.option.invalidation_bypass">
+<code class="descname">invalidation_bypass</code><em class="property"> = option.invalidation_bypass</em><a class="headerlink" href="#pyrealsense2.option.invalidation_bypass" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
@@ -501,13 +545,28 @@
 <dd></dd></dl>
 
 <dl class="attribute">
+<dt id="pyrealsense2.option.noise_filtering">
+<code class="descname">noise_filtering</code><em class="property"> = option.noise_filtering</em><a class="headerlink" href="#pyrealsense2.option.noise_filtering" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
 <dt id="pyrealsense2.option.output_trigger_enabled">
 <code class="descname">output_trigger_enabled</code><em class="property"> = option.output_trigger_enabled</em><a class="headerlink" href="#pyrealsense2.option.output_trigger_enabled" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
+<dt id="pyrealsense2.option.post_processing_sharpening">
+<code class="descname">post_processing_sharpening</code><em class="property"> = option.post_processing_sharpening</em><a class="headerlink" href="#pyrealsense2.option.post_processing_sharpening" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
 <dt id="pyrealsense2.option.power_line_frequency">
 <code class="descname">power_line_frequency</code><em class="property"> = option.power_line_frequency</em><a class="headerlink" href="#pyrealsense2.option.power_line_frequency" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyrealsense2.option.pre_processing_sharpening">
+<code class="descname">pre_processing_sharpening</code><em class="property"> = option.pre_processing_sharpening</em><a class="headerlink" href="#pyrealsense2.option.pre_processing_sharpening" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
@@ -518,6 +577,11 @@
 <dl class="attribute">
 <dt id="pyrealsense2.option.saturation">
 <code class="descname">saturation</code><em class="property"> = option.saturation</em><a class="headerlink" href="#pyrealsense2.option.saturation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyrealsense2.option.sensor_mode">
+<code class="descname">sensor_mode</code><em class="property"> = option.sensor_mode</em><a class="headerlink" href="#pyrealsense2.option.sensor_mode" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
@@ -623,7 +687,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.32.1 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.33.1 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

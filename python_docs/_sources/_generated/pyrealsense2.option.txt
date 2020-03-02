@@ -26,11 +26,13 @@ pyrealsense2.option
    .. autosummary::
    
       ~option.accuracy
+      ~option.ambient_light
       ~option.apd_temperature
       ~option.asic_temperature
       ~option.auto_exposure_converge_step
       ~option.auto_exposure_mode
       ~option.auto_exposure_priority
+      ~option.avalanche_photo_diode
       ~option.backlight_compensation
       ~option.brightness
       ~option.color_scheme
@@ -55,6 +57,7 @@ pyrealsense2.option
       ~option.filter_smooth_alpha
       ~option.filter_smooth_delta
       ~option.frames_queue_size
+      ~option.freefall_detection_enabled
       ~option.gain
       ~option.gamma
       ~option.global_time_enabled
@@ -63,6 +66,7 @@ pyrealsense2.option
       ~option.holes_fill
       ~option.hue
       ~option.inter_cam_sync_mode
+      ~option.invalidation_bypass
       ~option.laser_power
       ~option.led_power
       ~option.lld_temperature
@@ -72,10 +76,14 @@ pyrealsense2.option
       ~option.min_distance
       ~option.motion_module_temperature
       ~option.motion_range
+      ~option.noise_filtering
       ~option.output_trigger_enabled
+      ~option.post_processing_sharpening
       ~option.power_line_frequency
+      ~option.pre_processing_sharpening
       ~option.projector_temperature
       ~option.saturation
+      ~option.sensor_mode
       ~option.sharpness
       ~option.stereo_baseline
       ~option.stream_filter

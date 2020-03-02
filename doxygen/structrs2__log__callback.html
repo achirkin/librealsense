@@ -48,11 +48,20 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="rs__types_8hpp_source.html">rs_types.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for rs2_log_callback:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="structrs2__log__callback.png" usemap="#rs2_5Flog_5Fcallback_map" alt=""/>
+  <map id="rs2_5Flog_5Fcallback_map" name="rs2_5Flog_5Fcallback_map">
+<area href="classrs2_1_1log__callback.html" alt="rs2::log_callback&lt; T &gt;" shape="rect" coords="0,56,138,80"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0bf2ad03dc47758e548289eb035194e0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrs2__log__callback.html#a0bf2ad03dc47758e548289eb035194e0">on_event</a> (<a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4">rs2_log_severity</a> severity, const char *message)=0</td></tr>
-<tr class="separator:a0bf2ad03dc47758e548289eb035194e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af734bbc3c94e89228a366516696d8049"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrs2__log__callback.html#af734bbc3c94e89228a366516696d8049">on_log</a> (<a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4">rs2_log_severity</a> severity, <a class="el" href="rs__types_8h.html#a42a075a6510b680b4f572ef0e6a47d02">rs2_log_message</a> const &amp;msg) noexcept=0</td></tr>
+<tr class="separator:af734bbc3c94e89228a366516696d8049"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0689d7dc3859c44c3757e0ccb458bfb1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrs2__log__callback.html#a0689d7dc3859c44c3757e0ccb458bfb1">release</a> ()=0</td></tr>
 <tr class="separator:a0689d7dc3859c44c3757e0ccb458bfb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0af84452086f7a0681833982da734156"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrs2__log__callback.html#a0af84452086f7a0681833982da734156">~rs2_log_callback</a> ()</td></tr>
@@ -85,8 +94,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0bf2ad03dc47758e548289eb035194e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bf2ad03dc47758e548289eb035194e0">&#9670;&nbsp;</a></span>on_event()</h2>
+<a id="af734bbc3c94e89228a366516696d8049"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af734bbc3c94e89228a366516696d8049">&#9670;&nbsp;</a></span>on_log()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -95,7 +104,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void rs2_log_callback::on_event </td>
+          <td class="memname">virtual void rs2_log_callback::on_log </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4">rs2_log_severity</a>&#160;</td>
           <td class="paramname"><em>severity</em>, </td>
@@ -103,8 +112,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>message</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a42a075a6510b680b4f572ef0e6a47d02">rs2_log_message</a> const &amp;&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -114,10 +123,12 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classrs2_1_1log__callback.html#adeda4012467f63dad2d0a92365edcc17">rs2::log_callback&lt; T &gt;</a>.</p>
 
 </div>
 </div>
@@ -143,6 +154,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classrs2_1_1log__callback.html#a1feab5d856bdc7d95147d07214c83d17">rs2::log_callback&lt; T &gt;</a>.</p>
 
 </div>
 </div>

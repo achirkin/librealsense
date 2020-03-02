@@ -36,6 +36,7 @@ rs__pipeline_8hpp_source.html
 rs__processing_8hpp_source.html
 rs__record__playback_8hpp_source.html
 rs__sensor_8hpp_source.html
+rs__serializable__device_8hpp_source.html
 rs__types_8hpp_source.html
 rs_8h_source.html
 rs_8hpp_source.html
@@ -66,6 +67,7 @@ rs__pipeline_8hpp.html
 rs__processing_8hpp.html
 rs__record__playback_8hpp.html
 rs__sensor_8hpp.html
+rs__serializable__device_8hpp.html
 rs__types_8hpp.html
 rs_8h.html
 rs_8hpp.html
@@ -215,6 +217,10 @@ classrs2_1_1frameset_1_1iterator.html
 classrs2_1_1frameset_1_1iterator-members.html
 classrs2_1_1hole__filling__filter.html
 classrs2_1_1hole__filling__filter-members.html
+classrs2_1_1log__callback.html
+classrs2_1_1log__callback-members.html
+classrs2_1_1log__message.html
+classrs2_1_1log__message-members.html
 classrs2_1_1mock__context.html
 classrs2_1_1mock__context-members.html
 classrs2_1_1motion__frame.html
@@ -265,6 +271,8 @@ classrs2_1_1save__to__ply.html
 classrs2_1_1save__to__ply-members.html
 classrs2_1_1sensor.html
 classrs2_1_1sensor-members.html
+classrs2_1_1serializable__device.html
+classrs2_1_1serializable__device-members.html
 classrs2_1_1software__device.html
 classrs2_1_1software__device-members.html
 classrs2_1_1software__sensor.html
@@ -398,6 +406,7 @@ functions_vars.html
 functions_rela.html
 files.html
 globals.html
+globals_l.html
 globals_o.html
 globals_r.html
 globals_s.html
@@ -424,6 +433,7 @@ sync_off.png
 structrs2__devices__changed__callback.png
 structrs2__frame__callback.png
 structrs2__frame__processor__callback.png
+structrs2__log__callback.png
 structrs2__notifications__callback.png
 structrs2__playback__status__changed__callback.png
 structrs2__update__progress__callback.png
@@ -454,6 +464,7 @@ classrs2_1_1frame__processor__callback.png
 classrs2_1_1frameset.png
 classrs2_1_1frameset_1_1iterator.png
 classrs2_1_1hole__filling__filter.png
+classrs2_1_1log__callback.png
 classrs2_1_1mock__context.png
 classrs2_1_1motion__frame.png
 classrs2_1_1motion__sensor.png
@@ -474,6 +485,7 @@ classrs2_1_1roi__sensor.png
 classrs2_1_1save__single__frameset.png
 classrs2_1_1save__to__ply.png
 classrs2_1_1sensor.png
+classrs2_1_1serializable__device.png
 classrs2_1_1software__device.png
 classrs2_1_1software__sensor.png
 classrs2_1_1spatial__filter.png

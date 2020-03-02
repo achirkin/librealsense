@@ -56,6 +56,7 @@ pyrealsense2.extension
       ~extension.recommended_filters
       ~extension.record
       ~extension.roi
+      ~extension.serializable
       ~extension.software_device
       ~extension.software_sensor
       ~extension.spatial_filter

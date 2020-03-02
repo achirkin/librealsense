@@ -127,6 +127,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:a6b12b0e578c567223a99b0c0f2b67a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2e9b1e9fd4b0cb3ed42f33f0c9dec03"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a></td></tr>
 <tr class="separator:ab2e9b1e9fd4b0cb3ed42f33f0c9dec03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42a075a6510b680b4f572ef0e6a47d02"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="rs__types_8h.html#a42a075a6510b680b4f572ef0e6a47d02">rs2_log_message</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__types_8h.html#a42a075a6510b680b4f572ef0e6a47d02">rs2_log_message</a></td></tr>
+<tr class="separator:a42a075a6510b680b4f572ef0e6a47d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab811c9b19a9d7c4608062eb12a6e3f2e"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="rs__types_8h.html#ab811c9b19a9d7c4608062eb12a6e3f2e">rs2_raw_data_buffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__types_8h.html#ab811c9b19a9d7c4608062eb12a6e3f2e">rs2_raw_data_buffer</a></td></tr>
 <tr class="separator:ab811c9b19a9d7c4608062eb12a6e3f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af280a50e5484323c1b20b76eda3d370d"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="rs__types_8h.html#af280a50e5484323c1b20b76eda3d370d">rs2_frame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__types_8h.html#af280a50e5484323c1b20b76eda3d370d">rs2_frame</a></td></tr>
@@ -183,6 +185,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:a979cf7323b227cc89c3970592b9be897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4cfaf43c30c37843a3ac1d27d1ac870"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structrs2__notifications__callback.html">rs2_notifications_callback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__types_8h.html#ac4cfaf43c30c37843a3ac1d27d1ac870">rs2_notifications_callback</a></td></tr>
 <tr class="separator:ac4cfaf43c30c37843a3ac1d27d1ac870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2e6b8b0d242b6dce5ad3ea959153a11"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__types_8h.html#af2e6b8b0d242b6dce5ad3ea959153a11">rs2_log_callback_ptr</a>) (<a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4">rs2_log_severity</a>, <a class="el" href="rs__types_8h.html#a42a075a6510b680b4f572ef0e6a47d02">rs2_log_message</a> const *, void *arg)</td></tr>
+<tr class="separator:af2e6b8b0d242b6dce5ad3ea959153a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a9a55deefe7ca210b16be8e39747c65"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__types_8h.html#a6a9a55deefe7ca210b16be8e39747c65">rs2_notification_callback_ptr</a>) (<a class="el" href="rs__types_8h.html#a979cf7323b227cc89c3970592b9be897">rs2_notification</a> *, void *)</td></tr>
 <tr class="separator:a6a9a55deefe7ca210b16be8e39747c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac489e3bfca824f5027223b251fdb801c"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__types_8h.html#ac489e3bfca824f5027223b251fdb801c">rs2_devices_changed_callback_ptr</a>) (<a class="el" href="rs__types_8h.html#aae87a51cf47685a0b7e28884a8970dd6">rs2_device_list</a> *, <a class="el" href="rs__types_8h.html#aae87a51cf47685a0b7e28884a8970dd6">rs2_device_list</a> *, void *)</td></tr>
@@ -251,7 +255,8 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4a8d75c8c61c0e500a7a478cb436354d83">RS2_LOG_SEVERITY_FATAL</a>, 
 <a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4a77768fd2b0368e3241374903ed7f434d">RS2_LOG_SEVERITY_NONE</a>, 
-<a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4aadf227ec2da56a4b387438aa5ca7bcdd">RS2_LOG_SEVERITY_COUNT</a>
+<a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4aadf227ec2da56a4b387438aa5ca7bcdd">RS2_LOG_SEVERITY_COUNT</a>, 
+<a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4a7625c629b007dc6d9341f904562d0aaf">RS2_LOG_SEVERITY_ALL</a> = RS2_LOG_SEVERITY_DEBUG
 <br />
  }</td></tr>
 <tr class="memdesc:a312ebc7e1d7f444e97bbb998bee035d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Severity of the librealsense logger.  <a href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4">More...</a><br /></td></tr>
@@ -314,6 +319,7 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa205b63e00419c716233fe72026aa899f">RS2_EXTENSION_FISHEYE_SENSOR</a>, 
 <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa4672df499968802bc36b525f36fec49b">RS2_EXTENSION_DEPTH_HUFFMAN_DECODER</a>, 
+<a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa8ddab6bc4ce973a1528764f0442eb03b">RS2_EXTENSION_SERIALIZABLE</a>, 
 <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa0b4f59b824f69d456b53638b0f4ddef4">RS2_EXTENSION_COUNT</a>
 <br />
  }</td></tr>
@@ -660,6 +666,34 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef struct <a class="el" href="structrs2__log__callback.html">rs2_log_callback</a> <a class="el" href="structrs2__log__callback.html">rs2_log_callback</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af2e6b8b0d242b6dce5ad3ea959153a11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2e6b8b0d242b6dce5ad3ea959153a11">&#9670;&nbsp;</a></span>rs2_log_callback_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* rs2_log_callback_ptr) (<a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4">rs2_log_severity</a>, <a class="el" href="rs__types_8h.html#a42a075a6510b680b4f572ef0e6a47d02">rs2_log_message</a> const *, void *arg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42a075a6510b680b4f572ef0e6a47d02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42a075a6510b680b4f572ef0e6a47d02">&#9670;&nbsp;</a></span>rs2_log_message</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="rs__types_8h.html#a42a075a6510b680b4f572ef0e6a47d02">rs2_log_message</a> <a class="el" href="rs__types_8h.html#a42a075a6510b680b4f572ef0e6a47d02">rs2_log_message</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1232,6 +1266,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a7b6061f32e49fc7c6ff0e5734a380d8aaeef4e27f41b821bd00422c9a74cdb94c"></a>RS2_EXTENSION_MOTION_SENSOR&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7b6061f32e49fc7c6ff0e5734a380d8aa205b63e00419c716233fe72026aa899f"></a>RS2_EXTENSION_FISHEYE_SENSOR&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7b6061f32e49fc7c6ff0e5734a380d8aa4672df499968802bc36b525f36fec49b"></a>RS2_EXTENSION_DEPTH_HUFFMAN_DECODER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7b6061f32e49fc7c6ff0e5734a380d8aa8ddab6bc4ce973a1528764f0442eb03b"></a>RS2_EXTENSION_SERIALIZABLE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7b6061f32e49fc7c6ff0e5734a380d8aa0b4f59b824f69d456b53638b0f4ddef4"></a>RS2_EXTENSION_COUNT&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
@@ -1264,6 +1299,8 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a312ebc7e1d7f444e97bbb998bee035d4a77768fd2b0368e3241374903ed7f434d"></a>RS2_LOG_SEVERITY_NONE&#160;</td><td class="fielddoc"><p>No logging will occur </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a312ebc7e1d7f444e97bbb998bee035d4aadf227ec2da56a4b387438aa5ca7bcdd"></a>RS2_LOG_SEVERITY_COUNT&#160;</td><td class="fielddoc"><p>Number of enumeration values. Not a valid input: intended to be used in for-loops. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a312ebc7e1d7f444e97bbb998bee035d4a7625c629b007dc6d9341f904562d0aaf"></a>RS2_LOG_SEVERITY_ALL&#160;</td><td class="fielddoc"><p>Include any/all log messages </p>
 </td></tr>
 </table>
 

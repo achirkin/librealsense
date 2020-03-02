@@ -122,6 +122,10 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1hole__filling__filter.html">hole_filling_filter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1log__callback.html">log_callback</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1log__message.html">log_message</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1mock__context.html">mock_context</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1motion__frame.html">motion_frame</a></td></tr>
@@ -171,6 +175,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1save__to__ply.html">save_to_ply</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1sensor.html">sensor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1serializable__device.html">serializable_device</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1software__device.html">software_device</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -252,6 +258,9 @@ Functions</h2></td></tr>
 <tr class="separator:a29c3e985cd3a515a9231ccedde4168ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a435d76a9ec84f35ba7befa09aca513ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacers2.html#a435d76a9ec84f35ba7befa09aca513ad">log_to_file</a> (<a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4">rs2_log_severity</a> min_severity, const char *file_path=nullptr)</td></tr>
 <tr class="separator:a435d76a9ec84f35ba7befa09aca513ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca13b0e0a38a3f39f2ea337854524543"><td class="memTemplParams" colspan="2">template&lt;typename S &gt; </td></tr>
+<tr class="memitem:aca13b0e0a38a3f39f2ea337854524543"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacers2.html#aca13b0e0a38a3f39f2ea337854524543">log_to_callback</a> (<a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4">rs2_log_severity</a> min_severity, S callback)</td></tr>
+<tr class="separator:aca13b0e0a38a3f39f2ea337854524543"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0abe1547289763272a61517449d93e7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacers2.html#a0abe1547289763272a61517449d93e7b">log</a> (<a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4">rs2_log_severity</a> severity, const char *message)</td></tr>
 <tr class="separator:a0abe1547289763272a61517449d93e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -327,6 +336,44 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca13b0e0a38a3f39f2ea337854524543"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca13b0e0a38a3f39f2ea337854524543">&#9670;&nbsp;</a></span>log_to_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename S &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rs2::log_to_callback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4">rs2_log_severity</a>&#160;</td>
+          <td class="paramname"><em>min_severity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">S&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
