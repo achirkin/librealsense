@@ -99,6 +99,7 @@ Enumerations</h2></td></tr>
 <a class="el" href="rs__sensor_8h.html#aa607d93c1bac40af3ec1c9b0345f59afa13916f745779200e1c2e192ccd44dfbc">RS2_CAMERA_INFO_ASIC_SERIAL_NUMBER</a>, 
 <br />
 &#160;&#160;<a class="el" href="rs__sensor_8h.html#aa607d93c1bac40af3ec1c9b0345f59afab753239dbc6f88b9fdd3f583df05c4d4">RS2_CAMERA_INFO_FIRMWARE_UPDATE_ID</a>, 
+<a class="el" href="rs__sensor_8h.html#aa607d93c1bac40af3ec1c9b0345f59afaede0286e5130b36b5a66fd8590e752e9">RS2_CAMERA_INFO_IP_ADDRESS</a>, 
 <a class="el" href="rs__sensor_8h.html#aa607d93c1bac40af3ec1c9b0345f59afa8f5df734ba9377454f9575c706201907">RS2_CAMERA_INFO_COUNT</a>
 <br />
  }</td></tr>
@@ -229,8 +230,10 @@ Functions</h2></td></tr>
 <tr class="separator:a30573949ba732084b926178a98e8e90f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20ac88feef4d1a795920b2e2bc197849"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#a20ac88feef4d1a795920b2e2bc197849">rs2_get_notification_serialized_data</a> (<a class="el" href="rs__types_8h.html#a979cf7323b227cc89c3970592b9be897">rs2_notification</a> *notification, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:a20ac88feef4d1a795920b2e2bc197849"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31b60b72d48113fff214775907d384ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__types_8h.html#aae53b03d252f43953002821e7563ee4f">rs2_stream_profile_list</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#a31b60b72d48113fff214775907d384ff">rs2_get_stream_profiles</a> (<a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *device, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
-<tr class="separator:a31b60b72d48113fff214775907d384ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8b3ed4999ccd08076e4592e6914482c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__types_8h.html#aae53b03d252f43953002821e7563ee4f">rs2_stream_profile_list</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#af8b3ed4999ccd08076e4592e6914482c">rs2_get_stream_profiles</a> (<a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *sensor, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:af8b3ed4999ccd08076e4592e6914482c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af276e645c71569cd1a029dc3599aa9f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__types_8h.html#aae53b03d252f43953002821e7563ee4f">rs2_stream_profile_list</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#af276e645c71569cd1a029dc3599aa9f5">rs2_get_active_streams</a> (<a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *sensor, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:af276e645c71569cd1a029dc3599aa9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a290b1dc96c6617ba301dca00c4cc0df9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="rs__types_8h.html#a338107a48471d20ecacac3e4c9e024e2">rs2_stream_profile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#a290b1dc96c6617ba301dca00c4cc0df9">rs2_get_stream_profile</a> (const <a class="el" href="rs__types_8h.html#aae53b03d252f43953002821e7563ee4f">rs2_stream_profile_list</a> *list, int index, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:a290b1dc96c6617ba301dca00c4cc0df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8053602e2acbeaf0d1debac5c99c041a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#a8053602e2acbeaf0d1debac5c99c041a">rs2_get_stream_profile_data</a> (const <a class="el" href="rs__types_8h.html#a338107a48471d20ecacac3e4c9e024e2">rs2_stream_profile</a> *mode, <a class="el" href="rs__sensor_8h.html#a01b4027af33139de861408872dd11b93">rs2_stream</a> *stream, <a class="el" href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7">rs2_format</a> *format, int *index, int *unique_id, int *framerate, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
@@ -397,6 +400,8 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="aa607d93c1bac40af3ec1c9b0345f59afa13916f745779200e1c2e192ccd44dfbc"></a>RS2_CAMERA_INFO_ASIC_SERIAL_NUMBER&#160;</td><td class="fielddoc"><p>ASIC serial number </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aa607d93c1bac40af3ec1c9b0345f59afab753239dbc6f88b9fdd3f583df05c4d4"></a>RS2_CAMERA_INFO_FIRMWARE_UPDATE_ID&#160;</td><td class="fielddoc"><p>Firmware update ID </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa607d93c1bac40af3ec1c9b0345f59afaede0286e5130b36b5a66fd8590e752e9"></a>RS2_CAMERA_INFO_IP_ADDRESS&#160;</td><td class="fielddoc"><p>IP address for remote camera. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aa607d93c1bac40af3ec1c9b0345f59afa8f5df734ba9377454f9575c706201907"></a>RS2_CAMERA_INFO_COUNT&#160;</td><td class="fielddoc"><p>Number of enumeration values. Not a valid input: intended to be used in for-loops. </p>
 </td></tr>
@@ -994,6 +999,42 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="af276e645c71569cd1a029dc3599aa9f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af276e645c71569cd1a029dc3599aa9f5">&#9670;&nbsp;</a></span>rs2_get_active_streams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rs__types_8h.html#aae53b03d252f43953002821e7563ee4f">rs2_stream_profile_list</a>* rs2_get_active_streams </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *&#160;</td>
+          <td class="paramname"><em>sensor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>check how subdevice is streaming </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sensor</td><td>input RealSense subdevice </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>if non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>list of stream profiles that given subdevice is currently streaming, should be released by rs2_delete_profiles_list </dd></dl>
 
 </div>
 </div>
@@ -1767,8 +1808,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a31b60b72d48113fff214775907d384ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31b60b72d48113fff214775907d384ff">&#9670;&nbsp;</a></span>rs2_get_stream_profiles()</h2>
+<a id="af8b3ed4999ccd08076e4592e6914482c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8b3ed4999ccd08076e4592e6914482c">&#9670;&nbsp;</a></span>rs2_get_stream_profiles()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1777,7 +1818,7 @@ Functions</h2></td></tr>
           <td class="memname"><a class="el" href="rs__types_8h.html#aae53b03d252f43953002821e7563ee4f">rs2_stream_profile_list</a>* rs2_get_stream_profiles </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
+          <td class="paramname"><em>sensor</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1794,7 +1835,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>check if physical subdevice is supported </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>input RealSense device </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sensor</td><td>input RealSense subdevice </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>if non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
   </table>
   </dd>

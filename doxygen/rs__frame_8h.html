@@ -151,6 +151,8 @@ Functions</h2></td></tr>
 <tr class="separator:ad97d95ba813aa92159d580ab3ae89b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b10caf3806a26cdce9d19bf53d875cb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__frame_8h.html#a4b10caf3806a26cdce9d19bf53d875cb">rs2_get_frame_height</a> (const <a class="el" href="rs__types_8h.html#af280a50e5484323c1b20b76eda3d370d">rs2_frame</a> *frame, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:a4b10caf3806a26cdce9d19bf53d875cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeccdf7946db40b7d37b9c83b034586cb"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__frame_8h.html#aeccdf7946db40b7d37b9c83b034586cb">rs2_depth_frame_get_units</a> (const <a class="el" href="rs__types_8h.html#af280a50e5484323c1b20b76eda3d370d">rs2_frame</a> *frame, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:aeccdf7946db40b7d37b9c83b034586cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa87062516bb664e4b99430d541ea6eca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__frame_8h.html#aa87062516bb664e4b99430d541ea6eca">rs2_get_frame_stride_in_bytes</a> (const <a class="el" href="rs__types_8h.html#af280a50e5484323c1b20b76eda3d370d">rs2_frame</a> *frame, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:aa87062516bb664e4b99430d541ea6eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29307aebfd8bee779f77f629457cee6b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__frame_8h.html#a29307aebfd8bee779f77f629457cee6b">rs2_get_frame_bits_per_pixel</a> (const <a class="el" href="rs__types_8h.html#af280a50e5484323c1b20b76eda3d370d">rs2_frame</a> *frame, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
@@ -575,6 +577,35 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>reference to a newly allocated frame, must be released with release_frame memory for the frame is likely to be re-used from previous frame, but in lack of available frames in the pool will be allocated from the free store </dd></dl>
+
+</div>
+</div>
+<a id="aeccdf7946db40b7d37b9c83b034586cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeccdf7946db40b7d37b9c83b034586cb">&#9670;&nbsp;</a></span>rs2_depth_frame_get_units()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float rs2_depth_frame_get_units </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="rs__types_8h.html#af280a50e5484323c1b20b76eda3d370d">rs2_frame</a> *&#160;</td>
+          <td class="paramname"><em>frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>retrieve the scaling factor to use when converting a depth frame's get_data() units to meters </p><dl class="section return"><dt>Returns</dt><dd>float - depth, in meters, per 1 unit stored in the frame data </dd></dl>
 
 </div>
 </div>

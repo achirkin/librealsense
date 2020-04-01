@@ -14,6 +14,8 @@ main="Intel® RealSense™ Cross Platform API","index.hhc","index.hhk","index.html"
 [FILES]
 rs__processing__gl_8h_source.html
 rs__processing__gl_8hpp_source.html
+rs__net_8h_source.html
+rs__net_8hpp_source.html
 rs__advanced__mode__command_8h_source.html
 rs__config_8h_source.html
 rs__context_8h_source.html
@@ -45,6 +47,8 @@ rs__advanced__mode_8hpp_source.html
 rsutil_8h_source.html
 rs__processing__gl_8h.html
 rs__processing__gl_8hpp.html
+rs__net_8h.html
+rs__net_8hpp.html
 rs__advanced__mode__command_8h.html
 rs__config_8h.html
 rs__context_8h.html
@@ -106,8 +110,12 @@ structrs2__pose__stream.html
 structrs2__pose__stream-members.html
 structrs2__quaternion.html
 structrs2__quaternion-members.html
+structrs2__software__device__destruction__callback.html
+structrs2__software__device__destruction__callback-members.html
 structrs2__software__motion__frame.html
 structrs2__software__motion__frame-members.html
+structrs2__software__notification.html
+structrs2__software__notification-members.html
 structrs2__software__pose__frame.html
 structrs2__software__pose__frame-members.html
 structrs2__software__pose__frame_1_1pose__frame__info.html
@@ -229,6 +237,8 @@ classrs2_1_1motion__sensor.html
 classrs2_1_1motion__sensor-members.html
 classrs2_1_1motion__stream__profile.html
 classrs2_1_1motion__stream__profile-members.html
+classrs2_1_1net__device.html
+classrs2_1_1net__device-members.html
 classrs2_1_1notification.html
 classrs2_1_1notification-members.html
 classrs2_1_1notifications__callback.html
@@ -275,6 +285,8 @@ classrs2_1_1serializable__device.html
 classrs2_1_1serializable__device-members.html
 classrs2_1_1software__device.html
 classrs2_1_1software__device-members.html
+classrs2_1_1software__device__destruction__callback.html
+classrs2_1_1software__device__destruction__callback-members.html
 classrs2_1_1software__sensor.html
 classrs2_1_1software__sensor-members.html
 classrs2_1_1spatial__filter.html
@@ -341,6 +353,7 @@ dir_c9d1953413e23d3aa7ccc950e57561e9.html
 dir_d44c64559bbebec7f509842c48db8b23.html
 dir_9d25e8b11fe18f2432ba6c8d035b608c.html
 dir_bc8427575ab14123c40f6a4fe2297fa7.html
+dir_d941b4ba6598532acae371ccb010d9a6.html
 index.html
 pages.html
 namespaces.html
@@ -436,6 +449,7 @@ structrs2__frame__processor__callback.png
 structrs2__log__callback.png
 structrs2__notifications__callback.png
 structrs2__playback__status__changed__callback.png
+structrs2__software__device__destruction__callback.png
 structrs2__update__progress__callback.png
 classrs2_1_1align.png
 classrs2_1_1asynchronous__syncer.png
@@ -469,6 +483,7 @@ classrs2_1_1mock__context.png
 classrs2_1_1motion__frame.png
 classrs2_1_1motion__sensor.png
 classrs2_1_1motion__stream__profile.png
+classrs2_1_1net__device.png
 classrs2_1_1notifications__callback.png
 classrs2_1_1options.png
 classrs2_1_1playback.png
@@ -487,6 +502,7 @@ classrs2_1_1save__to__ply.png
 classrs2_1_1sensor.png
 classrs2_1_1serializable__device.png
 classrs2_1_1software__device.png
+classrs2_1_1software__device__destruction__callback.png
 classrs2_1_1software__sensor.png
 classrs2_1_1spatial__filter.png
 classrs2_1_1status__changed__callback.png
