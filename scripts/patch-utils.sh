@@ -67,7 +67,7 @@ function choose_kernel_branch {
 			;;
 		esac
 	else
-		if [ "$2" != "bionic" ];
+		if [ "$2" != "focal" ];
 		then
 			echo -e "\e[31mUnsupported distribution $2 kernel version $1 . The patches are maintained for Ubuntu16/18 (Xenial/Bionic) with LTS kernels 4-[4,8,10,13,15,18]\e[0m" >&2
 			exit 1
@@ -83,6 +83,9 @@ function choose_kernel_branch {
 			echo 5
 			;;
 		"5.3")									# kernel 5.3
+			echo 5
+			;;
+		"5.4")									# kernel 5.4
 			echo 5
 			;;
 		*)
